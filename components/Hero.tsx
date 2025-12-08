@@ -145,7 +145,7 @@ export default function Hero() {
             >
               {/* LETTER ANIMATION TITLE */}
               <motion.h1
-                className="text-white text-4xl sm:text-6xl font-bold leading-tight flex flex-wrap"
+                className="text-white text-3xl sm:text-5xl font-bold leading-tight flex flex-wrap "
                 style={{ wordBreak: "keep-all" }}
               >
                 {splitWords(heroContents[index].title).map((word: string, i: number) => (

@@ -4,6 +4,8 @@ import Aboutscale from "../components/Aboutscale";
 import OutlookPage from "../components/Outlook";
 import EventsPage from "../components/Events";
 import CTAApplyNow from "../components/CTAApplyNow";
+import ScrollVideoSections from "../components/ScrollVideoSections";
+import ScrollFaculty from "../components/Facultysection";
 
 
 import "./globals.css";
@@ -40,6 +42,8 @@ export default function HomePage() {
       </div>
 
       <OutlookPage />
+      <ScrollVideoSections/>
+      <ScrollFaculty/>
       <CTAApplyNow/>
 
     </>

@@ -618,7 +618,7 @@ export default function AboutPage({ activeSlug }: any) {
                                     >
                                         <FaEye className="text-maroon text-xl" />
                                         <h3 className="text-xl font-semibold text-maroon tracking-wide">
-                                            Vision Statement — SCALE
+                                            Vision 
                                         </h3>
 
                                     </motion.div>
@@ -642,8 +642,7 @@ export default function AboutPage({ activeSlug }: any) {
                                     </motion.p>
                                 </motion.div>
 
-                                {/* Divider */}
-                                <div className="h-[1px] bg-gradient-to-r from-transparent via-maroon/30 to-transparent"></div>
+                       
 
                                 {/* MISSION SECTION */}
                                 <motion.div
@@ -662,12 +661,12 @@ export default function AboutPage({ activeSlug }: any) {
                                     >
                                         <FaBullseye className="text-maroon text-xl" />
                                         <h3 className="text-xl font-semibold text-maroon tracking-wide">
-                                            Mission Statement — SCALE
+                                            Mission 
                                         </h3>
                                     </motion.div>
 
                                     {/* Mission List with Royal Animations */}
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div className="grid grid-cols-1  gap-4">
                                         {[
                                             "<strong>Empower students with industry-relevant, technology-driven management education </strong> by integrating AI, digital transformation, analytics, and emerging technologies into every aspect of learning.",
                                             "<strong>Build a vibrant ecosystem of global collaboration </strong>through partnerships with international universities, industry mentors, thought leaders, and cross-border experiential programs.",
@@ -682,7 +681,7 @@ export default function AboutPage({ activeSlug }: any) {
                                                 whileInView={{ opacity: 1, y: 0 }}
                                                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                                                 viewport={{ once: true }}
-                                                className="flex items-start gap-3 bg-gray-50 border border-maroon/20 p-4 rounded-xl shadow-sm hover:shadow-md transition-all"
+                                                className="flex items-start gap-3  p-4   transition-all"
                                             >
                                                 <FaCheckCircle className="text-maroon w-6 h-6 flex-shrink-0 mt-1" />
 

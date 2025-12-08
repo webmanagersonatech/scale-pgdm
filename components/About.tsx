@@ -71,7 +71,7 @@ export default function About() {
           viewport={{ once: true }}
           className="md:hidden w-full text-center"
         >
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+          <h2 className="text-2xl sm:text-3xl font-bold   font-serif text-gray-900">
             <span className="text-gray-500">About </span>
             <span className="text-maroon">SONA GROUP</span>
           </h2>
@@ -143,7 +143,7 @@ export default function About() {
           <div className="hidden md:flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-left space-y-2 md:space-y-0">
             {/* Heading */}
             <div className="inline-block relative">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 relative z-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900   font-serif relative z-10">
                 <span className="text-gray-500 block md:inline">About </span>
                 <span className="text-maroon block md:inline">SONA GROUP</span>
               </h2>
@@ -170,7 +170,7 @@ export default function About() {
 
           {/* Text */}
           <p data-aos="fade-up"
-            className="text-gray-700 leading-relaxed text-sm sm:text-base md:text-lg text-justify"
+            className="text-gray-700 leading-relaxed text-[15px] text-justify"
           >
             The Sona Group is steeped in more than 100 years of success and tradition tracing back to pre-Independence.
             The group was founded by the doyen of textile industries of the early twentieth century,

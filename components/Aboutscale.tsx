@@ -88,7 +88,7 @@ export default function About() {
             className="space-y-8"
           >
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 relative z-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 relative z-10   font-serif">
                 <span className="text-gray-500">About </span>
                 <span className="text-maroon">SCALE</span>
               </h2>
@@ -104,7 +104,7 @@ export default function About() {
 
 
 
-            <div className="space-y-6 text-gray-700 text-sm sm:text-base md:text-lg text-justify leading-relaxed">
+            <div className="space-y-6 text-gray-700 text-[15px] text-justify leading-relaxed">
               <p>
                 Welcome to SCALE - Sona School of Business & Management (SSBM),
                 a bold new leap in business education where technology, industry
