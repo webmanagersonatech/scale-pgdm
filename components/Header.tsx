@@ -262,7 +262,7 @@ export default function Header() {
                     : "text-gray-600"
                     }`}
                 >
-                  A unit of Sona Valliyappa Groups
+                  A unit of Sona Valliappa Group
                 </a>
 
               </p>
