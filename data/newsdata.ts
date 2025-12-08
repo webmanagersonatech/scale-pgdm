@@ -165,108 +165,7 @@ export const newsData = [
     showFront: true
   },
 
-  {
-    id: 11,
-    title: "Outstanding Achievement at MMA Think Tank Quiz 2025",
-    slug: "outstanding-achievement-at-mma-think-tank-quiz-2025",
-    excerpt: "SSBM clinches First and Third place at the MMA Think Tank Quiz 2025, proving excellence in analytical thinking and leadership.",
-    description: "SSBM students secure First and Third place at MMA Think Tank Quiz 2025.",
-    image: "/images/event-images/outstanding-achievement-at-mma-think-tank-quiz-2025-1.webp",
-    content: `<div class="news-article mx-auto">
-    <p class="mb-4"><strong>Sona School of Management (SSBM)</strong>  is proud to celebrate the exceptional performance of two student teams at the <strong>MMA Think Tank Quiz 2025</strong>, held as part of the <strong>24th MMA All-India Management Students' Convention – "FUTURE READY"</strong> on Monday, 27 October 2025, at the IITM Research Park Auditorium, Chennai.</p>
-
-    <h3 class="font-semibold mb-2">Award Winners</h3>
-    <ul class="list-disc pl-6 mb-4 space-y-2">
-      <li><strong>First Place – Team 1</strong>: Prasana Guru G.K. &amp; Shreenivas R</li>
-      <li><strong>Third Place – Team 2</strong>: Sabarii Uthira K.A. &amp; Akash Babu</li>
-    </ul>
-
-    <h3 class="font-semibold mb-2">About the Event</h3>
-    <p class="mb-4">The MMA Think Tank Quiz was conducted under the theme<strong> "Leveraging AI, Agility & Human Skills to Thrive in a Changing World",</strong> bringing together talented management students from premier institutions across India. The competition tested participants' strategic thinking, business acumen, analytical skills, and ability to devise innovative solutions to contemporary business challenges.</p>
-
-    <h3 class="font-semibold mb-2">A Testament to Excellence</h3>
-     <p class="mb-4">This remarkable achievement reflects the core values that define Sona School of Management:</p>
-    <ul class="list-disc pl-6 mb-4 space-y-1">
-      <li><strong>Analytical Excellence</strong> – Sharp business thinking and data-driven decision-making</li>
-      <li><strong>Creative Innovation</strong> – Out-of-the-box approaches to complex problems</li>
-      <li><strong>Collaborative Spirit</strong> – Effective teamwork and communication</li>
-      <li><strong>Strategic Leadership</strong> –  Vision and execution capabilities</li>
-    </ul>
-
-    <p class="mb-4">Our students competed with the finest minds in management studies and demonstrated the strength of SSBM’s academic rigor and holistic development.</p>
-
-    <h3 class="font-semibold mb-2">Message from Leadership</h3>
-    <p class="mb-4">We extend our sincere gratitude to <strong> Mr. Thyagu Valliappa, Vice Chairman,</strong> for his continuous support and encouragement toward student development and academic excellence. His vision and commitment have been instrumental in creating an environment where students can excel and achieve their full potential.</p>
-
-    <h3 class="font-semibold mb-2">Building Future-Ready Leaders</h3>
-    <p class="mb-4">At Sona School of Management, we are committed to nurturing business leaders who are equipped to thrive in an ever-evolving global landscape. This achievement serves as inspiration to our entire student community and reinforces our dedication to academic rigor, practical learning, and competitive excellence.</p>
-
-    <p class="mb-4"><strong>Congratulations to the champion teams!</strong> Your success brings immense pride to the entire SSBM family and sets a benchmark for future achievements.</p>
-  </div>`,
-
-
-    date: "2025-10-27",
-    category: "Academics",
-    relevantImages: [
-
-      "/images/event-images/outstanding-achievement-at-mma-think-tank-quiz-2025-2.webp",
-      "/images/event-images/outstanding-achievement-at-mma-think-tank-quiz-2025-3.webp",
-      "/images/event-images/outstanding-achievement-at-mma-think-tank-quiz-2025-4.webp",
-      "/images/event-images/outstanding-achievement-at-mma-think-tank-quiz-2025-5.webp",
-    ],
-    showFront: true
-  },
-
-  {
-    id: 10,
-    title: "Sona School of Business and Management Excels at MMA Think Tank Quiz",
-    slug: "sona-school-of-business-and-management-excels-at-mma-think-tank-quiz",
-
-    excerpt: "SSBM students secured top honors at the prestigious MMA Think Tank Quiz, showcasing strategic thinking and business acumen.",
-    description: "SSBM students excel at MMA Think Tank Quiz, winning First and Third place."
-
-    ,
-    image: "/images/event-images/sona-school-of-business-and-management-excels-at-mma-think-tank-quiz-1.webp",
-    content: `<div class="news-article mx-auto">
-    <p class="mb-4">Students from <strong>Sona School of Business and Management (SSBM)</strong> have brought laurels to the institution by securing top positions at the prestigious <strong>MMA Think Tank Quiz</strong>, an event that celebrates strategic thinking, business acumen, and innovation.</p>
-    <p class="mb-4">The competition witnessed participation from <strong>27 teams</strong> representing reputed institutions including XIME, SSN, Loyola College, and M.O.P. Vaishnav College, making it a highly competitive and intellectually engaging event.</p>
-    <p class="mb-4">Four teams represented SSBM in the contest:</p>
-    <ul class="list-disc pl-6 mb-4 space-y-2">
-      <li>Team 1: Ms. Sabarii Uthira and Mr. Akash Babu</li>
-      <li>Team 2: Mr. Prasana Guru and Mr. Shreenivas</li>
-      <li>Team 3: Mr. Prakathesh Perumal and Ms. Ashifa Anjhum</li>
-      <li>Team 4: Mr. Jeevapriyan and Mr. Gokul Raj</li>
-    </ul>
-    <p class="mb-4">Demonstrating exceptional analytical and problem-solving skills, <strong>Team 2 (Mr. Prasana Guru and Mr. Shreenivas)</strong> emerged as the <strong>winners (First Place)</strong>, while <strong>Team 1 (Ms. Sabarii Uthira and Mr. Akash Babu)</strong> achieved the <strong>Third Place</strong>, reaffirming SSBM’s academic strength and competitive spirit.</p>
-    <blockquote class="border-l-4 pl-4 italic my-4">
-      “We are truly thankful to Sona School of Business and Management for the continuous encouragement and the exclusive business quiz training sessions that helped us sharpen our analytical and strategic thinking skills. The guidance from our faculty mentors played a vital role in our success.” — <strong>Prasana Guru & Shreenivas</strong>, First Place Winners
-    </blockquote>
-    <blockquote class="border-l-4 pl-4 italic my-4">
-      “The structured training sessions and mock quiz rounds conducted by SSBM gave us the edge to compete confidently among top B-schools. We are proud to bring this achievement to our institution.” — <strong>Sabarii Uthira & Akash Babu</strong>, Third Place Winners
-    </blockquote>
-    <p class="mb-4">The management of Sona School of Business and Management congratulated all participating teams for their stellar performance and stated that the achievement reflects SSBM’s commitment to nurturing analytical excellence, creativity, collaboration, and leadership among its students.</p>
-  </div>`,
-    date: "2025-10-15",
-    category: "Academics",
-    relevantImages: [
-      "/images/event-images/sona-school-of-business-and-management-excels-at-mma-think-tank-quiz-9.webp",
-      "/images/event-images/sona-school-of-business-and-management-excels-at-mma-think-tank-quiz-2.webp",
-      "/images/event-images/sona-school-of-business-and-management-excels-at-mma-think-tank-quiz-3.webp",
-
-      "/images/event-images/sona-school-of-business-and-management-excels-at-mma-think-tank-quiz-5.webp",
-
-    ],
-    pressrealse: [
-      "/images/event-images/Tamilmurasu.webp",
-      "/images/event-images/Tamil-Hindu.webp",
-      "/images/event-images/Maalaimurasu.webp",
-      "/images/event-images/maalaimalar.webp",
-      "/images/event-images/Daily-Thanthi.webp",
-      "/images/event-images/Indian-Express.webp",
-      "/images/event-images/Dinamani.webp",
-    ],
-    showFront: true,
-  },
+ 
   {
     id: 1,
     title: "Sona Group Expands Global Links in Japan",
@@ -290,41 +189,7 @@ export const newsData = [
     ],
     showFront: true,
   },
-  {
-    id: 2,
-    title: "Leadership Development for an AI-Augmented Workforce",
-    slug: "leadership-development-for-an-ai-augmented-workforce",
-
-    excerpt: "The HR Round Table conference at Sona Towers, Millers Road on 6th September 2025 was organized on the topic “Leadership Development for an AI-Augmented Workforce” between 10.30 am and 1.00 pm.",
-    description: "The HR Round Table conference at Sona Towers, Millers Road on 6th September 2025 ",
-    image: "/images/news-image/Leadership-Development-for-an-AI-Augmented-Workforce-3.webp",
-    content: `<div class="news-article  mx-auto ">
-
  
-
-  <!-- Introduction -->
-  
-  <!-- Conclusion -->
-  <div class="mb-4">
-    <h2 class="text-xl font-semibold mb-2">Conclusion</h2>
-    <p class="text-gray-700 leading-relaxed">
-      In conclusion, while AI is reshaping the workplace by taking over routine and data-driven tasks, the true essence of leadership lies in leveraging technology to enhance human strengths rather than replace them. 
-      The evolving role of HR and the changing work preferences of Gen Z highlight the need for organizations to rethink strategies—balancing efficiency through AI with human-centered practices that foster flexibility, engagement, and long-term sustainability.
-    </p>
-  </div>
-
-</div>
-`,
-    date: "2025-09-06",
-    category: "Research",
-    showFront: true,
-    relevantImages: [
-      "/images/news-image/Leadership-Development-for-an-AI-Augmented-Workforce-1.webp",
-      "/images/news-image/Leadership-Development-for-an-AI-Augmented-Workforce-2.webp",
-      "/images/news-image/Leadership-Development-for-an-AI-Augmented-Workforce-3.webp",
-      "/images/news-image/Leadership-Development-for-an-AI-Augmented-Workforce-4.webp",
-    ],
-  },
   {
     id: 3,
     title: "Sona MBA Students Win 1st & 4th Prizes in National ANMI Fin Quiz 2025",
@@ -396,72 +261,8 @@ export const newsData = [
     ],
   },
 
-  {
-    id: 5,
-    title: "Thoppur Ghat Highway Project Gains Momentum with ₹905 Crore Sanction",
-    slug: "thoppur-ghat-highway-project-905-crore-sanction",
-    excerpt: "Highway project sanctioned to reduce Thoppur accidents.",
-    description: "Highway project sanctioned to reduce Thoppur accidents.",
-    image: "/images/news-image/thoppur-ghat-road-safety-initiative.webp",
-    content: ` <div class="news-article  mx-auto p-6 bg-white ">
-       
-        
-        <p class="mb-4">The Sona School of Business and Management (SSBM) has played a pivotal role in driving real-world change through its intensive research and advocacy focused on reducing road accidents in one of Tamil Nadu’s most dangerous stretches — the Thoppur Ghat Section.</p>
-        
-        <p class="mb-4">As part of a socially responsible initiative, SBM conducted a comprehensive analysis titled <strong>“Road Accidents in Thoppur”</strong>, presented in the presence of key stakeholders including the Deputy Superintendent of Police – Thoppur, Inspector of Police, Regional Transport Officers, Deputy Transport Commissioner, and L&T Toll Management officials. The report meticulously examined 10 years of accident data and offered insights into accident patterns, contributing factors, and potential prevention strategies.</p>
-        
-        <h3 class="text-xl font-semibold mt-6 mb-2">Research Highlights and Insights</h3>
-        <p class="mb-2">The report revealed some alarming statistics:</p>
-        <ul class="list-disc pl-6 mb-4 space-y-1">
-          <li>473 accidents occurred within a 3 KM stretch of the Thoppur Ghat section.</li>
-          <li>1 in every 4 accident injuries resulted in death, reflecting the severe nature of incidents.</li>
-          <li>Weekends saw a surge in accidents, likely due to increased traffic and drunk driving.</li>
-          <li>Vehicle design, especially those with a high center of gravity, contributed to rollover risks.</li>
-          <li>A dedicated two-wheeler lane was suggested to reduce mixed traffic collisions.</li>
-          <li>High penalties were recommended for accident-prone zones to improve discipline.</li>
-          <li>Around 30% of accidents occurred on full moon or new moon days, indicating a need for scientific review of gravitational effects.</li>
-          <li>Other key causes included poor road maintenance, sharp turns, and mechanical faults in vehicles that had undergone recent repairs.</li>
-        </ul>
-        
-        <h3 class="text-xl font-semibold mt-6 mb-2">From Research to Recognition and Action</h3>
-        <p class="mb-4">Based on feedback from officials, the report was refined and retitled <strong>“Towards Zero Accidents at Thoppur Ghat Section”</strong> and later presented to District Collector Tmt. D. Divyadharshini, who lauded the effort as “an impressive work.” The session concluded with several actionable proposals, many of which are now being explored or implemented by local authorities.</p>
-        
-        <h3 class="text-xl font-semibold mt-6 mb-2">A Major Milestone: Elevated Highway Project Sanctioned</h3>
-        <p class="mb-4">In a remarkable development aligned with the report’s recommendations, the Central Government has approved <strong>₹905 crore</strong> for the construction of a much-needed elevated highway in Thoppur. This infrastructure upgrade aims to ease congestion, reduce fatal crashes, and transform Thoppur Ghat into a safer corridor for all commuters.</p>
-        
-        <h3 class="text-xl font-semibold mt-6 mb-2">Driving Impact Beyond the Classroom</h3>
-        <p class="mb-4">At Sona School of Business and Management, we believe in research with purpose. Our commitment to public safety, governance collaboration, and community welfare is a testament to our vision of education that creates impact beyond the classroom.</p>
-        
-        <p class="mb-4">We are proud to contribute — in even the smallest way — toward safer roads, smarter infrastructure, and stronger communities.</p>
-      </div>`,
-    date: "2025-12-05",
-    category: "Academics",
-    relevantImages: [
-      "/images/news-image/thoppur-ghat-road-safety-initiative-1.webp",
-      "/images/news-image/thoppur-ghat-road-safety-initiative-2.webp",
-      "/images/news-image/thoppur-ghat-road-safety-initiative-3.webp",
 
-    ]
-  },
-  {
-    id: 6,
-    title: "Glorious Performance in Unearth Quiz on Water Sustainability",
-    slug: "unearth-quiz-water-sustainability",
-    excerpt: "Tharani excels in Unearth Quiz on Water Sustainability.",
-    description: "Tharani excels in Unearth Quiz on Water Sustainability.",
-    image: "/images/news-image/tharanies-center-excellence-mba.jpg",
-    content: `<div class="news-article  mx-auto p-4 bg-white ">
 
-  
-  <p class="mb-4">Congratulations to <strong>Tharani</strong> of Sona School of Business and Management for a glorious performance in the <strong>Unearth Quiz on Water Sustainability</strong>, organized by ICCW in association with X Quiz It on <strong>5.5.2024</strong>.</p>
-  
-  <p class="mb-4">She reached the <strong>3rd round</strong> in the tough-fought finals, showcasing remarkable skill and knowledge. It was indeed a remarkable performance!</p>
-</div>
-`,
-    date: "2025-05-05",
-    category: "Academics",
-
-  },
   {
     "id": 7,
     "title": "Sona School of Management Ranked Top 21 among Top Private B-Schools in South Zone",
@@ -474,18 +275,7 @@ export const newsData = [
     "category": "Academics",
 
   },
-  {
-    "id": 8,
-    "title": "Business Quiz Winners: Think Tank 2023",
-    "slug": "business-quiz-winners-think-tank-2023",
-    "excerpt": "Sona School of Business and Management students secure third place in MMA Chennai's Think Tank 2023 Business Quiz.",
-    "description": "SSBM students Aravinth Suryan and Sandhya V secured 3rd place in the prestigious 'Think Tank 23' Business Quiz organized by MMA, Chennai.",
-    "image": "/images/news-image/Business-quiz-winners-Think-Tank-2023.webp",
-    "content": "<div class=\"news-article mx-auto bg-white\">\n  <p class=\"mb-4\">Students from the Sona School of Business and Management, <strong>Aravinth Suryan</strong> and <strong>Sandhya V</strong>, achieved <strong>third place</strong> in the 'Think Tank 23' Business Quiz organized by <strong>MMA, Chennai</strong>. This remarkable achievement came as they outperformed <strong>43 other teams</strong> to secure the third prize.</p>\n\n  <p class=\"mb-4\">Our Vice Chairman, <strong>Mr. Thyagu Valliappa</strong>, provided motivation and is delighted to congratulate the team, appreciating their efforts. Faculty and MBA students extend their heartfelt congratulations to both the participants and the winners for bringing pride to the institution.</p>\n</div>",
-    "date": "2023-09-27",
-    "category": "Achievements",
 
-  },
   {
     "id": 9,
     "title": "The Future of Technology and Engineering Education",
