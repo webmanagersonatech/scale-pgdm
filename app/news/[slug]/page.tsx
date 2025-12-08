@@ -35,8 +35,8 @@ export default function NewsDetailPage({ params }: NewsPageProps) {
     image: newsItem.image,
     slug: newsItem.slug,
     content: newsItem.content,
-    relevantImages: filterUndefinedStrings(newsItem.relevantImages),
-    pressrealse: filterUndefinedStrings(newsItem.pressrealse),
+    relevantImages: filterUndefinedStrings(newsItem?.relevantImages),
+    pressrealse: filterUndefinedStrings((newsItem as any)?.pressrealse),
   };
 
   return <NewsDetailAnimated newsItem={filteredNewsItem} />;
