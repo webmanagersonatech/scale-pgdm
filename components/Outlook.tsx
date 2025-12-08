@@ -67,42 +67,6 @@ export default function OutlookPage() {
 
 
 
-  const stats = [
-    {
-      icon: <Award className="w-10 h-10 text-[#B98A5A]" />,
-      value: (
-        <>
-          <CountUp end={9} duration={2} />
-          <sup>th</sup>
-        </>
-      ),
-      label: "Outlook B-School Rank (Tamil Nadu)",
-    },
-    {
-      icon: <Briefcase className="w-10 h-10 text-[#B98A5A]" />,
-      value: (
-        <>
-          <CountUp end={98} duration={2} />%
-        </>
-      ),
-      label: "Placement Record",
-    },
-    {
-      icon: <Building2 className="w-10 h-10 text-[#B98A5A]" />,
-      value: (
-        <>
-          <CountUp end={100} duration={2} />+
-        </>
-      ),
-      label: "Industry Partners",
-    },
-    {
-      icon: <ShieldCheck className="w-10 h-10 text-[#B98A5A]" />,
-      value: "A++",
-      label: "NAAC Accreditation",
-    },
-  ];
-
   const fadeUp: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: {
@@ -144,7 +108,7 @@ export default function OutlookPage() {
           variants={fadeUp}
           className="text-2xl sm:text-3xl  font-bold text-maroon"
         >
-          WHY SCALE-SSBM ?
+          WHY SSBM ?
         </motion.h1>
 
         <motion.p
@@ -273,7 +237,6 @@ export default function OutlookPage() {
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6">
                 <span className="font-semibold text-maroon">PGDM</span> gives you the skills and mindset to excel in modern business roles.
               </p>
-
 
             </div>
 

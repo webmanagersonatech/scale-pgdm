@@ -633,12 +633,12 @@ export default function AboutPage({ activeSlug }: any) {
                                         To shape a new generation of tech-enabled, ethical, and globally conscious
                                         business leaders who innovate, transform industries, and create meaningful
                                         impact for society.
-                                        <br /><br />
+                                        {/* <br /><br />
                                         OR
                                         <br /><br />
                                         To be India’s most future-ready tech business school—where talent,
                                         technology, and entrepreneurial thinking converge to build leaders for a
-                                        rapidly evolving world.
+                                        rapidly evolving world. */}
                                     </motion.p>
                                 </motion.div>
 
