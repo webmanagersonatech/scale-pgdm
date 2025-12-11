@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
+
 import Link from "next/link";
 
 import AdmissionForm from "../../components/AdmissionForm";
@@ -293,6 +294,105 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                         >
 
                             {/* Hero */}
+
+
+
+                            {/* ---------------- Your Wave Card ---------------- */}
+                            <div >
+                                <div className="relative rounded-2xl overflow-hidden shadow-xl mb-12">
+
+                                    {/* Background Gradient */}
+                                    <div className="absolute inset-0 bg-gradient-to-br from-maroon-300 via-maroon-200 to-maroon-400"></div>
+
+                                    {/* Wave SVG */}
+                                    <svg
+                                        className="absolute bottom-0 left-0 w-full"
+                                        viewBox="0 0 1440 320"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill="#4A301C"
+                                            fillOpacity="0.4"
+                                            d="M0,256L80,224C160,192,320,128,480,112C640,96,800,128,960,149.3C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                                        ></path>
+                                    </svg>
+
+                                    {/* CONTENT – FIXED WITH z-10 */}
+                                    <div className="relative z-10 p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                                        {/* ---------------- Left Side ---------------- */}
+                                        <div className="space-y-6">
+
+                                            <h1 className="text-[25px] font-bold leading-tight text-maroon-900">
+                                                Eligibility  and Admission <br /> Process
+                                            </h1>
+
+                                            <div className="grid grid-cols-1 gap-6">
+
+                                                {/* Eligibility Box */}
+                                                <div className="bg-maroon-200/40 p-6 rounded-2xl shadow">
+                                                    <h3 className="text-[17px] font-semibold text-maroon-900 mb-2">
+                                                        Eligibility
+                                                    </h3>
+                                                    <p className="text-[14px] text-maroon-800 leading-relaxed">
+                                                        Graduation in any discipline with a minimum aggregate of 50%.
+                                                    </p>
+                                                </div>
+
+                                                {/* Scholarships Box */}
+                                                {/* <div className="bg-maroon-200/40 p-6 rounded-2xl shadow">
+                                                    <h3 className="text-[17px] font-semibold text-maroon-900 mb-2">
+                                                        Scholarships
+                                                    </h3>
+                                                    <p className="text-[14px] text-maroon-800 leading-relaxed">
+                                                        Financial Aid: Up to 100% scholarships for eligible applicants.
+                                                    </p>
+                                                </div> */}
+
+                                            </div>
+                                        </div>
+
+                                        {/* ---------------- Right Side ---------------- */}
+                                        <div className="space-y-10">
+
+                                            {/* Step 1 */}
+                                            <div>
+                                                <p className="text-[14px] text-maroon-700 font-medium">Step 01</p>
+                                                <h3 className="text-[17px] font-semibold text-maroon-900 mt-1">
+                                                    Application Submission
+                                                </h3>
+                                                <p className="text-[14px] text-maroon-700 mt-1">
+                                                    Fill out the online application form.
+                                                </p>
+                                            </div>
+
+                                            {/* Step 2 */}
+                                            <div>
+                                                <p className="text-[14px] text-maroon-700 font-medium">Step 02</p>
+                                                <h3 className="text-[17px] font-semibold text-maroon-900 mt-1">
+                                                    Entrance Exam
+                                                </h3>
+                                                <p className="text-[14px] text-maroon-700 mt-1">
+                                                    Submit scores from CAT/CMAT/XAT/GMAT/ATMA.
+                                                </p>
+                                            </div>
+
+                                            {/* Step 3 */}
+                                            <div>
+                                                <p className="text-[14px] text-maroon-700 font-medium">Step 03</p>
+                                                <h3 className="text-[17px] font-semibold text-maroon-900 mt-1">
+                                                    Personal Interview
+                                                </h3>
+                                                <p className="text-[14px] text-maroon-700 mt-1">
+                                                    Engage in a one-on-one interview with our admissions panel.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
 
 
 
