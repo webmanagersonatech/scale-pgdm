@@ -192,12 +192,12 @@ export default function PlacementPage() {
                                     <div className="mt-6 space-y-4">
                                         <p className="flex items-center gap-4">
                                             <FaPhoneAlt className="text-maroon text-2xl" />
-                                            <span className="text-maroon-800">+91 99000 16900</span>
+                                            <span className="text-maroon-800">+91 8022283008</span>
                                         </p>
 
                                         <p className="flex items-center gap-4">
                                             <FaEnvelope className="text-maroon text-2xl" />
-                                            <span className="text-maroon-800">placementinfo@sonastar.com</span>
+                                            <span className="text-maroon-800">placementinfo@sonatowers.com</span>
                                         </p>
                                     </div>
                                 </div>

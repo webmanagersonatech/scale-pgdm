@@ -151,9 +151,9 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">ADDRESS</div>
                   <p className="text-sm leading-relaxed mt-2">
-                    Sona Towers, 71 Millers Road,<br />
-                    Vasanth Nagar, Bengaluru,<br />
-                    Karnataka – 560052.
+                     Sona VT Towers & Estates 71 Millers Road <br />
+                    Vasanth Nagar, Bengaluru – 560052.<br />
+                    
                   </p>
                 </div>
               </div>
@@ -164,10 +164,10 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">PHONE</div>
                   <a
-                    href="tel:+919442592144"
+                    href="tel:+918022283008"
                     className="block text-sm font-medium mt-2 hover:underline"
                   >
-                    +91 94425 92144
+                    +91 8022283008
                   </a>
                 </div>
               </div>
@@ -178,10 +178,10 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">EMAIL</div>
                   <a
-                    href="mailto:info@sonastar.com"
+                    href="mailto:support@sonatowers.com"
                     className="block text-sm font-medium mt-2 hover:underline"
                   >
-                    info@sonastar.com
+                    support@sonatowers.com
                   </a>
                 </div>
               </div>

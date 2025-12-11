@@ -29,7 +29,7 @@ export const navItems: NavItem[] = [
   },
   {
     label: "Research",
-    href: "/admission/general",
+    href: "#",
 
 
   },

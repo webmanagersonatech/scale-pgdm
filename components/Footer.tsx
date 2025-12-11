@@ -28,9 +28,9 @@ export default function Footer() {
             </div>
 
             <p className="text-sm text-gray-300/80 leading-relaxed">
-              Sona Towers, Millers Road Vasanth Nagar,
+              Sona VT Towers & Estates 71 Millers Road ,Vasanth Nagar
               <br />
-              Bengaluru Karnataka 560001.
+              Bengaluru  560051.
 
 
             </p>
