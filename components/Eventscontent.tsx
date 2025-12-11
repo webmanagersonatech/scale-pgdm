@@ -124,7 +124,7 @@ const Events = ({ title }: EventsProps) => {
                 <div className="w-full lg:w-3/4 flex flex-col gap-8">
                     <AnimatePresence>
                         {currentEvents.length > 0 ? (
-                            currentEvents.map((event, idx) => (
+                            currentEvents.map((event:any, idx) => (
                                 <Link href={`/events/${event.slug}`} key={event.slug}>
                                     <motion.div
                                         initial={{ opacity: 0, y: 30 }}

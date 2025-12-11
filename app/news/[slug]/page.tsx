@@ -20,7 +20,7 @@ function filterUndefinedStrings(arr?: (string | undefined)[]): string[] | undefi
 export default function NewsDetailPage({ params }: NewsPageProps) {
   const { slug } = params;
 
-  const newsItem = newsData.find((n) => n.slug === slug);
+  const newsItem:any = newsData.find((n) => n.slug === slug);
 
   if (!newsItem) {
     return <p className="p-6">News not found</p>;
@@ -30,7 +30,7 @@ export default function NewsDetailPage({ params }: NewsPageProps) {
   const filteredNewsItem = {
     title: newsItem.title,
     date: newsItem.date,
-    event_period: newsItem.event_period,
+    event_period: newsItem.event_period ?? "",
     category: newsItem.category,
     image: newsItem.image,
     slug: newsItem.slug,
