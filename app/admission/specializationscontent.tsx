@@ -321,7 +321,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             >
 
                                 <p className="text-gray-700 text-[14px] leading-relaxed">
-                                    SCALE offers cutting-edge PGDM specialisations built around technologies, digital business skills, and future competencies demanded by global enterprises and GCCs.
+                                    SSBM offers cutting-edge PGDM specialisations built around technologies, digital business skills, and future competencies demanded by global enterprises and GCCs.
                                     Each programme blends business fundamentals with AI, analytics, cloud, automation, and digital tools—ensuring graduates are job-ready from Day 1.
 
                                 </p>
@@ -331,7 +331,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                     The Two-Year Fully Residential PGDM Programme
                                 </h3>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
                                     {[
                                         "Build tech-driven managers and innovators",
                                         "Equip learners with industry-aligned skills",
@@ -346,7 +346,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             transition={{ duration: 0.5, delay: i * 0.1 }}
                                             className="flex items-start gap-3 p-2"
                                         >
-                                            <span className="text-maroon text-lg font-bold leading-none">✓</span>
+                                            <span className="text-maroon-300 text-sm font-bold leading-none">✓</span>
 
                                             <p className="text-gray-700 text-[14px]">{point}</p>
                                         </motion.div>
@@ -365,17 +365,17 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                     {[
                                         {
                                             title: "A Tech-Powered Business School",
-                                            desc: "In today’s world, business leadership is impossible without deep technological fluency. At SCALE -SSBM, management learning is fused with AI, Data Science, Digital Transformation, Cloud, Cybersecurity, FinTech, and Industry 4.0 tools—ensuring every student graduates with the superpower of tech-enabled decision making.",
+                                            desc: "In today’s world, business leadership is impossible without deep technological fluency. At SSBM, management learning is fused with AI, Data Science, Digital Transformation, Cloud, Cybersecurity, FinTech, and Industry 4.0 tools—ensuring every student graduates with the superpower of tech-enabled decision making.",
                                             icon: <MdLaptopMac className="h-7 w-7 text-maroon" />
                                         },
                                         {
                                             title: "Global Collaboration & Exposure",
-                                            desc: "SCALE- SSBM’s global partnerships bring international faculty, industry mentors, real-world case labs, and cross-border learning experiences directly into the classroom.Students gain insights into global business landscapes, cross-cultural leadership, and international market dynamics, preparing them for careers without boundaries.",
+                                            desc: " SSBM’s global partnerships bring international faculty, industry mentors, real-world case labs, and cross-border learning experiences directly into the classroom.Students gain insights into global business landscapes, cross-cultural leadership, and international market dynamics, preparing them for careers without boundaries.",
                                             icon: <MdPublic className="h-7 w-7 text-maroon" />
                                         },
                                         {
                                             title: "Startup Incubation & Innovation Centre",
-                                            desc: "At SCALE, early-stage founders, student innovators, and ideators gain access to the Sona Startup Hub—a launchpad that fuels real entrepreneurship. With mentorship from global experts, corporate accelerators, investors, and technology partners, SCALE transforms students into creators of jobs, not seekers of jobs",
+                                            desc: "At , early-stage founders, student innovators, and ideators gain access to the Sona Startup Hub—a launchpad that fuels real entrepreneurship. With mentorship from global experts, corporate accelerators, investors, and technology partners, SSBM transforms students into creators of jobs, not seekers of jobs",
                                             icon: <MdRocketLaunch className="h-7 w-7 text-maroon" />
                                         },
                                     ].map((item, i) => (

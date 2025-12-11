@@ -110,23 +110,28 @@ export default function About() {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, ease: "backOut" }}
             viewport={{ once: true }}
-            className="absolute bottom-6 sm:bottom-20 left-6 w-[clamp(5rem,8vw,10rem)] h-[clamp(5rem,8vw,10rem)] 
-             flex flex-col items-center justify-center rounded-full bg-gradient-to-br from-[#A0E7E5] via-[#B4F8C8] to-[#FBE7C6]
-             text-[#FFD700] font-semibold shadow-2xl border-[3px] sm:border-4 border-maroon 
-             p-2 sm:p-3"
+            className="absolute bottom-6 sm:bottom-20 left-6
+             w-[clamp(5rem,8vw,10rem)] h-[clamp(5rem,8vw,10rem)]
+             flex flex-col items-center justify-center rounded-full 
+             bg-gradient-to-br from-[#A0E7E5] via-[#B4F8C8] to-[#FBE7C6]
+             shadow-2xl border-[3px] sm:border-4 border-maroon
+             p-[5%] sm:p-[6%] overflow-hidden"
           >
-            {/* Image scaled to a fraction of the badge size */}
+            {/* Bigger image at the top */}
             <img
               src="/images/about/100+-year.png"
               alt="NAAC Accredited"
-              className="w-1/2 h-1/2 sm:w-1/2 sm:h-1/2 mb-1 object-contain"
+              className="w-3/4 h-auto max-h-[60%] object-contain mb-1"
             />
 
-            {/* Text scales with the badge */}
-            <div className="text-[clamp(0.5rem,1.5vw,1rem)] text-center leading-tight text-maroon-800">
+            {/* Smaller text under the image */}
+            <div className="text-[clamp(0.4rem,1vw,0.7rem)] text-center leading-tight text-maroon-800">
               INDUSTRY & <br /> ACADEMY
             </div>
           </motion.div>
+
+
+
 
 
         </motion.div>

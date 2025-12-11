@@ -282,9 +282,12 @@ export default function AboutPage({ activeSlug }: any) {
                         </a>
                     )}
                 </div>
-                {member.title && <p className="text-sm text-gray-600 border-t border-maroon pt-1 mt-1">{member.title}</p>}
-                {member.designation && <p className="text-[13px] text-gray-600 mt-1">{member.designation}</p>}
-                {member.company && <p className="text-[12px] text-gray-500 mt-1">{member.company}</p>}
+            <div className="space-y-0.5">
+  {member.title && <p className="text-sm text-gray-600 border-t border-maroon pt-0.5">{member.title}</p>}
+  {member.designation && <p className="text-[13px] text-gray-600">{member.designation}</p>}
+  {member.company && <p className="text-[12px] text-gray-500">{member.company}</p>}
+</div>
+
             </div>
         </motion.div>
     );
@@ -536,7 +539,7 @@ export default function AboutPage({ activeSlug }: any) {
                                         <div className="flex flex-col gap-2">
                                             {milestones.map((item, idx) => (
                                                 <div key={idx} className="flex items-start gap-2">
-                                                    <span className="flex items-center justify-center w-5 h-5  text-maroon text-[12px] font-bold">
+                                                    <span className="flex items-center justify-center w-5 h-5  text-maroon-300 text-[12px] font-bold">
                                                         ✓
                                                     </span>
 
@@ -797,7 +800,7 @@ export default function AboutPage({ activeSlug }: any) {
                                                 viewport={{ once: true }}
                                                 className="flex items-start gap-3   transition-all"
                                             >
-                                                <span className="flex items-center justify-center w-6 h-6  text-maroon text-[14px] font-bold ">
+                                                <span className="flex items-center justify-center w-6 h-6  text-maroon-300 text-[14px] font-bold ">
                                                     ✓
                                                 </span>
 

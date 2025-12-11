@@ -11,9 +11,9 @@ const fadeUp = {
 };
 
 const facultyData40 = [
-    { name: "Dr. M. Venugopal", image: "/images/faculty/venugopal-1.webp", title: "Vice President", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
-    { name: "Dr. Sheelan Misra", image: "/images/faculty/image-3.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
-    { name: "Dr. Sowmya Narayanan", image: "/images/faculty/image-4.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
+    { name: "Dr. M. Venugopal", image: "/images/faculty/venugopal-1.webp", title: "Vice President", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/mittapallyvenugopal/" },
+    { name: "Dr. Sheelan Misra", image: "/images/faculty/image-3.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/sheelan-misra/" },
+    { name: "Dr. Sowmya Narayanan", image: "/images/faculty/image-4.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/" },
 ];
 
 
@@ -52,8 +52,8 @@ export default function FacultyGrid() {
 
     const timelineItems = [
         { num: "40", title: "Industry Practitioners", desc: "Leaders & CEOs sharing real-world insights" },
-        { num: "30", title: "Full-Time Faculty", desc: "Dedicated educators shaping learning" },
-        { num: "30", title: "Visiting Faculty", desc: "Stanford, Harvard-level masters" },
+        { num: "30", title: "International Resource Faculty", desc: "Dedicated educators shaping learning" },
+        { num: "30", title: "Excellent Research Faculty", desc: "Stanford, Harvard-level masters" },
     ];
 
     return (
@@ -104,15 +104,10 @@ export default function FacultyGrid() {
                             `}
                             >
                                 <div className="flex items-stretch gap-3">
-                                    <div className="flex items-center font-classy font-bold text-maroon-400 leading-none
-                             text-4xl sm:text-5xl md:text-6xl">
-                                        {item.num}
-                                    </div>
+
                                     <div className="flex flex-col gap-[2px] leading-none">
 
-                                        <span className="text-[14px] text-maroon leading-none block">
-                                            %
-                                        </span>
+                                       
 
                                         <span className="text-[14px]  text-grayText leading-none block">
                                             {item.title}

@@ -9,8 +9,8 @@ export default function FacultyPage() {
 
     const tabs = [
         { label: "Faculty-in-Residence", key: "masters", data: masters },
-        { label: "Visiting Faculty", key: "visiting", data: visiting },
-        { label: "Part Time Faculty", key: "parttime", data: parttime },
+        { label: "International Resource Faculty", key: "visiting", data: visiting },
+        { label: "Excellent Research Faculty", key: "parttime", data: parttime },
     ];
 
     const [activeTab, setActiveTab] = useState("masters");
@@ -108,19 +108,19 @@ export default function FacultyPage() {
                                 whileInView="visible"
                                 viewport={{ once: false, amount: 0.3 }}
                                 transition={{ duration: 0.5 }}
-                                className=" overflow-hidden text-[14px]"
+                                className="bg-maroon-100 rounded-xl shadow-md overflow-hidden"
                             >
                                 <img
                                     src={f.image}
-                                    className="h-[100px] w-full rounded-2xl bg-[radial-gradient(circle,#f5d6c6_0%,#C9A683_60%,#A88562_100%)]
- object-contain bg-transparent"
+                                    className="h-44 w-full bg-[radial-gradient(circle,#f5d6c6_0%,#C9A683_60%,#A88562_100%)]
+                        object-contain bg-transparent"
                                 />
 
 
 
                                 <div className="p-3">
                                     <div className="flex justify-between items-center">
-                                        <h3 className="text-maroon-800 font-bold ">{f.name}</h3>
+                                        <h3 className="text-maroon-800 font-bold text-[15px]">{f.name}</h3>
 
                                         {f.linkedin && (
                                             <a
@@ -132,11 +132,8 @@ export default function FacultyPage() {
                                                 <FaLinkedin className="text-blue-500 text-lg hover:text-blue-700 transition" />
                                             </a>
                                         )}
-
                                     </div>
-                                    <div>
 
-                                    </div>
                                     <p className="text-sm text-gray-600 border-t border-maroon mt-1 pt-1">
                                         {f.title}
                                     </p>
