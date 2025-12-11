@@ -90,7 +90,7 @@ export default function About() {
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 relative z-10   font-serif">
                 <span className="text-gray-500">About </span>
-                <span className="text-maroon">SCALE</span>
+                <span className="text-maroon">SSBM</span>
               </h2>
 
               <motion.div
@@ -106,13 +106,13 @@ export default function About() {
 
             <div className="space-y-6 text-gray-700 text-[14px] text-justify leading-relaxed">
               <p>
-                Welcome to SCALE - Sona School of Business & Management (SSBM),
+                Welcome to - Sona School of Business & Management (SSBM),
                 a bold new leap in business education where technology, industry
                 wisdom, and entrepreneurial spirit merge to create leaders who
                 aren’t just ready for the future—they are built to define it.
               </p>
               <p>
-                Located in the heart of Bangalore’s Bidadi industrial hub, SCALE
+                Located in the heart of Bangalore’s Bidadi industrial hub, SSBM
                 offers unparalleled access to industry interactions,
                 state-of-the-art infrastructure, and cutting-edge digital
                 learning tools. With a GCC-driven curriculum and focus on
@@ -122,7 +122,7 @@ export default function About() {
             </div>
 
             <Link
-              href="/scale/aboutus"
+              href="/scale/why-ssbm"
               className="inline-block mt-6  font-medium  transition text-sm sm:text-base text-center"
             >
               <button
@@ -153,13 +153,13 @@ export default function About() {
           >
             <div className="relative h-[500px] rounded-t-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/about/scale-bg.webp"
+                src="/images/about/scale-bg.png"
                 alt="SCALE Campus"
                 fill
                 className="object-cover"
               />
 
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8 text-white">
+              <div className="absolute bottom-0 left-0  right-0 bg-gradient-to-t from-black/80 to-transparent p-8 text-white">
                 <p className="text-xl font-semibold mb-2">
                   Future-Ready Leaders
                 </p>

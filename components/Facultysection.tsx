@@ -12,59 +12,11 @@ const fadeUp = {
 
 const facultyData40 = [
     { name: "Dr. M. Venugopal", image: "/images/faculty/venugopal-1.webp", title: "Vice President", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
-    { name: "Dr. Anna Smith", image: "/images/faculty/image-3.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
-    { name: "Dr. Michael Lee", image: "/images/faculty/image-4.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
+    { name: "Dr. Sheelan Misra", image: "/images/faculty/image-3.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
+    { name: "Dr. Sowmya Narayanan", image: "/images/faculty/image-4.webp", title: "Professor", logo: "/images/logo.webp", linkedin: "https://www.linkedin.com/in/johndoe" },
 ];
 
-const facultyData30 = [
-    {
-        name: "Dr. Arvind Kumar",
-        image: "/images/faculty/prof-4.png",
-        title: "Professor",
-        logo: "/images/logo.webp",
-        linkedin: "https://www.linkedin.com/in/arvindkumar"
-    },
-    {
-        name: "Ms. Neha Ramesh",
-        image: "/images/faculty/prof-4.png",
-        title: "Assistant Professor",
-        logo: "/images/logo.webp",
-        linkedin: "https://www.linkedin.com/in/neharamesh"
-    },
-    {
-        name: "Dr. Karthik S.",
-        image: "/images/faculty/prof-4.png",
-        title: "Senior Lecturer",
-        logo: "/images/logo.webp",
-        linkedin: "https://www.linkedin.com/in/karthiks"
-    }
 
-];
-
-const facultyRemaining30 = [
-    {
-        name: "Dr. Riya Mehta",
-        image: "/images/faculty/prof-4.png",
-        title: "Assistant Professor",
-        logo: "/images/logo.webp",
-        linkedin: "https://www.linkedin.com/in/riyamehta"
-    },
-    {
-        name: "Prof. Aditya Varma",
-        image: "/images/faculty/prof-4.png",
-        title: "Professor",
-        logo: "/images/logo.webp",
-        linkedin: "https://www.linkedin.com/in/adityavarma"
-    },
-    {
-        name: "Dr. Sneha Kapoor",
-        image: "/images/faculty/prof-4.png",
-        title: "Associate Professor",
-        logo: "/images/logo.webp",
-        linkedin: "https://www.linkedin.com/in/snehakapoor"
-    }
-
-];
 
 export default function FacultyGrid() {
 
@@ -95,8 +47,8 @@ export default function FacultyGrid() {
 
     const dataList =
         activeCategory === 0 ? facultyData40 :
-            activeCategory === 1 ? facultyData30 :
-                facultyRemaining30;
+            activeCategory === 1 ? [] :
+                [];
 
     const timelineItems = [
         { num: "40", title: "Industry Practitioners", desc: "Leaders & CEOs sharing real-world insights" },
@@ -189,7 +141,7 @@ export default function FacultyGrid() {
                             >
                                 <img
                                     src={f.image}
-                                    className="h-44 w-full bg-[radial-gradient(circle,#f5d6c6_0%,#e0a68b_60%,#c9745b_100%)]
+                                    className="h-44 w-full bg-[radial-gradient(circle,#f5d6c6_0%,#C9A683_60%,#A88562_100%)]
 object-contain bg-transparent"
                                 />
 

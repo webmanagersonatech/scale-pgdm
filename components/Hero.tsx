@@ -12,7 +12,7 @@ const cubicEase: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
 const heroContents = [
   {
     title:
-      "India’s New-Age Tech Business School for the Next Generation of Global Leaders",
+      "India’s New-Age Techno Business School for the Next Generation of Global Leaders",
     desc: "By the Industry, for the Industry, to the Industry",
     btn: "Apply Now →",
     link: "https://www.sonabusinessschool.com/online-application?inst_id=ZFSQSGGCPYXQ9589",

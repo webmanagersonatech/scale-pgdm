@@ -192,7 +192,7 @@ export default function AboutPage({ activeSlug }: any) {
         {
             name: "Mr. C. Valliappa",
             role: "Chairman",
-            image: "/images/about/valliappa-chairman-sona-gro.jpg",
+            image: "/images/about/Valliappa.jpg",
             fullBio:
                 "Mr. C. Valliappa , is the Chairman of this institution and the illustrious son of Founder Chairman. His passion and commitment to the cause of education, able guidance and devoted care of the various needs of this institution has established SONA as a  veritable haven of educational brilliance which is moving towards greater heights of achievement and glory.",
             socials: [],
@@ -201,8 +201,8 @@ export default function AboutPage({ activeSlug }: any) {
 
         {
             name: "Mr. Thyagu Valliappa",
-            role: "Vice Chairman",
-            image: "/images/about/thyagu-valliappa.jpg",
+            role: "Founder",
+            image: "/images/about/Thyagu-Valliappa1.jpg",
             fullBio:
                 "Thyagu Valliappa is a fourth-generation entrepreneur and a transformative leader known for driving innovation across diverse sectors including technology, real estate, textiles, healthcare, logistics, and education. With over four decades of entrepreneurial experience, he has mentored more than 50 startups and played a pivotal role in shaping India’s startup and industry ecosystem. As Founder & Chief Mentor of SCALE, he brings unmatched industry insight, a global mindset, and a passion for developing future-ready leaders. His work spans building world-class infrastructure, pioneering sportainment, advancing heritage healthcare, and strengthening industry–academia partnerships. A visionary strategist and thought leader, he continues to inspire change through innovation, sustainability, and purposeful leadership.",
             socials: [
@@ -233,12 +233,7 @@ export default function AboutPage({ activeSlug }: any) {
                     image: "/images/about/breaking-barriers-sona.png",
                     content: "Sona College initiative empowering students through mentorship and seed support for startups across manufacturing and AI."
                 },
-                {
-                    title: "Mr. Thyagu Valliappa assumes Chairmanship for MMA Salem Chapter",
-                    date: "13-03-2023",
-                    image: "/images/about/thyagu-mma-salem-chapter-chairman-tamil-news.webp",
-                    content: "Coverage in Tamil news on Thyagu Valliappa’s appointment as Chairman of the MMA Salem Chapter."
-                },
+
                 {
                     title: "The Future of Technology and Engineering Educaion",
                     date: "22-10-2023",
@@ -269,7 +264,7 @@ export default function AboutPage({ activeSlug }: any) {
                 <img
                     src={member.image}
                     alt={member.name}
-                    className="h-[100px] w-full rounded-2xl object-contain bg-[radial-gradient(circle,#f5d6c6_0%,#e0a68b_60%,#c9745b_100%)]
+                    className="h-[100px] w-full rounded-2xl object-contain bg-[radial-gradient(circle,#f5d6c6_0%,#C9A683_60%,#A88562_100%)]
 "
                 />
             )}
@@ -436,9 +431,9 @@ export default function AboutPage({ activeSlug }: any) {
                                         tabsRef.current[index] = el;
                                     }}
                                     onClick={() => handleTabChange(sec.id)}
-                                    className={`relative flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base font-medium rounded-md transition-all duration-500 transform ${isActive
+                                    className={`relative flex items-center gap-2 px-3 sm:px-4 py-1 text-sm sm:text-base font-medium rounded-md transition-all duration-500 transform ${isActive
                                         ? "text-maroon scale-105"
-                                        : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                                        : "text-gray-700 hover:text-gray-900 hover:bg-gray-200"
                                         }`}
                                 >
                                     {/* Icon */}
@@ -800,7 +795,7 @@ export default function AboutPage({ activeSlug }: any) {
                                                 whileInView={{ opacity: 1, y: 0 }}
                                                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                                                 viewport={{ once: true }}
-                                                className="flex items-start gap-3  py-2   transition-all"
+                                                className="flex items-start gap-3   transition-all"
                                             >
                                                 <span className="flex items-center justify-center w-6 h-6  text-maroon text-[14px] font-bold ">
                                                     ✓

@@ -3,6 +3,7 @@
 import { motion, Variants } from "framer-motion"; // <-- add Variants here
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import {
   faTrophy,
   faChartBar,
@@ -118,6 +119,27 @@ export default function OutlookPage() {
           <span className="font-semibold text-maroon">curriculum, mentor students, deliver courses, and co-create real business challenges</span> by{" "}
           <span >Learning here is practical, relevant, and future-proof.</span>
         </motion.p>
+        <Link
+          href="/scale/why-ssbm"
+          className="inline-block mt-6  font-medium  transition text-sm sm:text-base text-center"
+        >
+          <button
+            className="flex items-center gap-2 border border-maroon-700  text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
+          >
+            Know More
+            <svg
+              className="w-8 h-8 group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+              viewBox="0 0 16 19"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                className="fill-gray-800 group-hover:fill-gray-800"
+              ></path>
+            </svg>
+          </button>
+        </Link>
+
 
       </motion.div>
 

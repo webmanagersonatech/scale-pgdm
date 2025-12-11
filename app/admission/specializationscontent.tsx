@@ -180,7 +180,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
     }, [currentSection]);
 
     return (
-        <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] py-12   flex flex-col items-center">
+        <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] pt-12   flex flex-col items-center">
             {/* Banner */}
             <div className="w-full relative">
                 <AnimatePresence mode="wait">
@@ -252,9 +252,9 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                     tabsRef.current[index] = el;
                                 }}
                                 onClick={() => handleTabChange(sec.id)}
-                                className={`relative flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base font-medium rounded-md transition-all duration-500 transform ${isActive
+                                className={`relative flex items-center gap-2 px-3 sm:px-4 py-1  text-sm sm:text-base font-medium rounded-md transition-all duration-500 transform ${isActive
                                     ? "text-maroon scale-105"
-                                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-200"
                                     }`}
                             >
                                 <Icon
@@ -289,7 +289,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -40 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="relative max-w-7xl mx-auto p-6 md:p-12 rounded-2xl overflow-hidden"
+                            className="relative max-w-7xl mx-auto p-6  rounded-2xl overflow-hidden"
                         >
 
                             {/* Hero */}
@@ -462,7 +462,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="relative  p-6 md:p-10 rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                            className="relative  p-6  rounded-3xl max-w-7xl mx-auto overflow-hidden"
                         >
 
                             {/* Header */}
@@ -631,7 +631,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="relative  p-6 md:p-10 rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                            className="relative  p-6  rounded-3xl max-w-7xl mx-auto overflow-hidden"
                         >
 
                             {/* Header */}
@@ -801,7 +801,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="relative  p-6 md:p-10 rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                            className="relative  p-6  rounded-3xl max-w-7xl mx-auto overflow-hidden"
                         >
 
                             {/* Header */}
@@ -968,7 +968,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="relative  p-6 md:p-10 rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                            className="relative  p-6  rounded-3xl max-w-7xl mx-auto overflow-hidden"
                         >
 
                             {/* Header */}
@@ -1122,7 +1122,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="relative p-6 md:p-10 rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                            className="relative p-6  rounded-3xl max-w-7xl mx-auto overflow-hidden"
                         >
                             {/* Header */}
                             <motion.div

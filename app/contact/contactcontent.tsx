@@ -151,9 +151,9 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">ADDRESS</div>
                   <p className="text-sm leading-relaxed mt-2">
-                     Sona VT Towers & Estates 71 Millers Road <br />
+                    71 Millers Road <br />
                     Vasanth Nagar, Bengaluru – 560052.<br />
-                    
+
                   </p>
                 </div>
               </div>
@@ -178,10 +178,10 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">EMAIL</div>
                   <a
-                    href="mailto:support@sonatowers.com"
+                    href="mailto:contact@scaleindia.in"
                     className="block text-sm font-medium mt-2 hover:underline"
                   >
-                    support@sonatowers.com
+                    contact@scaleindia.in
                   </a>
                 </div>
               </div>

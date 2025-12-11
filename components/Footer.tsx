@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
 
             <p className="text-sm text-gray-300/80 leading-relaxed">
-              Sona VT Towers & Estates 71 Millers Road ,Vasanth Nagar
+              71 Millers Road ,Vasanth Nagar
               <br />
               Bengaluru  560051.
 
@@ -122,14 +122,7 @@ export default function Footer() {
           <span className="text-center">
             © {new Date().getFullYear()} Sona School of Business and Management. All rights reserved.
           </span>
-          <div className="flex gap-4">
-            <a href="#terms" className="hover:text-white transition">
-              Terms & Conditions
-            </a>
-            <a href="#privacy" className="hover:text-white transition">
-              Privacy Policy
-            </a>
-          </div>
+
         </div>
       </div>
     </footer>

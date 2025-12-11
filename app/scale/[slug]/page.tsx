@@ -2,7 +2,7 @@ import ScalePage from "../about-content";
 
 export async function generateStaticParams() {
   return [
-    { slug: "why-scale" },
+    { slug: "why-ssbm" },
     { slug: "industry-designed" },
     { slug: "tech-infused" },
     { slug: "global-exposure" },
@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 
 export function generateMetadata({ params }: any) {
   const titles: any = {
-    "why-scale": "Why SCALE?",
+    "why-SSBM": "Why SSBM?",
     "industry-designed": "Industry Designed Business School",
     "tech-infused": "Tech-Infused Curriculum",
     "global-exposure": "Global Exposure",

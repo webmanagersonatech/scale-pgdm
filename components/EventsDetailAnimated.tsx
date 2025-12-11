@@ -233,7 +233,7 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
 
       {/* Title */}
       <motion.h1
-        className="text-xl sm:text-2xl md:text-3xl font-bold text-maroon my-4"
+        className="text-xl sm:text-2xl font-bold text-maroon my-4"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
@@ -397,7 +397,7 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
         // Old single-day event
         <>
           <motion.div
-            className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify mb-6"
+            className="text-gray-700 text-[14px] leading-relaxed text-justify mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6, ease: "easeInOut" }}

@@ -35,7 +35,7 @@ export default function FacultyPage() {
 
 
     return (
-        <section className="py-10 min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289]">
+        <section className="py-10  bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289]">
 
             {/* Heading */}
             <div className="max-w-7xl mx-auto px-4">
@@ -112,7 +112,7 @@ export default function FacultyPage() {
                             >
                                 <img
                                     src={f.image}
-                                    className="h-[100px] w-full rounded-2xl bg-[radial-gradient(circle,#f5d6c6_0%,#e0a68b_60%,#c9745b_100%)]
+                                    className="h-[100px] w-full rounded-2xl bg-[radial-gradient(circle,#f5d6c6_0%,#C9A683_60%,#A88562_100%)]
  object-contain bg-transparent"
                                 />
 
@@ -135,7 +135,7 @@ export default function FacultyPage() {
 
                                     </div>
                                     <div>
-                                    
+
                                     </div>
                                     <p className="text-sm text-gray-600 border-t border-maroon mt-1 pt-1">
                                         {f.title}

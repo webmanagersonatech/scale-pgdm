@@ -91,7 +91,7 @@ const customStyles = `
 `;
 
 type TabId =
-  | "why-scale"
+  | "why-ssbm"
   | "industry-designed"
   | "tech-driven"
   | "global-exposure"
@@ -111,12 +111,12 @@ interface Section {
 export default function ScalePage({ activeSlug }: any) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [activeTab, setActiveTab] = useState<TabId>("why-scale");
+  const [activeTab, setActiveTab] = useState<TabId>("why-ssbm");
   const tabsRef = useRef<(HTMLButtonElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement | null>(null);
   // ALL TABS
   const sections: Section[] = [
-    { id: "why-scale", title: "Why SCALE", icon: FiInfo },
+    { id: "why-ssbm", title: "Why SSBM", icon: FiInfo },
     {
       id: "industry-designed",
       title: "Industry-Designed B-School",
@@ -245,7 +245,7 @@ export default function ScalePage({ activeSlug }: any) {
                       href="/scale"
                       className="cursor-pointer transition-colors text-white"
                     >
-                      About Scale
+                      About SSBM
                     </Link>
                     <span className="text-white mx-1">{">"}</span>
                   </li>
@@ -278,9 +278,9 @@ export default function ScalePage({ activeSlug }: any) {
                     tabsRef.current[index] = el;
                   }}
                   onClick={() => handleTabChange(sec.id)}
-                  className={`relative flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base font-medium rounded-md transition-all duration-500 transform ${isActive
+                  className={`relative flex items-center gap-2 px-3 sm:px-4 py-1 text-sm sm:text-base font-medium rounded-md transition-all duration-500 transform ${isActive
                     ? "text-maroon scale-105"
-                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+                    : "text-gray-700 hover:text-gray-900 hover:bg-gray-200"
                     }`}
                 >
                   <Icon
@@ -310,7 +310,7 @@ export default function ScalePage({ activeSlug }: any) {
         <div className="w-full max-w-7xl mx-auto mt-6 sm:mt-8 md:mt-10 relative flex flex-col gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 lg:px-6">
           <AnimatePresence mode="wait">
             {/* ---------------- WHY SCALE ---------------- */}
-            {activeTab === "why-scale" && (
+            {activeTab === "why-ssbm" && (
               <motion.div
                 key="why-scale"
                 variants={tabVariants}
@@ -322,7 +322,7 @@ export default function ScalePage({ activeSlug }: any) {
                 <div className="text-start mb-8">
                   <h3 className="text-[17px] font-semibold text-maroon mb-4 text-start">
                     Why Students Should Join Sona School of Business &
-                    Management - SCALE
+                    Management - SSBM
                   </h3>
                   <p className="text-[14px] text-primary-700">
                     India's First Truly Tech-Driven, Industry-Built Business
@@ -451,12 +451,12 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-8  font-serif italic">
                   <div className="bg-primary-50  px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
 
                     <p className="text-maroon text-[16px]  leading-relaxed">
-                      Students learn exactly what companies want <br />
-                      <span className="text-maroon">RIGHT NOW.</span>
+                      “ Students learn exactly what companies want <br />
+                      <span className="text-maroon">RIGHT NOW.”</span>
                     </p>
 
                   </div>
@@ -569,12 +569,12 @@ export default function ScalePage({ activeSlug }: any) {
                 </div>
 
 
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50  px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
 
                     <p className="text-maroon text-[16px]  leading-relaxed">
-                      Every graduate leaves SCALE-SSBM with dual strength: <br />
-                      <span className="text-maroon">Business + Technology.</span>
+                      “ Every graduate leaves SCALE-SSBM with dual strength: <br />
+                      <span className="text-maroon">Business + Technology. ”</span>
                     </p>
 
                   </div>
@@ -674,11 +674,11 @@ export default function ScalePage({ activeSlug }: any) {
                 </div>
 
                 {/* Bottom Highlight Box (Same UI as Tech-Driven) */}
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
                     <p className="text-maroon text-[16px] leading-relaxed">
-                      Students graduate with a global mindset <br />
-                      <span className="text-maroon">and worldwide opportunities.</span>
+                      “ Students graduate with a global mindset <br />
+                      <span className="text-maroon">and worldwide opportunities. ”</span>
                     </p>
                   </div>
                 </div>
@@ -779,11 +779,11 @@ export default function ScalePage({ activeSlug }: any) {
                 </div>
 
                 {/* Bottom Highlight Box (same as tech-driven) */}
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
                     <p className="text-maroon text-[16px] leading-relaxed">
-                      SCALE is the perfect choice for future founders, innovators, <br />
-                      <span className="text-maroon">and problem-solvers.</span>
+                      “ SCALE is the perfect choice for future founders, innovators, <br />
+                      <span className="text-maroon">and problem-solvers. ”</span>
                     </p>
                   </div>
                 </div>
@@ -883,11 +883,11 @@ export default function ScalePage({ activeSlug }: any) {
                 </div>
 
                 {/* Bottom Highlight Box (same UI as all tabs) */}
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
                     <p className="text-maroon text-[16px] leading-relaxed">
-                      Students experience the real world of leadership—<br />
-                      <span className="text-maroon">not just a classroom.</span>
+                      “ Students experience the real world of leadership—<br />
+                      <span className="text-maroon">not just a classroom. ”</span>
                     </p>
                   </div>
                 </div>
@@ -968,12 +968,12 @@ export default function ScalePage({ activeSlug }: any) {
                 </div>
 
 
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
                     <p className="text-maroon text-[16px] leading-relaxed">
-                      SCALE stands on a century-old foundation of <br />
+                      “ SCALE stands on a century-old foundation of <br />
                       <span className="text-maroon">credibility,
-                        quality, and trust.</span>
+                        quality, and trust.” </span>
                     </p>
                   </div>
                 </div>
@@ -1034,11 +1034,11 @@ export default function ScalePage({ activeSlug }: any) {
 
 
 
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
                     <p className="text-maroon text-[16px] leading-relaxed">
-                      SCALE-SSBM graduates are multi-skilled, employable, adaptable, and
-                      future-ready. <br />
+                      “ SSBM graduates are multi-skilled, employable, adaptable, and
+                      future-ready. ” <br />
 
                     </p>
                   </div>
@@ -1066,7 +1066,7 @@ export default function ScalePage({ activeSlug }: any) {
                 </div>
 
                 <p className="text-[14px] text-primary-700">
-                  SCALE-SSBM focuses deeply on developing essential leadership
+                  SSBM focuses deeply on developing essential leadership
                   qualities:
                 </p>
 
@@ -1111,11 +1111,11 @@ export default function ScalePage({ activeSlug }: any) {
                 </div>
 
 
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
                     <p className="text-maroon text-[16px] leading-relaxed">
-                      Students evolve into purpose-driven, confident, and
-                      ethical leaders. <br />
+                      “ Students evolve into purpose-driven, confident, and
+                      ethical leaders. ” <br />
 
                     </p>
                   </div>
@@ -1216,11 +1216,11 @@ export default function ScalePage({ activeSlug }: any) {
 
 
 
-                <div className="mt-8">
+                <div className="mt-8 font-serif italic">
                   <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
                     <p className="text-maroon text-[16px] leading-relaxed">
-                      Students leave SCALE ready to lead the unknown and shape
-                      the new.<br />
+                      “ Students leave SCALE ready to lead the unknown and shape
+                      the new. ”<br />
 
                     </p>
                   </div>

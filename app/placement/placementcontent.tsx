@@ -196,7 +196,7 @@ export default function PlacementPage() {
 
                                         <p className="flex items-center gap-4">
                                             <FaEnvelope className="text-maroon text-2xl" />
-                                            <span className="text-maroon-800">placementinfo@sonatowers.com</span>
+                                            <span className="text-maroon-800">contact@scaleindia.in</span>
                                         </p>
                                     </div>
                                 </div>
