@@ -323,7 +323,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                         {/* ---------------- Left Side ---------------- */}
                                         <div className="space-y-6">
 
-                                            <h1 className="text-[25px] font-bold leading-tight text-maroon-900">
+                                            <h1 className="text-[25px] font-bold leading-tight text-maroon">
                                                 Eligibility  and Admission <br /> Process
                                             </h1>
 
@@ -331,7 +331,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
 
                                                 {/* Eligibility Box */}
                                                 <div className="bg-maroon-200/40 p-6 rounded-2xl shadow">
-                                                    <h3 className="text-[17px] font-semibold text-maroon-900 mb-2">
+                                                    <h3 className="text-[17px] font-semibold text-maroon mb-2">
                                                         Eligibility
                                                     </h3>
                                                     <p className="text-[14px] text-maroon-800 leading-relaxed">
@@ -358,7 +358,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             {/* Step 1 */}
                                             <div>
                                                 <p className="text-[14px] text-maroon-700 font-medium">Step 01</p>
-                                                <h3 className="text-[17px] font-semibold text-maroon-900 mt-1">
+                                                <h3 className="text-[17px] font-semibold text-maroon mt-1">
                                                     Application Submission
                                                 </h3>
                                                 <p className="text-[14px] text-maroon-700 mt-1">
@@ -369,7 +369,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             {/* Step 2 */}
                                             <div>
                                                 <p className="text-[14px] text-maroon-700 font-medium">Step 02</p>
-                                                <h3 className="text-[17px] font-semibold text-maroon-900 mt-1">
+                                                <h3 className="text-[17px] font-semibold text-maroon mt-1">
                                                     Entrance Exam
                                                 </h3>
                                                 <p className="text-[14px] text-maroon-700 mt-1">
@@ -380,7 +380,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             {/* Step 3 */}
                                             <div>
                                                 <p className="text-[14px] text-maroon-700 font-medium">Step 03</p>
-                                                <h3 className="text-[17px] font-semibold text-maroon-900 mt-1">
+                                                <h3 className="text-[17px] font-semibold text-maroon mt-1">
                                                     Personal Interview
                                                 </h3>
                                                 <p className="text-[14px] text-maroon-700 mt-1">
