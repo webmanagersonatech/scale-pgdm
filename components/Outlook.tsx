@@ -204,7 +204,7 @@ bg-gradient-to-b from-maroon-500 via-maroon-400 to-maroon-200
                   key={i}
                   variants={fadeUp}
                   transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.2 }}
-                  className="mb-5 last:mb-0 flex flex-col sm:flex-row items-start sm:items-center"
+                  className="mb-10 last:mb-0 flex flex-col sm:flex-row items-start sm:items-center"
                 >
                   <FontAwesomeIcon
                     icon={program.icon}
