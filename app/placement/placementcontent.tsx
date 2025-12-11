@@ -20,8 +20,7 @@ export default function PlacementPage() {
     const searchParams = useSearchParams();
 
     const [activeTab, setActiveTab] = useState("placementdetails");
-    const tabsRef = useRef<(HTMLButtonElement | null)[]>([]);
-    const containerRef = useRef<HTMLDivElement | null>(null);
+  
 
 
     /** Sections (Tabs) */

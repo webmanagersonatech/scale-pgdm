@@ -103,40 +103,40 @@ export default function AboutPage({ activeSlug }: any) {
 
     // Advisory Board
     const advisoryMembers = [
-        { name: "Prof. Atul Sharma", designation: "National Vice President – ISTD", company: "Former SR.GM-HR, BOSCH INDIA", image: "/images/about/advisory/Picture1.png" },
-        { name: "Mr. Vanshi Mohan", designation: "Cluster COO", company: "KIMSHEALTH", image: "/images/about/advisory/Picture2.png" },
-        { name: "Prof. Girinarayan", designation: "Former Chairman, NIPM", company: "INSEAD Singapore alumnus", image: "/images/about/advisory/Picture6.png" },
-        { name: "Dr. Mahesh Bhatt", designation: "CEO", company: "Formax Consulting Pvt Ltd", image: "/images/about/advisory/Picture7.png" },
-        { name: "Mr. Suraj Chettri", designation: "Director – HR", company: "Airbus", image: "/images/about/advisory/Picture3.png" },
-        { name: "Dr. Ranjith T.P", designation: "Director, Recruitment – Asia Pacific", company: "VOLVO India", image: "/images/about/advisory/Picture4.png" },
-        { name: "Mr. Glen Dsouza", designation: "VP Human Resources & Head ER", company: "Air India Limited", image: "/images/about/advisory/Picture5.png" },
-        { name: "Mr. Jays Chandy", designation: "Chief People Officer", company: "CensaNext", image: "/images/about/advisory/Picture8.png" },
-        { name: "Mr. Alex Mathews", designation: "Chief HR Officer", company: "KPN Fresh – West Bridge Capital", image: "/images/about/advisory/Picture9.png" },
-        { name: "Mr. Vamshi Guntha", designation: "Founder & CEO", company: "Propl Inventions Ltd (Business Analytics)", image: "/images/about/advisory/Picture10.png" },
+        { name: "Prof. Atul Sharma", designation: "National Vice President – ISTD", company: "Former SR.GM-HR, BOSCH INDIA", image: "/images/about/advisory/Picture1.webp" },
+        { name: "Mr. Vanshi Mohan", designation: "Cluster COO", company: "KIMSHEALTH", image: "/images/about/advisory/Picture2.webp" },
+        { name: "Prof. Girinarayan", designation: "Former Chairman, NIPM", company: "INSEAD Singapore alumnus", image: "/images/about/advisory/Picture6.webp" },
+        { name: "Dr. Mahesh Bhatt", designation: "CEO", company: "Formax Consulting Pvt Ltd", image: "/images/about/advisory/Picture7.webp" },
+        { name: "Mr. Suraj Chettri", designation: "Director – HR", company: "Airbus", image: "/images/about/advisory/Picture3.webp" },
+        { name: "Dr. Ranjith T.P", designation: "Director, Recruitment – Asia Pacific", company: "VOLVO India", image: "/images/about/advisory/Picture4.webp" },
+        { name: "Mr. Glen Dsouza", designation: "VP Human Resources & Head ER", company: "Air India Limited", image: "/images/about/advisory/Picture5.webp" },
+        { name: "Mr. Jays Chandy", designation: "Chief People Officer", company: "CensaNext", image: "/images/about/advisory/Picture8.webp" },
+        { name: "Mr. Alex Mathews", designation: "Chief HR Officer", company: "KPN Fresh – West Bridge Capital", image: "/images/about/advisory/Picture9.webp" },
+        { name: "Mr. Vamshi Guntha", designation: "Founder & CEO", company: "Propl Inventions Ltd (Business Analytics)", image: "/images/about/advisory/Picture10.webp" },
     ];
 
     // Industry Advisory Council
     const industryAdvisoryMembers = [
-        { name: "Mr. Srikanth", designation: "GM & Head – HR", company: "SIEMENS Technology India", image: "/images/about/advisory/Picture11.png" },
-        { name: "Mr. Rathod", designation: "Consultant", company: "Retail Management", image: "/images/about/advisory/Picture12.png" },
-        { name: "Mr. Benny Augustine", designation: "Director - Compliance & Ethics", company: "Global Head - Center of Excellence, Conflicts of Interest", image: "/images/about/advisory/Picture14.png" },
-        { name: "Mr. Sarang Ayachit", designation: "Program Lead - HR Process Automation and Digitalization", image: "/images/about/advisory/Picture13.png" },
+        { name: "Mr. Srikanth", designation: "GM & Head – HR", company: "SIEMENS Technology India", image: "/images/about/advisory/Picture11.webp" },
+        { name: "Mr. Rathod", designation: "Consultant", company: "Retail Management", image: "/images/about/advisory/Picture12.webp" },
+        { name: "Mr. Benny Augustine", designation: "Director - Compliance & Ethics", company: "Global Head - Center of Excellence, Conflicts of Interest", image: "/images/about/advisory/Picture14.webp" },
+        { name: "Mr. Sarang Ayachit", designation: "Program Lead - HR Process Automation and Digitalization", image: "/images/about/advisory/Picture13.webp" },
     ];
 
     // Governing Council
     const governingCouncilMembers = [
-        { name: "Mr. Kamal Bali", designation: "MD Volvo", image: "/images/about/advisory/Picture16.png" },
-        { name: "Dr. Augustus (Augie) Azariah", designation: "Regional Director, Kyndryl India", image: "/images/about/advisory/Picture15.png" },
-        { name: "Madhusudan Murthy", designation: "Senior Vice President of Engineering, GlobalLogic", image: "/images/about/advisory/Picture17.png" },
-        { name: "Viswanath PS", designation: "Managing Director & CEO, Randstad India", image: "/images/about/advisory/Picture18.png" },
-        { name: "Dr. Akali Fulma", designation: "Director International Relation, University of West Alabama", image: "/images/about/advisory/Picture19.png" },
+        { name: "Mr. Kamal Bali", designation: "MD Volvo", image: "/images/about/advisory/Picture16.webp" },
+        { name: "Dr. Augustus (Augie) Azariah", designation: "Regional Director, Kyndryl India", image: "/images/about/advisory/Picture15.webp" },
+        { name: "Madhusudan Murthy", designation: "Senior Vice President of Engineering, GlobalLogic", image: "/images/about/advisory/Picture17.webp" },
+        { name: "Viswanath PS", designation: "Managing Director & CEO, Randstad India", image: "/images/about/advisory/Picture18.webp" },
+        { name: "Dr. Akali Fulma", designation: "Director International Relation, University of West Alabama", image: "/images/about/advisory/Picture19.webp" },
     ];
 
     // Academic Advisory Council
     const academicAdvisoryMembers = [
-        { name: "Dr. M.P. Ganesh Ph.D.", designation: "Head (EM) & Associate Professor, IIT- Hyderabad", image: "/images/about/advisory/Picture20.png" },
-        { name: "Dr. Virajanand Varma", designation: "Professor, IIM- Ranchi", image: "/images/about/advisory/Picture21.png" },
-        { name: "Dr. I Lokananda Reddy", designation: "Professor, Hyderabad Central University", image: "/images/about/advisory/Picture22.png" },
+        { name: "Dr. M.P. Ganesh Ph.D.", designation: "Head (EM) & Associate Professor, IIT- Hyderabad", image: "/images/about/advisory/Picture20.webp" },
+        { name: "Dr. Virajanand Varma", designation: "Professor, IIM- Ranchi", image: "/images/about/advisory/Picture21.webp" },
+        { name: "Dr. I Lokananda Reddy", designation: "Professor, Hyderabad Central University", image: "/images/about/advisory/Picture22.webp" },
     ];
 
 
