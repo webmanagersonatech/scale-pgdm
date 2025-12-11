@@ -31,20 +31,20 @@ export default function FloatingSidebar() {
     {
       id: "phone",
       icon: FaPhone,
-      label: "+91 9900016900",
-      href: "tel:+9900016900",
+      label: "+91 8022283008",
+      href: "tel:+8022283008",
     },
     {
       id: "email",
       icon: FaEnvelope,
-      label: "admissions@scale.edu.in",
-      href: "mailto:admissions@scale.edu.in",
+      label: "contact@scaleindia.in",
+      href: "mailto:contact@scaleindia.in",
     },
     {
       id: "whatsapp",
       icon: FaWhatsapp,
       label: "WhatsApp",
-      href: "https://wa.me/9900016900",
+      href: "https://wa.me/8022283008",
     },
   ];
 
