@@ -6,6 +6,7 @@ import { motion, Variants, AnimatePresence } from "framer-motion";
 import DiamondStar from "../../components/DiamondStar";
 import NewsCarousel from "../../components/NewsCarousel";
 import Link from "next/link";
+
 import { FiInfo, FiEye, FiUsers, FiX, FiMaximize } from "react-icons/fi";
 
 import {
@@ -83,8 +84,8 @@ export default function AboutPage({ activeSlug }: any) {
         visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 18 } },
     };
     const focusAreas = [
-        { icon: <MdBusiness className="text-maroon" />, label: "Automation Strategy", image: "https://img.freepik.com/free-photo/businessman-explaining-chart_23-2147626542.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
-        { icon: <MdBusiness className="text-maroon" />, label: "GCC Setup & Transformation", image: "https://img.freepik.com/free-photo/group-casually-dressed-colleagues-sitting-office-open-door-talking_1098-20440.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <MdBusiness className="text-maroon" />, label: "Automation Strategy", image: "https://img.freepik.com/free-photo/robotic-process-automation-concept-with-bright-light_23-2149311920.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
+        { icon: <MdBusiness className="text-maroon" />, label: "GCC Setup & Transformation", image: "https://img.freepik.com/free-photo/people-office-analyzing-checking-finance-graphs_23-2150377139.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
         { icon: <FaRocket className="text-maroon" />, label: "Business Growth", image: "https://img.freepik.com/free-photo/business-people-meeting_53876-20927.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
         { icon: <MdInsights className="text-maroon" />, label: "Innovation Strategy", image: "https://img.freepik.com/premium-photo/businessman-standing-head-table_13339-20093.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
         { icon: <MdBusiness className="text-maroon" />, label: "Private Equity & Partner Strategy", image: "https://img.freepik.com/premium-photo/company-employees-studying-documents-meeting-office_1358627-55366.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
@@ -92,12 +93,12 @@ export default function AboutPage({ activeSlug }: any) {
     ];
 
     const industries = [
-        { icon: <FaShoppingCart className="text-maroon" />, label: "CPG & Retail", image: "https://img.freepik.com/free-photo/businessman-explaining-chart_23-2147626542.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
-        { icon: <FaLaptopCode className="text-maroon" />, label: "ERP Software", image: "https://img.freepik.com/free-photo/group-casually-dressed-colleagues-sitting-office-open-door-talking_1098-20440.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
-        { icon: <FaBuilding className="text-maroon" />, label: "Engineering R&D & Digital Services", image: "https://img.freepik.com/free-photo/business-people-meeting_53876-20927.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
-        { icon: <FaChartLine className="text-maroon" />, label: "Financial Services", image: "https://img.freepik.com/premium-photo/businessman-standing-head-table_13339-20093.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
-        { icon: <FaHospital className="text-maroon" />, label: "Healthcare", image: "https://img.freepik.com/premium-photo/company-employees-studying-documents-meeting-office_1358627-55366.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
-        { icon: <FaIndustry className="text-maroon" />, label: "Industrials", image: "https://img.freepik.com/free-photo/tired-people-working-late-their-office_23-2149006058.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <FaShoppingCart className="text-maroon" />, label: "CPG & Retail", image: "https://img.freepik.com/premium-photo/owner-business-manages-inspect-location-product-transportation-cost-calculation_537132-1806.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
+        { icon: <FaLaptopCode className="text-maroon" />, label: "ERP Software", image: "https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041853.jpg?t=st=1765429601~exp=1765433201~hmac=78c539b548ddd779cd1d4b17b610f4de6175179e1d8e4ac2a1c486ad0153486a&w=1480" },
+        { icon: <FaBuilding className="text-maroon" />, label: "Engineering R&D & Digital Services", image: "https://img.freepik.com/premium-photo/man-hard-hat-is-working-computer-front-blue-background-with-cityscape-b_1316263-154675.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
+        { icon: <FaChartLine className="text-maroon" />, label: "Financial Services", image: "https://img.freepik.com/premium-photo/man-is-pressing-button-with-word-finance-it_920245-88.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
+        { icon: <FaHospital className="text-maroon" />, label: "Healthcare", image: "https://img.freepik.com/free-photo/medical-banner-with-doctor-working-laptop_23-2149611211.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
+        { icon: <FaIndustry className="text-maroon" />, label: "Industrials", image: "https://img.freepik.com/free-photo/environmental-pollution-factory-exterior-night_23-2149057721.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
     ];
 
     // Advisory Board
@@ -352,19 +353,23 @@ export default function AboutPage({ activeSlug }: any) {
             <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] py-12 flex flex-col items-center">
 
                 <div className="w-full relative">
-                    <AnimatePresence mode="wait">
+                    <div className="w-full h-96 flex items-center justify-center overflow-hidden">
 
-                        <motion.img
-                            key={tabImages[activeTab]}
-                            src={tabImages[activeTab] || ""}
-                            alt="Corporate Banner"
-                            className="w-full h-auto max-h-96 object-contain"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.4 }}
-                        />
-                    </AnimatePresence>
+                        <AnimatePresence mode="wait">
+                            <motion.img
+                                key={tabImages[activeTab]}
+                                src={tabImages[activeTab] || ""}
+                                alt="Corporate Banner"
+                                className="w-full h-full object-contain"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.4 }}
+                            />
+                        </AnimatePresence>
+
+                    </div>
+
 
                     <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-4 sm:px-6">
                         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg flex items-center gap-2">
