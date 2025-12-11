@@ -103,7 +103,7 @@ export default function AboutPage({ activeSlug }: any) {
 
     // Advisory Board
     const advisoryMembers = [
-        { name: "Prof. Atul Sharma", designation: "National Vice President – ISTD", company: "Former SR.GM-HR, BOSCH INDIA", image: "/images/about/advisory/Picture1.webp" },
+        { name: "Prof. Atul Sharma", designation: "National Vice President – ISTD", company: "Former SR.GM-HR, BOSCH INDIA", image: "/images/about/advisory/picture1.webp" },
         { name: "Mr. Vanshi Mohan", designation: "Cluster COO", company: "KIMSHEALTH", image: "/images/about/advisory/Picture2.webp" },
         { name: "Prof. Girinarayan", designation: "Former Chairman, NIPM", company: "INSEAD Singapore alumnus", image: "/images/about/advisory/Picture6.webp" },
         { name: "Dr. Mahesh Bhatt", designation: "CEO", company: "Formax Consulting Pvt Ltd", image: "/images/about/advisory/Picture7.webp" },
