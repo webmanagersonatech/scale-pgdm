@@ -29,31 +29,35 @@ export default function CTAApplyNow({ fadeUp }: any) {
           Ready to Transform Your Future?
         </h2>
 
-        <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-
+        <motion.div className="flex justify-center items-center">
+          <button
+            className="flex items-center gap-2 border border-white text-[15px] 
+  text-maroon-100 hover:text-white
+  backdrop-blur-md lg:font-semibold isolation-auto 
+  before:absolute before:w-full before:transition-all before:duration-700 
+  before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full 
+  before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] 
+  before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 
+  relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
             onClick={() => setIsModalOpen(true)}
-
-            className="inline-flex items-center px-5 sm:px-6 md:px-8 py-2 sm:py-3 text-maroon font-semibold rounded-lg shadow-lg bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 border transition-all"
           >
             Apply Now
+
             <svg
+              className="w-8 h-8 group-hover:rotate-90 text-maroon-100 group-hover:text-white 
+    ease-linear duration-300 rounded-full border border-white p-2 rotate-45"
+              viewBox="0 0 16 19"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 ml-2 animate-bounce"
-              viewBox="0 0 20 20"
-              fill="currentColor"
             >
               <path
-                fillRule="evenodd"
-                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
+                d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                className="fill-current"
+              ></path>
             </svg>
-          </motion.button>
+          </button>
 
         </motion.div>
+
 
         {bubbles.map((bubble, idx) => (
           <motion.div

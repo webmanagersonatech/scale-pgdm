@@ -35,16 +35,7 @@ export default function Footer() {
 
             </p>
 
-            <div className="aspect-video w-full rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.google.com/maps?q=11.6768,78.1257&hl=en&z=15&output=embed"
-                className="w-full h-full"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+
           </div>
 
           {/* Links + Socials */}
@@ -96,12 +87,12 @@ export default function Footer() {
                 </ul>
               </div>
 
-         
+
 
               {/* Facilities */}
               <div>
                 <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-             <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3">
                   {socialIcons.map(({ icon: Icon, href, color }, idx) => (
                     <a
                       key={idx}
@@ -119,7 +110,7 @@ export default function Footer() {
                   ))}
                 </div>
 
-            
+
               </div>
             </div>
           </div>
@@ -127,7 +118,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-300/70">
+        <div className="mt-6 border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-300/70">
           <span className="text-center">
             © {new Date().getFullYear()} Sona School of Business and Management. All rights reserved.
           </span>

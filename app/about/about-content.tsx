@@ -6,7 +6,7 @@ import { motion, Variants, AnimatePresence } from "framer-motion";
 import DiamondStar from "../../components/DiamondStar";
 import NewsCarousel from "../../components/NewsCarousel";
 import Link from "next/link";
-import { FiInfo, FiEye, FiBook, FiClock, FiUsers, FiX, FiMaximize } from "react-icons/fi";
+import { FiInfo, FiEye, FiUsers, FiX, FiMaximize } from "react-icons/fi";
 
 import {
     FaInstagram,
@@ -26,6 +26,7 @@ type TabId =
     | "history"
     | "chairman"
     | "management"
+    | "advisory"
 
 
 interface Section {
@@ -43,12 +44,13 @@ export default function AboutPage({ activeSlug }: any) {
     const [underlineProps, setUnderlineProps] = useState({ left: 0, width: 0 });
     const tabsRef = useRef<(HTMLButtonElement | null)[]>([]);
     const containerRef = useRef<HTMLDivElement | null>(null);
-
     const sections: Section[] = [
         { id: "aboutus", title: "About Us", icon: FiInfo },
         { id: "vision", title: "Vision & Mission", icon: FiEye },
         { id: "management", title: "Management Profile", icon: FiUsers },
+        { id: "advisory", title: "Advisory Board", icon: FiUsers }, // added Advisory Board
     ];
+
     useEffect(() => {
         if (activeSlug && sections.some((s) => s.id === activeSlug)) {
             setActiveTab(activeSlug);
@@ -81,22 +83,62 @@ export default function AboutPage({ activeSlug }: any) {
         visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 80, damping: 18 } },
     };
     const focusAreas = [
-        { icon: <MdBusiness className="text-maroon" />, label: "Automation Strategy" },
-        { icon: <MdBusiness className="text-maroon" />, label: "GCC Setup & Transformation" },
-        { icon: <FaRocket className="text-maroon" />, label: "Business Growth" },
-        { icon: <MdInsights className="text-maroon" />, label: "Innovation Strategy" },
-        { icon: <MdBusiness className="text-maroon" />, label: "Private Equity & Partner Strategy" },
-        { icon: <MdInsights className="text-maroon" />, label: "Market & Technology Insights" },
+        { icon: <MdBusiness className="text-maroon" />, label: "Automation Strategy", image: "https://img.freepik.com/free-photo/businessman-explaining-chart_23-2147626542.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <MdBusiness className="text-maroon" />, label: "GCC Setup & Transformation", image: "https://img.freepik.com/free-photo/group-casually-dressed-colleagues-sitting-office-open-door-talking_1098-20440.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <FaRocket className="text-maroon" />, label: "Business Growth", image: "https://img.freepik.com/free-photo/business-people-meeting_53876-20927.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <MdInsights className="text-maroon" />, label: "Innovation Strategy", image: "https://img.freepik.com/premium-photo/businessman-standing-head-table_13339-20093.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <MdBusiness className="text-maroon" />, label: "Private Equity & Partner Strategy", image: "https://img.freepik.com/premium-photo/company-employees-studying-documents-meeting-office_1358627-55366.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <MdInsights className="text-maroon" />, label: "Market & Technology Insights", image: "https://img.freepik.com/free-photo/tired-people-working-late-their-office_23-2149006058.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
     ];
 
     const industries = [
-        { icon: <FaShoppingCart className="text-maroon" />, label: "CPG & Retail" },
-        { icon: <FaLaptopCode className="text-maroon" />, label: "ERP Software" },
-        { icon: <FaBuilding className="text-maroon" />, label: "Engineering R&D & Digital Services" },
-        { icon: <FaChartLine className="text-maroon" />, label: "Financial Services" },
-        { icon: <FaHospital className="text-maroon" />, label: "Healthcare" },
-        { icon: <FaIndustry className="text-maroon" />, label: "Industrials" },
+        { icon: <FaShoppingCart className="text-maroon" />, label: "CPG & Retail", image: "https://img.freepik.com/free-photo/businessman-explaining-chart_23-2147626542.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <FaLaptopCode className="text-maroon" />, label: "ERP Software", image: "https://img.freepik.com/free-photo/group-casually-dressed-colleagues-sitting-office-open-door-talking_1098-20440.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <FaBuilding className="text-maroon" />, label: "Engineering R&D & Digital Services", image: "https://img.freepik.com/free-photo/business-people-meeting_53876-20927.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <FaChartLine className="text-maroon" />, label: "Financial Services", image: "https://img.freepik.com/premium-photo/businessman-standing-head-table_13339-20093.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <FaHospital className="text-maroon" />, label: "Healthcare", image: "https://img.freepik.com/premium-photo/company-employees-studying-documents-meeting-office_1358627-55366.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
+        { icon: <FaIndustry className="text-maroon" />, label: "Industrials", image: "https://img.freepik.com/free-photo/tired-people-working-late-their-office_23-2149006058.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
     ];
+
+    // Advisory Board
+    const advisoryMembers = [
+        { name: "Prof. Atul Sharma", designation: "National Vice President – ISTD", company: "Former SR.GM-HR, BOSCH INDIA", image: "/images/about/advisory/picture1.png" },
+        { name: "Mr. Vanshi Mohan", designation: "Cluster COO", company: "KIMSHEALTH", image: "/images/about/advisory/picture2.png" },
+        { name: "Prof. Girinarayan", designation: "Former Chairman, NIPM", company: "INSEAD Singapore alumnus", image: "/images/about/advisory/picture6.png" },
+        { name: "Dr. Mahesh Bhatt", designation: "CEO", company: "Formax Consulting Pvt Ltd", image: "/images/about/advisory/picture7.png" },
+        { name: "Mr. Suraj Chettri", designation: "Director – HR", company: "Airbus", image: "/images/about/advisory/picture3.png" },
+        { name: "Dr. Ranjith T.P", designation: "Director, Recruitment – Asia Pacific", company: "VOLVO India", image: "/images/about/advisory/picture4.png" },
+        { name: "Mr. Glen Dsouza", designation: "VP Human Resources & Head ER", company: "Air India Limited", image: "/images/about/advisory/picture5.png" },
+        { name: "Mr. Jays Chandy", designation: "Chief People Officer", company: "CensaNext", image: "/images/about/advisory/picture8.png" },
+        { name: "Mr. Alex Mathews", designation: "Chief HR Officer", company: "KPN Fresh – West Bridge Capital", image: "/images/about/advisory/picture9.png" },
+        { name: "Mr. Vamshi Guntha", designation: "Founder & CEO", company: "Propl Inventions Ltd (Business Analytics)", image: "/images/about/advisory/picture10.png" },
+    ];
+
+    // Industry Advisory Council
+    const industryAdvisoryMembers = [
+        { name: "Mr. Srikanth", designation: "GM & Head – HR", company: "SIEMENS Technology India", image: "/images/about/advisory/picture11.png" },
+        { name: "Mr. Rathod", designation: "Consultant", company: "Retail Management", image: "/images/about/advisory/picture12.png" },
+        { name: "Mr. Benny Augustine", designation: "Director - Compliance & Ethics", company: "Global Head - Center of Excellence, Conflicts of Interest", image: "/images/about/advisory/picture14.png" },
+        { name: "Mr. Sarang Ayachit", designation: "Program Lead - HR Process Automation and Digitalization", image: "/images/about/advisory/picture13.png" },
+    ];
+
+    // Governing Council
+    const governingCouncilMembers = [
+        { name: "Mr. Kamal Bali", designation: "MD Volvo", image: "/images/about/advisory/picture16.png" },
+        { name: "Dr. Augustus (Augie) Azariah", designation: "Regional Director, Kyndryl India", image: "/images/about/advisory/picture15.png" },
+        { name: "Madhusudan Murthy", designation: "Senior Vice President of Engineering, GlobalLogic", image: "/images/about/advisory/picture17.png" },
+        { name: "Viswanath PS", designation: "Managing Director & CEO, Randstad India", image: "/images/about/advisory/picture18.png" },
+        { name: "Dr. Akali Fulma", designation: "Director International Relation, University of West Alabama", image: "/images/about/advisory/picture19.png" },
+    ];
+
+    // Academic Advisory Council
+    const academicAdvisoryMembers = [
+        { name: "Dr. M.P. Ganesh Ph.D.", designation: "Head (EM) & Associate Professor, IIT- Hyderabad", image: "/images/about/advisory/picture20.png" },
+        { name: "Dr. Virajanand Varma", designation: "Professor, IIM- Ranchi", image: "/images/about/advisory/picture21.png" },
+        { name: "Dr. I Lokananda Reddy", designation: "Professor, Hyderabad Central University", image: "/images/about/advisory/picture22.png" },
+    ];
+
+
     const focusItems = [
         { icon: <FaCogs className="text-white" />, label: "Advanced Technological Services" },
         { icon: <FaChartLine className="text-white" />, label: "Strategic Insights" },
@@ -207,12 +249,49 @@ export default function AboutPage({ activeSlug }: any) {
         },
     ];
     const tabImages: any = {
-        aboutus: "/images/banner/about-banners/about-us.webp",
+        aboutus: "/images/banner/about-banners/6.webp",
         vision: "/images/banner/about-banners/Vision-mission.webp",
         history: "/images/banner/about-banners/history.webp",
         chairman: "/images/banner/about-banners/chairmans-books.webp",
-        management: "/images/banner/about-banners/management-profile.webp"
+        management: "/images/banner/about-banners/1.webp",
+        advisory: "/images/banner/about-banners/8.webp"
     };
+    const MemberCard = ({ member }: { member: any }) => (
+        <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex flex-col items-center text-center"
+        >
+            {member.image && (
+                <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-[100px] w-full rounded-2xl object-contain bg-[radial-gradient(circle,#f5d6c6_0%,#e0a68b_60%,#c9745b_100%)]
+"
+                />
+            )}
+            <div className="p-3 w-full">
+                <div className="flex justify-between items-center mb-1 border-b border-maroon">
+                    <h3 className="text-maroon-800 font-bold text-sm ">{member.name}</h3>
+                    {member.linkedin && (
+                        <a
+                            href={member.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center"
+                        >
+                            <FaLinkedin className="text-blue-500 text-lg hover:text-blue-700 transition" />
+                        </a>
+                    )}
+                </div>
+                {member.title && <p className="text-sm text-gray-600 border-t border-maroon pt-1 mt-1">{member.title}</p>}
+                {member.designation && <p className="text-[13px] text-gray-600 mt-1">{member.designation}</p>}
+                {member.company && <p className="text-[12px] text-gray-500 mt-1">{member.company}</p>}
+            </div>
+        </motion.div>
+    );
 
 
 
@@ -270,7 +349,7 @@ export default function AboutPage({ activeSlug }: any) {
         <>
 
 
-            <section className="w-full min-h-screen bg-white py-12 flex flex-col items-center">
+            <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] py-12 flex flex-col items-center">
 
                 <div className="w-full relative">
                     <AnimatePresence mode="wait">
@@ -304,7 +383,7 @@ export default function AboutPage({ activeSlug }: any) {
                                     <li className="inline-flex items-center">
                                         <Link
                                             href="/"
-                                            className="hover:text-maroon cursor-pointer transition-colors text-white"
+                                            className=" cursor-pointer transition-colors text-white"
                                         >
                                             Home
                                         </Link>
@@ -318,7 +397,7 @@ export default function AboutPage({ activeSlug }: any) {
                                     <li className="inline-flex items-center">
                                         <Link
                                             href="/about"
-                                            className="hover:text-maroon cursor-pointer transition-colors text-white"
+                                            className="cursor-pointer transition-colors text-white"
                                         >
                                             About
                                         </Link>
@@ -406,7 +485,7 @@ export default function AboutPage({ activeSlug }: any) {
                                 animate="animate"
                                 exit="exit"
                                 transition={{ duration: 0.5 }}
-                                className="bg-white rounded-2xl p-6 md:p-10 flex flex-col gap-12 max-w-7xl mx-auto "
+                                className="p-6 md:p-10 flex flex-col gap-12 max-w-7xl mx-auto "
                             >
                                 {/* Introduction */}
                                 <div className="flex flex-col gap-10 pt-4">
@@ -418,22 +497,21 @@ export default function AboutPage({ activeSlug }: any) {
                                         transition={{ duration: 0.5 }}
                                         variants={fadeUp}
                                         viewport={{ once: true }}
-                                        className="bg-[#fefcfa] border-l-[6px] border-maroon rounded-l-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-all"
+                                        className="  border-maroon  transition-all"
                                     >
                                         <div className="flex items-center gap-2 mb-2">
                                             <FaLightbulb className="text-maroon text-xl" />
-                                            <h4 className="text-xl font-semibold text-maroon">WHAT WE DO</h4>
+                                            <h4 className="text-[17px] font-semibold text-maroon">WHAT WE DO</h4>
                                         </div>
 
-                                        <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify">
+                                        <p className="text-gray-700 text-[14px] leading-relaxed text-justify">
                                             We provide business organisations with the latest technological services and managerial insights fostering transformational strategies, operational performance improvements, competitive advantage and value creation for their customers at the least cost.
                                             <br /><br />
                                             Sona Star Innovation brings robust skills and forward-looking perspectives to solve customer challenges. We use proven knowledge to make recommendations and provide expert guidance to our customers.
                                         </p>
                                     </motion.div>
 
-                                    {/* Divider */}
-                                    <div className="h-[1px] bg-gradient-to-r from-transparent via-maroon/30 to-transparent"></div>
+
 
                                     {/* IT Revolution */}
                                     <motion.div
@@ -442,16 +520,16 @@ export default function AboutPage({ activeSlug }: any) {
                                         transition={{ duration: 0.6 }}
                                         variants={fadeUp}
                                         viewport={{ once: true }}
-                                        className="bg-white border border-maroon/30  p-6 md:p-8 shadow-md hover:shadow-lg transition-all"
+                                        className="  transition-all"
                                     >
                                         <div className="flex items-center gap-2 mb-3">
                                             <RiBuilding4Line className="text-maroon text-xl" />
-                                            <h4 className="text-xl font-semibold text-maroon">
+                                            <h4 className="text-[17px] font-semibold text-maroon">
                                                 Sona Group’s Pioneering Role in India’s IT Revolution
                                             </h4>
                                         </div>
 
-                                        <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify mb-4">
+                                        <p className="text-gray-700 text-[14px] leading-relaxed text-justify mb-4">
                                             The Sona Group played a foundational role in establishing Bengaluru as the Silicon Valley of India.
                                         </p>
 
@@ -460,21 +538,20 @@ export default function AboutPage({ activeSlug }: any) {
                                         <div className="flex flex-col gap-2">
                                             {milestones.map((item, idx) => (
                                                 <div key={idx} className="flex items-start gap-2">
-                                                    <FaStar className="text-maroon-300 mt-1  w-4 h-4 text-xs flex-shrink-0" />
-                                                    <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify">{item}</p>
+                                                    <span className="flex items-center justify-center w-5 h-5  text-maroon text-[12px] font-bold">
+                                                        ✓
+                                                    </span>
+
+                                                    <p className="text-gray-700 text-[14px] leading-relaxed text-justify">{item}</p>
                                                 </div>
                                             ))}
                                         </div>
 
-                                        <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify mt-4">
+                                        <p className="text-gray-700 text-[14px] leading-relaxed text-justify mt-4">
                                             This catalytic contribution ignited Bengaluru’s IT boom and continues to shape India’s digital leadership today.
                                         </p>
                                     </motion.div>
 
-                                    {/* Divider */}
-                                    <div className="h-[1px] bg-gradient-to-r from-transparent via-maroon/30 to-transparent"></div>
-
-                                    {/* Transformation */}
 
 
                                     <motion.div
@@ -482,17 +559,17 @@ export default function AboutPage({ activeSlug }: any) {
                                         whileInView="visible"
                                         variants={fadeUp}
                                         viewport={{ once: true }}
-                                        className="bg-[#fefcfa] p-6 md:p-8 border border-maroon/30  transition-all"
+                                        className="    transition-all"
                                     >
                                         {/* Header */}
                                         <div className="flex items-center gap-2">
                                             <FaRocket className="text-maroon text-xl" />
-                                            <h4 className="text-xl font-semibold text-maroon">
+                                            <h4 className="text-[17px] font-semibold text-maroon">
                                                 Business Transformation Through Technology
                                             </h4>
                                         </div>
 
-                                        <p className="text-gray-700 text-sm md:text-base leading-relaxed mt-2 mb-4 text-justify">
+                                        <p className="text-gray-700 text-[14px] leading-relaxed mt-2 mb-4 text-justify">
                                             We equip enterprises with:
                                         </p>
 
@@ -511,7 +588,7 @@ export default function AboutPage({ activeSlug }: any) {
 
                                                     {/* Animated Text */}
                                                     <motion.span
-                                                        className="ml-8"
+                                                        className="ml-8 text-[14px]"
                                                         initial={{ opacity: 0, x: 20 }}
                                                         animate={{ opacity: 1, x: 0 }}
                                                         transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 * idx }}
@@ -524,64 +601,105 @@ export default function AboutPage({ activeSlug }: any) {
                                         </div>
                                     </motion.div>
 
-                                    {/* Divider */}
-                                    <div className="h-[1px] bg-gradient-to-r from-transparent via-maroon/30 to-transparent"></div>
+
 
                                     {/* Advisory */}
                                     <motion.div
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        className="bg-white border border-maroon/40 p-6 md:p-8 stransition-all "
+                                        className=" transition-all space-y-16"
                                     >
-                                        {/* Header */}
-                                        <div className="flex items-center gap-3 mb-6">
-                                            <MdAnalytics className="text-maroon text-2xl" />
-                                            <h4 className="text-xl font-semibold text-maroon">
-                                                Advisory Board, Offerings & Industries
-                                            </h4>
-                                        </div>
+                                        {/* Advisory Board Focus Areas Section */}
+                                        <motion.div variants={containerVariants} className="space-y-6">
+                                            {/* FIRST TITLE */}
+                                            <div className="flex items-center gap-2">
+                                                <FaRocket className="text-maroon text-xl" />
+                                                <h4 className="text-[17px] font-semibold text-maroon">
+                                                    Advisory Board, Offerings & Industries                                            </h4>
+                                            </div>
+                                            <p className="text-gray-800 font-semibold text-[15px]">
+                                                Advisory Board Focus Areas
+                                            </p>
 
-                                        {/* Two sections side by side */}
-                                        <div className="flex flex-col md:flex-row gap-6">
-                                            {/* Focus Areas Section (Left) */}
-                                            <motion.div className="flex-1" variants={containerVariants}>
-                                                <p className="text-gray-800 font-semibold flex items-center gap-2 mb-3">
-                                                    Advisory Board Focus Areas
-                                                </p>
-                                                <div className="flex flex-wrap gap-2">
+                                            {/* SECOND LIST + IMAGES */}
+                                            <div className="flex flex-col md:flex-row gap-6">
+                                                {/* LEFT LIST */}
+                                                <motion.div className="flex-1 flex flex-col gap-2">
                                                     {focusAreas.map((item, idx) => (
                                                         <motion.div
                                                             key={idx}
                                                             variants={itemVariants}
-                                                            className="flex items-center gap-1 text-gray-700 text-sm md:text-base bg-gray-50 px-2 py-1 rounded shadow-sm"
+                                                            className="flex items-center gap-2 text-gray-700 text-sm px-3 py-2 border-b border-maroon-300"
                                                         >
                                                             {item.icon} <span>{item.label}</span>
                                                         </motion.div>
                                                     ))}
-                                                </div>
-                                            </motion.div>
+                                                </motion.div>
 
-                                            {/* Industries Served Section (Right) */}
-                                            <motion.div className="flex-1" variants={containerVariants}>
-                                                <p className="text-gray-800 font-semibold flex items-center gap-2 mb-3">
-                                                    Industries Served
-                                                </p>
-                                                <div className="flex flex-wrap gap-2">
-                                                    {industries.map((industry, idx) => (
+                                                {/* RIGHT IMAGES */}
+                                                <motion.div className="flex-1 flex flex-wrap gap-2">
+                                                    {focusAreas.map((item, idx) => (
                                                         <motion.div
                                                             key={idx}
                                                             variants={itemVariants}
-                                                            className="flex items-center gap-1 text-gray-700 text-sm md:text-base bg-gray-50 px-2 py-1 rounded shadow-sm"
+                                                            className="min-w-[30%] overflow-hidden rounded shadow"
+                                                            style={{ flexBasis: 'calc(33% - 0.5rem)' }}
                                                         >
-                                                            {industry.icon} <span>{industry.label}</span>
+                                                            <img
+                                                                src={item.image}
+                                                                className="w-full h-full object-cover"
+                                                            />
                                                         </motion.div>
                                                     ))}
-                                                </div>
-                                            </motion.div>
+                                                </motion.div>
+                                            </div>
+                                        </motion.div>
 
-                                        </div>
+                                        {/* Industries Served Section */}
+                                        <motion.div variants={containerVariants} className="space-y-6">
+                                            {/* FIRST TITLE */}
+                                            <p className="text-gray-800 font-semibold text-[15px]">
+                                                Industries Served
+                                            </p>
+
+                                            {/* SECOND LIST + IMAGES */}
+                                            <div className="flex flex-col md:flex-row gap-6">
+                                                {/* LEFT LIST */}
+                                                <motion.div className="flex-1 flex flex-col gap-2">
+                                                    {industries.map((item, idx) => (
+                                                        <motion.div
+                                                            key={idx}
+                                                            variants={itemVariants}
+                                                            className="flex items-center gap-2 text-gray-700 text-sm  px-3 py-2 border-b border-maroon-300"
+                                                        >
+                                                            {item.icon} <span>{item.label}</span>
+                                                        </motion.div>
+                                                    ))}
+                                                </motion.div>
+
+                                                {/* RIGHT IMAGES */}
+                                                <motion.div className="flex-1 flex flex-wrap gap-2">
+                                                    {industries.map((item, idx) => (
+                                                        <motion.div
+                                                            key={idx}
+                                                            variants={itemVariants}
+                                                            className="min-w-[30%] overflow-hidden rounded shadow"
+                                                            style={{ flexBasis: 'calc(33% - 0.5rem)' }}
+                                                        >
+                                                            <img
+                                                                src={item.image}
+                                                                className="w-full h-full object-cover"
+                                                            />
+                                                        </motion.div>
+                                                    ))}
+                                                </motion.div>
+                                            </div>
+                                        </motion.div>
                                     </motion.div>
+
+
+
                                 </div>
                             </motion.div>
                         )}
@@ -598,7 +716,7 @@ export default function AboutPage({ activeSlug }: any) {
                                 animate="animate"
                                 exit="exit"
                                 transition={{ duration: 0.5 }}
-                                className="bg-white rounded-2xl p-6 md:p-10 flex flex-col gap-10 max-w-7xl mx-auto"
+                                className=" rounded-2xl p-6 md:p-10 flex flex-col gap-10 max-w-7xl mx-auto"
                             >
 
                                 {/* VISION SECTION */}
@@ -607,7 +725,7 @@ export default function AboutPage({ activeSlug }: any) {
                                     whileInView="visible"
                                     viewport={{ once: true }}
                                     variants={fadeUp}
-                                    className="bg-[#fefcfa] border-l-[6px] border-maroon rounded-l-xl p-6 md:p-8 shadow-sm"
+
                                 >
                                     {/* Header */}
                                     <motion.div
@@ -617,8 +735,8 @@ export default function AboutPage({ activeSlug }: any) {
                                         className="flex items-center gap-2 mb-4"
                                     >
                                         <FaEye className="text-maroon text-xl" />
-                                        <h3 className="text-xl font-semibold text-maroon tracking-wide">
-                                            Vision 
+                                        <h3 className="text-[17px] font-semibold text-maroon tracking-wide">
+                                            Vision
                                         </h3>
 
                                     </motion.div>
@@ -628,7 +746,7 @@ export default function AboutPage({ activeSlug }: any) {
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.7, ease: "easeOut" }}
-                                        className="text-gray-700 text-sm md:text-base leading-relaxed"
+                                        className="text-gray-700 text-[14px] leading-relaxed"
                                     >
                                         To shape a new generation of tech-enabled, ethical, and globally conscious
                                         business leaders who innovate, transform industries, and create meaningful
@@ -642,7 +760,7 @@ export default function AboutPage({ activeSlug }: any) {
                                     </motion.p>
                                 </motion.div>
 
-                       
+
 
                                 {/* MISSION SECTION */}
                                 <motion.div
@@ -650,7 +768,7 @@ export default function AboutPage({ activeSlug }: any) {
                                     whileInView="visible"
                                     viewport={{ once: true }}
                                     variants={fadeUp}
-                                    className="bg-white border border-maroon/40 p-6 md:p-8 shadow-md"
+
                                 >
                                     {/* Header */}
                                     <motion.div
@@ -659,9 +777,9 @@ export default function AboutPage({ activeSlug }: any) {
                                         transition={{ duration: 0.6 }}
                                         className="flex items-center gap-2 mb-4"
                                     >
-                                        <FaBullseye className="text-maroon text-xl" />
-                                        <h3 className="text-xl font-semibold text-maroon tracking-wide">
-                                            Mission 
+                                        <FaBullseye className=" text-maroon text-xl" />
+                                        <h3 className="text-[17px] font-semibold text-maroon tracking-wide">
+                                            Mission
                                         </h3>
                                     </motion.div>
 
@@ -681,16 +799,18 @@ export default function AboutPage({ activeSlug }: any) {
                                                 whileInView={{ opacity: 1, y: 0 }}
                                                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                                                 viewport={{ once: true }}
-                                                className="flex items-start gap-3  p-4   transition-all"
+                                                className="flex items-start gap-3  py-2   transition-all"
                                             >
-                                                <FaCheckCircle className="text-maroon w-6 h-6 flex-shrink-0 mt-1" />
+                                                <span className="flex items-center justify-center w-6 h-6  text-maroon text-[14px] font-bold ">
+                                                    ✓
+                                                </span>
 
                                                 {/* Text with HTML + animation */}
                                                 <motion.p
                                                     initial={{ opacity: 0, x: 15 }}
                                                     animate={{ opacity: 1, x: 0 }}
                                                     transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-                                                    className="text-gray-700 text-sm md:text-base  text-justify leading-relaxed"
+                                                    className="text-gray-700 text-[14px]  text-justify leading-relaxed"
                                                     dangerouslySetInnerHTML={{ __html: text }}
                                                 />
                                             </motion.div>
@@ -705,58 +825,55 @@ export default function AboutPage({ activeSlug }: any) {
                         )}
 
 
-
-
-
-                        {activeTab === "history" && (
+                        {activeTab === "advisory" && (
                             <motion.div
-                                key="history"
+                                key="advisory"
                                 variants={tabVariants}
                                 initial="initial"
                                 animate="animate"
                                 exit="exit"
                                 transition={{ duration: 0.5 }}
-                                className="bg-white rounded-2xl p-6 md:p-10 flex flex-col gap-12 max-w-7xl mx-auto"
+                                className="p-6 md:p-10 flex flex-col gap-12 max-w-7xl mx-auto"
                             >
-
-                                <p className="text-justify">The <strong>Sona Group </strong> is steeped in more than <strong>100 years</strong> of success and tradition tracing back to pre-Independence. The group was founded by the doyen of textile industries of the early twentieth century, <strong>Karumuttu Thiagarajar Chettiar.</strong> He oozed passion and patriotism for his motherland and fought for Her freedom along with other great freedom fighters of this nation. Karumuttu Thiagarajar Chettiar’s prominence is etched in the tapestry of our nation by the role he played in the transformation of Mohandas Karamchand Gandhi to Gandhiji, The Father of our Nation. This defining moment played out in 1938, within the walls of Karumuttu Thiagarajar Chettiar’s home when <strong>Gandhiji visited Madurai</strong>. Gandhiji wore his trademark Loin cloth, vowing not to wear a shirt every again after seeing daily wage workers who could not afford one.</p>
-                                {/* Section 1: Two Columns (Responsive, Centered) */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    {/* Left */}
-                                    <div className="flex flex-col items-center text-center">
-                                        <div className="w-[220px] h-[280px] sm:w-[260px] sm:h-[340px] md:w-[295px] md:h-[378px] flex items-center justify-center bg-white rounded-xl shadow-lg overflow-hidden mb-4">
-                                            <img
-                                                src="/images/about/karumuttu-thiagarajan-chettiar.webp"
-                                                alt="Karumuttu Thiagarajar Chettiar"
-                                                className="w-full h-full object-contain"
-                                            />
-                                        </div>
-                                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify">
-                                            <strong>Karumuttu Thiagarajan Chettiar,</strong> saw the plight of workers in the plantations and fought for their liberation. His idea of liberation was to set people free and even to a higher level of setting minds free through education. He envisioned an Indian nation that would stand tall in the global stage built on its robust educated society with its traditional values and wealth. He set this idea in motion by establishing Thiagarajar Engineering College in Madurai, and Thiagarajar Polytechnic College, Salem, and sowed the seeds of quality technical education in India. Those seeds now stand as a global brand called ‘Sona’ whose roots run deep into education, textile, IT, research, manufacturing, outsourcing, logistics and many more. The Sona Group’s quest to cater quality higher education has led to its banyan tree like growth with Thiagarajar Polytechnic College, Sona College of Technology, Sona School of Business and Management, Sona College of Arts and Science , Sona Valliappa Public School and Sona Medical College of Naturopathy and Yoga.
-                                        </p>
-                                    </div>
-
-                                    {/* Right */}
-                                    <div className="flex flex-col items-center text-center">
-                                        <div className="w-[220px] h-[280px] sm:w-[260px] sm:h-[340px] md:w-[295px] md:h-[378px] flex items-center justify-center bg-white rounded-xl shadow-lg overflow-hidden mb-4">
-                                            <img
-                                                src="/images/about/chockalingam-founder-sonaco.jpg"
-                                                alt="Shri M.S. Chokalingam"
-                                                className="w-full h-full object-contain"
-                                            />
-                                        </div>
-                                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify">
-                                            <strong>Shri. M.S. Chokalingam,</strong> a textile wizard and philanthropist, who always evinced an abiding interest in professional education as a means to industrial and economic growth and prosperity of the country, founded Sona College of Technology. The vision of Sona’s Founder Chairman was to have a vibrant Engineering and Management Institution that is equal in educational excellence to the best in the world that is why this institution has gathered momentum to reach phenomenal height today.
-                                        </p>
-                                    </div>
+                                <h2 className="text-xl font-bold text-maroon-800">Advisory Board</h2>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                                    {advisoryMembers.map((member, idx) => (
+                                        <MemberCard key={idx} member={member} />
+                                    ))}
                                 </div>
 
+                                <h2 className="text-xl font-bold text-maroon-800 ">Industry Advisory Council</h2>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                                    {industryAdvisoryMembers.map((member, idx) => (
+                                        <MemberCard key={idx} member={member} />
+                                    ))}
+                                </div>
 
+                                <h2 className="text-xl font-bold text-maroon-800 ">Governing Council</h2>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                                    {governingCouncilMembers.map((member, idx) => (
+                                        <MemberCard key={idx} member={member} />
+                                    ))}
+                                </div>
+
+                                <h2 className="text-xl font-bold text-maroon-800 ">Academic Advisory Council</h2>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                                    {academicAdvisoryMembers.map((member, idx) => (
+                                        <MemberCard key={idx} member={member} />
+                                    ))}
+                                </div>
                             </motion.div>
+
                         )}
 
+
+
+
+
+
+
                         {activeTab === "management" && (
-                            <div className="bg-white rounded-2xl p-6 md:p-10 flex flex-col gap-10 max-w-7xl mx-auto">
+                            <div className=" p-6 md:p-10 flex flex-col gap-10 max-w-7xl mx-auto">
 
 
                                 {/* Zig-Zag Cards */}
@@ -771,7 +888,7 @@ export default function AboutPage({ activeSlug }: any) {
                                                 initial="hidden"
                                                 whileInView="visible"
                                                 viewport={{ once: true, amount: 0.2 }}
-                                                className=" border border-gray-200 shadow-sm overflow-hidden bg-white  py-2"
+                                                className="overflow-hidden  py-2"
                                             >
                                                 {/* Top: Image + Text */}
                                                 <div className="flex flex-col md:flex-row md:gap-x-4">
@@ -785,9 +902,9 @@ export default function AboutPage({ activeSlug }: any) {
 
                                                     <div className="md:w-9/12 w-full p-5 flex flex-col gap-4">
                                                         <div>
-                                                            <h3 className="text-2xl font-bold text-maroon">{member.name}</h3>
+                                                            <h3 className="text-[17px] font-bold text-maroon">{member.name}</h3>
                                                             <p className="text-gray-700 font-medium">{member.role}</p>
-                                                            <p className="text-gray-600 mt-2 text-justify">{member.fullBio}</p>
+                                                            <p className="text-gray-600 mt-2 text-[14px] text-justify">{member.fullBio}</p>
                                                         </div>
 
 
@@ -819,7 +936,7 @@ export default function AboutPage({ activeSlug }: any) {
                                                                             rel="noopener noreferrer"
                                                                             className="group"
                                                                         >
-                                                                            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100/70 shadow-sm hover:shadow-md transition-all duration-300">
+                                                                            <div className="w-8 h-8 flex items-center justify-center rounded-full bg-maroon/20 shadow-sm hover:shadow-md transition-all duration-300">
                                                                                 <Icon
                                                                                     className={`w-5 h-5 text-slate-500 transition-colors duration-300 ${hoverColor}`}
                                                                                 />
@@ -925,66 +1042,7 @@ export default function AboutPage({ activeSlug }: any) {
 
                         )
                         }
-                        {activeTab === "chairman" && (
-                            <motion.div
-                                key="chairman"
-                                variants={tabVariants}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                transition={{ duration: 0.5 }}
-                                className="bg-white rounded-2xl p-6 md:p-10 flex flex-col gap-10 max-w-7xl mx-auto"
-                            >
-                                {/* Books Section */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-                                    {/* Book 1 */}
-                                    <div className="flex flex-col items-center gap-4 ">
-                                        <a
-                                            href="https://www.sonatech.ac.in/about-sona/read/?book=verum-vizhudhugalum"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="relative   block group"
-                                        >
-                                            <img
-                                                src="/images/about/verum-vizhuthugalum.webp"
-                                                alt="Verum Vizhuthugalum"
-                                                className=" h-[350px] rounded-md shadow-lg transition-transform duration-300 group-hover:scale-105 object-cover"
-                                            />
-                                            {/* Spine effect */}
-                                            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-r from-gray-300 to-transparent rounded-l-md"></div>
-                                            {/* Page edges effect */}
-                                            <div className="absolute top-0 right-0 w-3 h-full bg-gradient-to-l from-gray-200 to-transparent rounded-r-md"></div>
-                                        </a>
-                                        <p className="text-gray-800 text-center text-sm md:text-base leading-relaxed">
-                                            <strong>Verum Vizhuthugalum:</strong> The Inspiring Biography of Mr. C. Valliappa (Tamil).
-                                        </p>
-                                    </div>
 
-                                    {/* Book 2 */}
-                                    <div className="flex flex-col items-center gap-4 ">
-                                        <a
-                                            href="https://www.sonatech.ac.in/about-sona/read/?book=the-sona-story"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="relative   block group"
-                                        >
-                                            <img
-                                                src="/images/about/the-sona-story.webp"
-                                                alt="The Sona Story"
-                                                className=" h-[350px] transition-transform duration-300 group-hover:scale-105 object-cover"
-                                            />
-                                            {/* Spine effect */}
-                                            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-r from-gray-300 to-transparent rounded-l-md"></div>
-                                            {/* Page edges effect */}
-                                            <div className="absolute top-0 right-0 w-3 h-full bg-gradient-to-l from-gray-200 to-transparent rounded-r-md"></div>
-                                        </a>
-                                        <p className="text-gray-800 text-center text-sm md:text-base leading-relaxed">
-                                            <strong>The Sona Story:</strong> The Textile to Tech Journey of Chettiar Industrialist C. Valliappa.
-                                        </p>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        )}
 
 
 

@@ -68,7 +68,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
             metaDescription:
                 "MBA in Finance at Sona School: Master corporate finance, investments, and strategic financial skills for a successful career.",
             canonical: "finance",
-            image: "/images/specilization/speaclization-5.webp",
+            image: "/images/banner/about-banners/3.webp",
         },
 
         {
@@ -180,7 +180,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
     }, [currentSection]);
 
     return (
-        <section className="w-full min-h-screen bg-white py-12 flex flex-col items-center">
+        <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] py-12   flex flex-col items-center">
             {/* Banner */}
             <div className="w-full relative">
                 <AnimatePresence mode="wait">
@@ -204,14 +204,14 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                     </h1>
                     <div className="mt-3 sm:mt-4 w-full">
                         <nav
-                            className="flex flex-wrap text-white text-xs sm:text-sm md:text-base"
+                            className="flex flex-wrap text-white text-xs sm:text-[14px]"
                             aria-label="Breadcrumb"
                         >
                             <ol className="inline-flex flex-wrap items-center space-x-1 sm:space-x-2">
                                 <li className="inline-flex items-center">
                                     <Link
                                         href="/"
-                                        className="hover:text-maroon cursor-pointer transition-colors text-white"
+                                        className=" cursor-pointer transition-colors text-white"
                                     >
                                         Home
                                     </Link>
@@ -220,7 +220,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 <li className="inline-flex items-center">
                                     <Link
                                         href="/admission"
-                                        className="hover:text-maroon cursor-pointer transition-colors text-white"
+                                        className=" cursor-pointer transition-colors text-white"
                                     >
                                         Specializations
                                     </Link>
@@ -289,7 +289,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -40 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="relative max-w-7xl mx-auto p-6 md:p-12  rounded-2xl overflow-hidden"
+                            className="relative max-w-7xl mx-auto p-6 md:p-12 rounded-2xl overflow-hidden"
                         >
 
                             {/* Hero */}
@@ -302,32 +302,32 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 transition={{ duration: 0.8 }}
                                 className="text-center mb-6"
                             >
-                                <h2 className="text-2xl font-semibold text-maroon  mb-2">
-                                    PGDM Specialisations at SSBM – SCALE
+                                <h2 className="text-[17px] font-semibold text-maroon  mb-2">
+                                    PGDM Specialisations at SSBM
                                 </h2>
                                 <p className="text-gray-600">
-                                    <span className="font-semibold italic">Tech-Enabled. Industry-Driven. Future-Ready</span>
+                                    <span className="font-semibold italic text-[14px]">Tech-Enabled. Industry-Driven. Future-Ready</span>
 
                                 </p>
                             </motion.div>
 
                             {/* Program Overview */}
                             <motion.div
-                                className="bg-maroon-100/20 p-6 md:p-10 rounded-t-2xl border border-maroon-300 mb-12"
+                                className="bg-maroon-100/20 p-6 md:p-10   mb-12"
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6 }}
                             >
 
-                                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                                <p className="text-gray-700 text-[14px] leading-relaxed">
                                     SCALE offers cutting-edge PGDM specialisations built around technologies, digital business skills, and future competencies demanded by global enterprises and GCCs.
                                     Each programme blends business fundamentals with AI, analytics, cloud, automation, and digital tools—ensuring graduates are job-ready from Day 1.
 
                                 </p>
                             </motion.div>
                             <motion.div className="mb-12">
-                                <h3 className="text-2xl font-semibold text-maroon mb-6 text-center">
+                                <h3 className="text-[17px] font-semibold text-maroon mb-6 text-center">
                                     The Two-Year Fully Residential PGDM Programme
                                 </h3>
 
@@ -337,7 +337,6 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                         "Equip learners with industry-aligned skills",
                                         "Create confident, ethical, future-ready leaders",
                                         "Provide hands-on experience through live projects, internships, hackathons, and global immersion",
-
                                     ].map((point, i) => (
                                         <motion.div
                                             key={i}
@@ -345,18 +344,20 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ duration: 0.5, delay: i * 0.1 }}
-                                            className="flex items-start gap-3 p-4 bg-gray-50 border border-gray-400 "
+                                            className="flex items-start gap-3 p-2"
                                         >
-                                            <MdVerified className="text-maroon h-6 w-6 mt-1" />
-                                            <p className="text-gray-700">{point}</p>
+                                            <span className="text-maroon text-lg font-bold leading-none">✓</span>
+
+                                            <p className="text-gray-700 text-[14px]">{point}</p>
                                         </motion.div>
                                     ))}
                                 </div>
+
                             </motion.div>
                             {/* Three Pillars */}
                             <motion.div className="mb-12">
-                                <h3 className="text-2xl font-semibold text-maroon mb-6 text-center">
-                                    Three Pillars of SCALE-SSBM
+                                <h3 className="text-[17px] font-semibold text-maroon mb-6 text-center">
+                                    Three Pillars of SSBM
                                 </h3>
 
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -384,15 +385,15 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ duration: 0.6, delay: i * 0.1 }}
-                                            className="bg-white border border-maroon/10 p-6 rounded-xl shadow-sm hover:shadow-md transition-all"
+                                            className=" border border-maroon/10 p-6 rounded-xl shadow-sm hover:shadow-md transition-all"
                                         >
                                             <div className="flex items-center gap-3 mb-4">
                                                 <div className="bg-maroon/10 w-12 h-12 rounded-full flex items-center justify-center">
                                                     {item.icon}
                                                 </div>
-                                                <h4 className="text-lg font-semibold text-maroon">{item.title}</h4>
+                                                <h4 className=" font-semibold text-maroon text-[17px]">{item.title}</h4>
                                             </div>
-                                            <p className="text-gray-600 text-sm md:text-base text-justify leading-relaxed">{item.desc}</p>
+                                            <p className="text-gray-600 text-[14px] text-justify leading-relaxed">{item.desc}</p>
                                         </motion.div>
                                     ))}
 
@@ -408,7 +409,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
-                                className="text-center my-10 bg-gray-50 py-2 border"
+                                className="text-center my-10  py-2 "
                             >
                                 <h2 className="text-3xl font-bold mb-3 text-maroon">
                                     Ready to Transform Your Career?
@@ -471,11 +472,11 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 transition={{ duration: 0.8 }}
                                 className="text-center mb-10"
                             >
-                                <h2 className="text-2xl font-semibold text-maroon  mb-2">
+                                <h2 className="text-[17px] font-semibold text-maroon  mb-2">
                                     Martech Innovation & Automation
                                 </h2>
                                 <p className="text-gray-600">
-                                    <span className="font-semibold italic">Where Creativity Meets AI.</span>
+                                    <span className="font-semibold italic text-[14px]">Where Creativity Meets AI.</span>
                                     <br />Where Brands Scale with Data.
                                 </p>
                             </motion.div>
@@ -490,7 +491,6 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             <>
                                                 This specialisation prepares learners to become
                                                 <span className="font-semibold text-maroon"> modern marketing strategists</span> who master consumer psychology, digital ecosystems, analytics, and AI-driven growth.
-
                                             </>
                                         ),
                                     },
@@ -511,8 +511,6 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             </>
                                         ),
                                     },
-
-
 
                                     // Career Trajectories
                                     {
@@ -537,12 +535,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                             whileInView={{ opacity: 1, y: 0 }}
                                                             viewport={{ once: true }}
                                                             transition={{ duration: 0.4, delay: index * 0.1 }}
-                                                            className="flex items-center gap-3 p-3 bg-white  shadow-sm border border-gray-200 hover:shadow-md transition-all"
+                                                            className="flex items-center gap-3 p-3 shadow-sm  hover:shadow-md  transition-all"
                                                         >
                                                             <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center">
                                                                 {role.icon}
                                                             </div>
-                                                            <p className="text-gray-700 text-sm md:text-base">{role.title}</p>
+                                                            <p className="text-gray-700 text-[14px]">{role.title}</p>
                                                         </motion.div>
                                                     ))}
 
@@ -550,9 +548,6 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             </>
                                         ),
                                     },
-
-
-
 
                                 ].map((item, i) => (
                                     <motion.div
@@ -563,17 +558,15 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.5, delay: i * 0.15 }}
                                     >
-                                        <div className="absolute -left-10 top-0 flex flex-col items-center">
-                                            <div className="w-8 h-8 rounded-full bg-maroon/20 flex items-center justify-center mb-2">
+                                        <div className="flex items-start gap-4">
+                                            {/* Fixed-size icon circle */}
+                                            <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
                                                 {item.icon}
                                             </div>
-                                            <div className="w-1 bg-maroon flex-1"></div>
-                                        </div>
 
-                                        <div className="bg-gray-50 border-l-4 border-maroon-200 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                                            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                                            <div className="flex-1 p-1 text-[14px] text-gray-700 leading-relaxed">
                                                 {item.content}
-                                            </p>
+                                            </div>
                                         </div>
                                     </motion.div>
                                 ))}
@@ -584,7 +577,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
-                                className="text-center my-10 bg-gray-50 py-2 border"
+                                className="text-center my-10  py-2 "
                             >
                                 <h2 className="text-3xl font-bold mb-3 text-maroon">
                                     Ready to Transform Your Career?
@@ -630,6 +623,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                     )}
 
 
+
                     {activeTab === "analytics" && (
                         <motion.section
                             key="analytics"
@@ -647,12 +641,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 transition={{ duration: 0.8 }}
                                 className="text-center mb-10"
                             >
-                                <h2 className="text-2xl font-semibold text-maroon mb-2">
+                                <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                     AI, Data Analytics & Business Intelligence
                                 </h2>
 
                                 <p className="text-gray-600 italic">
-                                    <span className="font-semibold">Turning Data Into Decisions.</span>
+                                    <span className="font-semibold text-[14px]">Turning Data Into Decisions.</span>
                                     <br />Turning Decisions Into Impact.
                                 </p>
                             </motion.div>
@@ -713,12 +707,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                             whileInView={{ opacity: 1, y: 0 }}
                                                             viewport={{ once: true }}
                                                             transition={{ duration: 0.4, delay: index * 0.1 }}
-                                                            className="flex items-center gap-3 p-3 bg-white shadow-sm border border-gray-200 hover:shadow-md transition-all"
+                                                            className="flex items-center gap-3 p-3 shadow-sm hover:shadow-md transition-all"
                                                         >
                                                             <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center">
                                                                 {role.icon}
                                                             </div>
-                                                            <p className="text-gray-700 text-sm md:text-base">{role.title}</p>
+                                                            <p className="text-gray-700 text-[14px]">{role.title}</p>
                                                         </motion.div>
                                                     ))}
 
@@ -736,17 +730,15 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.5, delay: i * 0.15 }}
                                     >
-                                        <div className="absolute -left-10 top-0 flex flex-col items-center">
-                                            <div className="w-8 h-8 rounded-full bg-maroon/20 flex items-center justify-center mb-2">
+                                        <div className="flex items-start gap-4">
+                                            {/* Fixed-size icon circle */}
+                                            <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
                                                 {item.icon}
                                             </div>
-                                            <div className="w-1 bg-maroon flex-1"></div>
-                                        </div>
 
-                                        <div className="bg-gray-50 border-l-4 border-maroon-200 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                                            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                                            <div className="flex-1 p-1 text-[14px] text-gray-700 leading-relaxed">
                                                 {item.content}
-                                            </p>
+                                            </div>
                                         </div>
                                     </motion.div>
                                 ))}
@@ -757,7 +749,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
-                                className="text-center my-10 bg-gray-50 py-2 border"
+                                className="text-center my-10  py-2 "
                             >
                                 <h2 className="text-3xl font-bold mb-3 text-maroon">
                                     Ready to Transform Your Career?
@@ -819,12 +811,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 transition={{ duration: 0.8 }}
                                 className="text-center mb-10"
                             >
-                                <h2 className="text-2xl font-semibold text-maroon mb-2">
+                                <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                     AI, IoT & Big Data in Supply Chain Operations
                                 </h2>
 
                                 <p className="text-gray-600 italic">
-                                    <span className="font-semibold">Mastering the Systems That Move the World.</span>
+                                    <span className="font-semibold text-[14px]">Mastering the Systems That Move the World.</span>
 
                                 </p>
                             </motion.div>
@@ -883,12 +875,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                             whileInView={{ opacity: 1, y: 0 }}
                                                             viewport={{ once: true }}
                                                             transition={{ duration: 0.4, delay: index * 0.1 }}
-                                                            className="flex items-center gap-3 p-3 bg-white shadow-sm border border-gray-200 hover:shadow-md transition-all"
+                                                            className="flex items-center gap-3 p-3 shadow-sm  hover:shadow-md transition-all"
                                                         >
                                                             <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center">
                                                                 {role.icon}
                                                             </div>
-                                                            <p className="text-gray-700 text-sm md:text-base">{role.title}</p>
+                                                            <p className="text-gray-700 text-[14px]">{role.title}</p>
                                                         </motion.div>
                                                     ))}
                                                 </div>
@@ -905,17 +897,15 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.5, delay: i * 0.15 }}
                                     >
-                                        <div className="absolute -left-10 top-0 flex flex-col items-center">
-                                            <div className="w-8 h-8 rounded-full bg-maroon/20 flex items-center justify-center mb-2">
+                                        <div className="flex items-start gap-4">
+                                            {/* Fixed-size icon circle */}
+                                            <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
                                                 {item.icon}
                                             </div>
-                                            <div className="w-1 bg-maroon flex-1"></div>
-                                        </div>
 
-                                        <div className="bg-gray-50 border-l-4 border-maroon-200 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                                            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                                            <div className="flex-1 p-1 text-[14px] text-gray-700 leading-relaxed">
                                                 {item.content}
-                                            </p>
+                                            </div>
                                         </div>
                                     </motion.div>
                                 ))}
@@ -926,7 +916,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
-                                className="text-center my-10 bg-gray-50 py-2 border"
+                                className="text-center my-10  py-2 "
                             >
                                 <h2 className="text-3xl font-bold mb-3 text-maroon">
                                     Ready to Transform Your Career?
@@ -988,12 +978,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 transition={{ duration: 0.8 }}
                                 className="text-center mb-10"
                             >
-                                <h2 className="text-2xl font-semibold text-maroon mb-2">
+                                <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                     Fin-Tech, AI & Digital Finance
                                 </h2>
 
                                 <p className="text-gray-600 italic">
-                                    <span className="font-semibold">Where Banking Meets Code.</span>
+                                    <span className="font-semibold text-[14px]">Where Banking Meets Code.</span>
                                     <br />Where Finance Becomes Intelligent.
                                 </p>
                             </motion.div>
@@ -1038,12 +1028,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                             whileInView={{ opacity: 1, y: 0 }}
                                                             viewport={{ once: true }}
                                                             transition={{ duration: 0.4, delay: index * 0.1 }}
-                                                            className="flex items-center gap-3 p-3 bg-white shadow-sm border border-gray-200 hover:shadow-md transition-all"
+                                                            className="flex items-center gap-3 p-3  shadow-sm   hover:shadow-md transition-all"
                                                         >
                                                             <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center">
                                                                 {role.icon}
                                                             </div>
-                                                            <p className="text-gray-700 text-sm md:text-base">{role.title}</p>
+                                                            <p className="text-gray-700 text-[14px]">{role.title}</p>
                                                         </motion.div>
                                                     ))}
                                                 </div>
@@ -1060,17 +1050,15 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.5, delay: i * 0.15 }}
                                     >
-                                        <div className="absolute -left-10 top-0 flex flex-col items-center">
-                                            <div className="w-8 h-8 rounded-full bg-maroon/20 flex items-center justify-center mb-2">
+                                        <div className="flex items-start gap-4">
+                                            {/* Fixed-size icon circle */}
+                                            <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
                                                 {item.icon}
                                             </div>
-                                            <div className="w-1 bg-maroon flex-1"></div>
-                                        </div>
 
-                                        <div className="bg-gray-50 border-l-4 border-maroon-200 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                                            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                                            <div className="flex-1 p-1 text-[14px] text-gray-700 leading-relaxed">
                                                 {item.content}
-                                            </p>
+                                            </div>
                                         </div>
                                     </motion.div>
                                 ))}
@@ -1081,7 +1069,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
-                                className="text-center my-10 bg-gray-50 py-2 border"
+                                className="text-center my-10 py-2 "
                             >
                                 <h2 className="text-3xl font-bold mb-3 text-maroon">
                                     Ready to Transform Your Career?
@@ -1134,9 +1122,8 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="relative  p-6 md:p-10 rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                            className="relative p-6 md:p-10 rounded-3xl max-w-7xl mx-auto overflow-hidden"
                         >
-
                             {/* Header */}
                             <motion.div
                                 initial={{ y: 30, opacity: 0 }}
@@ -1144,26 +1131,26 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 transition={{ duration: 0.8 }}
                                 className="text-center mb-10"
                             >
-                                <h2 className="text-2xl font-semibold text-maroon mb-2">
+                                <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                     HR Tech & Digital Transformation
                                 </h2>
 
-                                <p className="text-gray-600 italic">
-                                    <span className="font-semibold">Building Leaders Who Shape the Workforce of the Future.</span>
+                                <p className="text-gray-600 italic text-[14px]">
+                                    <span className="font-semibold">
+                                        Building Leaders Who Shape the Workforce of the Future.
+                                    </span>
                                 </p>
                             </motion.div>
 
                             {/* Timeline UI */}
-                            <div className="relative ml-4">
-
+                            <div className="space-y-8">
                                 {[
-                                    // Core Learning Areas
                                     {
-                                        icon: <MdMenuBook className="text-maroon h-6 w-6" />,
+                                        icon: <MdMenuBook className="w-5 h-5 text-maroon" />,
                                         content: (
                                             <>
                                                 <span className="font-semibold text-maroon">Core Learning Areas</span>
-                                                <ul className="list-disc ml-5 mt-2 space-y-1 text-gray-700">
+                                                <ul className="list-disc ml-5 mt-2 space-y-1 text-gray-700 text-[14px]">
                                                     <li>HR Analytics, Workforce Intelligence & Predictive People Modelling</li>
                                                     <li>AI-Enabled Talent Acquisition & Competency Mapping</li>
                                                     <li>Total Rewards Design, Performance Architecture & EX Strategy</li>
@@ -1173,73 +1160,66 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             </>
                                         ),
                                     },
-
-                                    // Career Trajectories
                                     {
-                                        icon: <MdWork className="text-maroon h-6 w-6" />,
+                                        icon: <MdWork className="w-5 h-5 text-maroon" />,
                                         content: (
                                             <>
                                                 <span className="font-semibold text-maroon">Career Trajectories</span>
 
                                                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
                                                     {[
-                                                        { title: "HRBP", icon: <MdPeople className="text-maroon w-6 h-6" /> },
-                                                        { title: "Talent Acquisition Lead", icon: <MdGroup className="text-maroon w-6 h-6" /> },
-                                                        { title: "HR Analyst", icon: <MdAssessment className="text-maroon w-6 h-6" /> },
-                                                        { title: "L&D Specialist", icon: <MdSchool className="text-maroon w-6 h-6" /> },
-                                                        { title: "Employee Experience Manager", icon: <MdEmojiEmotions className="text-maroon w-6 h-6" /> },
-                                                        { title: "People Operations Strategist", icon: <MdSupervisedUserCircle className="text-maroon w-6 h-6" /> },
+                                                        { title: "HRBP", icon: <MdPeople className="w-5 h-5 text-maroon" /> },
+                                                        { title: "Talent Acquisition Lead", icon: <MdGroup className="w-5 h-5 text-maroon" /> },
+                                                        { title: "HR Analyst", icon: <MdAssessment className="w-5 h-5 text-maroon" /> },
+                                                        { title: "L&D Specialist", icon: <MdSchool className="w-5 h-5 text-maroon" /> },
+                                                        { title: "Employee Experience Manager", icon: <MdEmojiEmotions className="w-5 h-5 text-maroon" /> },
+                                                        { title: "People Operations Strategist", icon: <MdSupervisedUserCircle className="w-5 h-5 text-maroon" /> },
                                                     ].map((role, index) => (
                                                         <motion.div
                                                             key={index}
                                                             initial={{ opacity: 0, y: 15 }}
                                                             whileInView={{ opacity: 1, y: 0 }}
                                                             viewport={{ once: true }}
-                                                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                                                            className="flex items-center gap-3 p-3 bg-white shadow-sm border border-gray-200 hover:shadow-md transition-all"
+                                                            transition={{ duration: 0.4, delay: index * 0.05 }}
+                                                            className="flex items-center gap-3 p-3 shadow-sm hover:shadow-md transition-all rounded-md"
                                                         >
                                                             <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center">
                                                                 {role.icon}
                                                             </div>
-                                                            <p className="text-gray-700 text-sm md:text-base">{role.title}</p>
+                                                            <p className="text-gray-700 text-[14px]">{role.title}</p>
                                                         </motion.div>
                                                     ))}
                                                 </div>
                                             </>
                                         ),
                                     },
-
                                 ].map((item, i) => (
                                     <motion.div
                                         key={i}
-                                        className="mb-8 relative"
                                         initial={{ opacity: 0, x: -20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         viewport={{ once: true }}
-                                        transition={{ duration: 0.5, delay: i * 0.15 }}
+                                        transition={{ duration: 0.5, delay: i * 0.12 }}
                                     >
-                                        <div className="absolute -left-10 top-0 flex flex-col items-center">
-                                            <div className="w-8 h-8 rounded-full bg-maroon/20 flex items-center justify-center mb-2">
+                                        <div className="flex items-start gap-4">
+                                            {/* Fixed-size icon circle */}
+                                            <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
                                                 {item.icon}
                                             </div>
-                                            <div className="w-1 bg-maroon flex-1"></div>
-                                        </div>
 
-                                        <div className="bg-gray-50 border-l-4 border-maroon-200 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                                            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                                            <div className="flex-1 p-1 text-[14px] text-gray-700 leading-relaxed">
                                                 {item.content}
-                                            </p>
+                                            </div>
                                         </div>
                                     </motion.div>
                                 ))}
-
                             </div>
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6 }}
                                 viewport={{ once: true }}
-                                className="text-center my-10 bg-gray-50 py-2 border"
+                                className="text-center my-10 py-2 "
                             >
                                 <h2 className="text-3xl font-bold mb-3 text-maroon">
                                     Ready to Transform Your Career?
@@ -1283,6 +1263,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                             </motion.div>
                         </motion.section>
                     )}
+
 
                 </AnimatePresence>
             </div>

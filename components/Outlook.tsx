@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, Variants } from "framer-motion"; // <-- add Variants here
-import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,8 +12,7 @@ import {
   faChartLine,
   faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
-import CountUp from "react-countup";
-import { Award, Briefcase, Building2, ShieldCheck } from "lucide-react";
+;
 
 export default function OutlookPage() {
   const features = [
@@ -81,7 +79,8 @@ export default function OutlookPage() {
 
 
   return (
-    <section className="relative min-h-screen py-12 sm:py-16 px-4 sm:px-6 md:px-10 flex flex-col items-center overflow-hidden bg-gradient-to-b from-gray-100 to-white">
+    <section className=" relative min-h-screen py-12 sm:py-16 px-4 sm:px-6 md:px-10 flex flex-col items-center overflow-hidden bg-gradient-to-b from-[#c7a289] via-[#f5f0eb] to-white
+ opacity-90">
       {/* Background Orbs */}
       <motion.div
         className="absolute top-0 left-0 w-40 h-40 sm:w-56 sm:h-56 rounded-full bg-indigo-100 opacity-30 blur-2xl"
@@ -113,7 +112,7 @@ export default function OutlookPage() {
 
         <motion.p
           variants={fadeUp}
-          className="mt-3 sm:mt-4 text-lg text-gray-600 max-w-2xl mx-auto"
+          className="mt-3 sm:mt-4 text-[15px] text-gray-600 max-w-2xl mx-auto"
         >
           Industry leaders shape the{" "}
           <span className="font-semibold text-maroon">curriculum, mentor students, deliver courses, and co-create real business challenges</span> by{" "}
@@ -157,10 +156,13 @@ export default function OutlookPage() {
               {/* Text */}
               <div className="p-5 flex flex-col items-center text-center">
                 <FontAwesomeIcon icon={feature.icon} className="text-2xl sm:text-3xl text-maroon mb-2" />
-                <h3 className="text-lg  font-semibold text-maroon mb-1">
+                <h3 className="text-[17px] font-semibold text-maroon mb-1">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 text-[15px] text-justify">{feature.description}</p>
+                <p className="text-gray-600 text-[14px] text-justify leading-relaxed">
+                  {feature.description}
+                </p>
+
               </div>
             </motion.div>
           ))}
@@ -177,13 +179,15 @@ export default function OutlookPage() {
           <div className="bg-white rounded-xl shadow-xl overflow-hidden h-full flex flex-col">
             {/* Header */}
             <div className="p-6 sm:p-8 text-white 
-                bg-gradient-to-r from-[#6A4A2F] via-[#4A301C] to-[#1F130B]
+bg-gradient-to-b from-maroon-500 via-maroon-400 to-maroon-200
+
+
                 rounded-t-xl shadow-md">
               <h2 className="text-2xl font-bold mb-3">
                 PGDM
               </h2>
 
-              <p className="mb-4 sm:mb-6 opacity-90 text-[15px] leading-relaxed">
+              <p className="mb-4 sm:mb-6 opacity-90 text-[14px] leading-relaxed">
                 Our PGDM program builds essential managerial and analytical skills through
                 industry-focused learning and practical exposure, preparing you for strong
                 leadership roles.
@@ -207,10 +211,10 @@ export default function OutlookPage() {
                     className="text-xl sm:text-2xl md:text-3xl text-maroon mr-3 mb-2 sm:mb-0"
                   />
                   <div>
-                    <h3 className="text-base sm:text-lg  font-semibold text-gray-800">
+                    <h3 className="text-[17px]  font-semibold text-gray-800">
                       {program.title}
                     </h3>
-                    <p className="text-gray-600 text-[15px]">{program.description}</p>
+                    <p className="text-gray-600 text-[14px]">{program.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -223,7 +227,7 @@ export default function OutlookPage() {
               viewport={{ once: true }}
               className="px-6 sm:px-8 py-2 border-t border-gray-200 bg-white/70"
             >
-              <p className="text-[15px] text-justify text-gray-700 leading-relaxed">
+              <p className="text-[14px] text-justify text-gray-700 leading-relaxed">
 
                 Students should join <span className="font-semibold text-maroon">SCALE – Sona School of Business & Management</span>{" "}
                 because it is the only place where business education meets technology, innovation, and global
@@ -234,7 +238,7 @@ export default function OutlookPage() {
 
             {/* Extra */}
             <div className="px-6 sm:px-8  border border-gray-100 ">
-              <p className="text-[15px] text-gray-600 leading-relaxed mb-6">
+              <p className="text-[14px] text-gray-600 leading-relaxed mb-6">
                 <span className="font-semibold text-maroon">PGDM</span> gives you the skills and mindset to excel in modern business roles.
               </p>
 

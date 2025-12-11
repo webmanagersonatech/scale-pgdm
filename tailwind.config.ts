@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"], // 👈 added here
+        classy: ["Playfair Display", "serif"],
       },
       colors: {
         maroon: {

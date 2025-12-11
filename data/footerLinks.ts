@@ -4,12 +4,13 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react
 export const footerLinks: { label: string; href: string }[] = [
   { label: "About", href: "/about/aboutus" },
   { label: "Events", href: "/events" },
-  // { label: "Enrichment", href: "/enrichment" },
+  { label: "Faculty", href: "/faculty" },
 ];
 
 export const quickLinks = [
   { label: "Admissions", href: "/admission/general" },
   { label: "Contact", href: "/contact" },
+  { label: "Placement", href: "/placement" },
 ];
 
 export const alumniFacilities = [

@@ -82,7 +82,8 @@ export default function ScrollVideoSections() {
     }, []);
 
     return (
-        <div className="bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] opacity-90 py-10">
+        <div className="bg-gradient-to-t from-[#c7a289] via-[#f5f0eb] to-white
+ opacity-90 py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
                 <div className="flex justify-between items-start mb-6">
                     <h2 className="text-2xl sm:text-3xl font-bold  font-serif">
@@ -106,7 +107,7 @@ export default function ScrollVideoSections() {
 
                             <h2 className="text-xl font-bold text-maroon-700">{sec.title}</h2>
 
-                            <ul className="space-y-2 text-gray-700 text-[15px]">
+                            <ul className="space-y-2 text-gray-700 text-[14px]">
                                 {sec.points.map((p, i) => (
                                     <li key={i} className="flex gap-2">
                                         <span className="text-maroon-500">•</span>
@@ -155,15 +156,15 @@ export default function ScrollVideoSections() {
                                     {sec.icon}
                                 </div>
 
-                                <div className="text-maroon-300 text-sm tracking-[2px] font-semibold mt-3">
+                                <div className="text-maroon-300 text-[14px] tracking-[2px] font-semibold mt-3">
                                     {sec.tag}
                                 </div>
 
-                                <h2 className="text-2xl font-bold text-maroon-700 mt-1">
+                                <h2 className="text-[17px] font-bold text-maroon-700 mt-1">
                                     {sec.title}
                                 </h2>
 
-                                <ul className="space-y-2 mt-4 text-gray-700 text-[15px]">
+                                <ul className="space-y-2 mt-4 text-gray-700 text-[14px]">
                                     {sec.points.map((p, i2) => (
                                         <li key={i2} className="flex gap-2">
                                             <span className="text-maroon-500">•</span>

@@ -7,34 +7,37 @@ export const navItems: NavItem[] = [
     href: "/",
   },
   {
-    label: "About",
+    label: "About Us",
     href: "/about/aboutus",
     submenu: [
       { label: "Vision & Mission", href: "/about/vision" },
 
       { label: "Management Profile", href: "/about/management" },
+      { label: "Advisory Board", href: "/about/advisory" },
+
     ],
   },
 
-  // {
-  //   label: "Faculty",
-  //   href: "/faculty",
-  //   // submenu: [
-  //   //   { label: "Faculty Info", href: "/faculty?tab=facultyinfo" },
-  //   //   { label: "Guest Lecture", href: "/faculty?tab=guest" },
-  //   //   { label: "Teaching Learning Initiative", href: "/faculty?tab=teaching" },
-  //   //   { label: "Faculty publications", href: "/faculty?tab=publications" },
-  //   // ],
-  // },
+  {
+    label: "Faculty",
+    href: "/faculty",
+  },
   {
     label: "Admisssion",
     href: "/admission/general",
-    // submenu: [
-    //   { label: "Faculty Info", href: "/faculty?tab=facultyinfo" },
-    //   { label: "Guest Lecture", href: "/faculty?tab=guest" },
-    //   { label: "Teaching Learning Initiative", href: "/faculty?tab=teaching" },
-    //   { label: "Faculty publications", href: "/faculty?tab=publications" },
-    // ],
+
+  },
+  {
+    label: "Research",
+    href: "/admission/general",
+
+
+  },
+  {
+    label: "Placement",
+    href: "/placement",
+
+
   },
   // {
   //   label: "Program",

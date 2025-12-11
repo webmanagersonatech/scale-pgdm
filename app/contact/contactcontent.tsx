@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"
 import Notiflix from "notiflix";
 
 export default function ContactPage() {
@@ -114,68 +114,86 @@ export default function ContactPage() {
 
 
   return (
-    <section className="w-full min-h-screen bg-gray-50 py-12 flex flex-col text-gray-600 body-font relative items-center">
+    <section className="w-full min-h-screen  bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] py-12 flex flex-col text-gray-600 body-font relative items-center">
       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         {/* Map Section */}
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
-            height="100%"
-            className="absolute inset-0"
-            title="map"
-            src="https://www.google.com/maps?q=Sona+College+of+Technology,Salem,+India&hl=en&z=16&output=embed"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-          <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                ADDRESS
-              </h2>
-              <p className="mt-1 text-sm leading-relaxed">
-                Sona School of Business & Management, <br />
-                Sona College of Technology, <br />
-                TPT Main Road (Junction), <br />
-                Salem - 636 005, Tamil Nadu, India.
+        <div className="lg:w-2/3 md:w-1/2 relative rounded-lg overflow-hidden sm:mr-10 ">
+
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: "url('/images/contact/contactbg.webp')",
+            }}
+          ></div>
+
+          {/* Black Overlay */}
+          <div className="absolute inset-0 bg-black/60"></div>
+
+          {/* Content */}
+          <div className="absolute inset-0 p-10 text-white flex flex-col justify-between">
+
+            {/* Title */}
+            <div>
+              <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
+              <p className="text-sm leading-relaxed text-gray-200">
+                Have questions about our MBA programs? Fill out the form and we’ll
+                get back to you.
               </p>
             </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a
-                href="mailto:admissions@scale.edu.in"
-                className="leading-relaxed text-sm"
-                style={{ color: "#4A301C" }}
-              >
-                admissions@scale.edu.in
-              </a>
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed text-sm flex flex-col">
-                <a href="tel:+919900016900" className="hover:underline" style={{ color: "#4A301C" }}>
-                  +91 99000 16900
-                </a>
-                <a href="tel:+919489600283" className="hover:underline" style={{ color: "#4A301C" }}>
-                  +91 94896 00283
-                </a>
-              </p>
+
+            {/* Info Cards */}
+            <div className="grid grid-cols-2 gap-6">
+
+
+              <div className="bg-white/90 text-[#4A301C] rounded-lg p-4 shadow flex gap-3">
+                <FaMapMarkerAlt className="text-xl" />
+                <div>
+                  <div className="text-xs font-semibold tracking-widest">ADDRESS</div>
+                  <p className="text-sm leading-relaxed mt-2">
+                    Sona Towers, 71 Millers Road,<br />
+                    Vasanth Nagar, Bengaluru,<br />
+                    Karnataka – 560052.
+                  </p>
+                </div>
+              </div>
+
+              {/* Phone Card */}
+              <div className="bg-white/90 text-[#4A301C] rounded-lg p-4 shadow flex gap-3">
+                <FaPhoneAlt className="text-xl " />
+                <div>
+                  <div className="text-xs font-semibold tracking-widest">PHONE</div>
+                  <a
+                    href="tel:+919442592144"
+                    className="block text-sm font-medium mt-2 hover:underline"
+                  >
+                    +91 94425 92144
+                  </a>
+                </div>
+              </div>
+
+              {/* Email Card */}
+              <div className="bg-white/90 text-[#4A301C] rounded-lg p-4 shadow flex gap-3">
+                <FaEnvelope className="text-xl" />
+                <div>
+                  <div className="text-xs font-semibold tracking-widest">EMAIL</div>
+                  <a
+                    href="mailto:info@sonastar.com"
+                    className="block text-sm font-medium mt-2 hover:underline"
+                  >
+                    info@sonastar.com
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
+
+
         {/* Form Section */}
         <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 rounded-lg shadow-md p-6">
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-            Get in Touch
-          </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            Have questions about our MBA programs? Fill out the form and we’ll
-            get back to you.
-          </p>
+
           <form onSubmit={handleSubmit}>
             <div className="relative mb-4">
               <label htmlFor="name" className="leading-7 text-sm text-gray-600">

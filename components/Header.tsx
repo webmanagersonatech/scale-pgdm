@@ -19,7 +19,6 @@ import {
 import AdmissionForm from "./AdmissionForm";
 import Modal from "./Modal";
 
-
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -273,29 +272,34 @@ export default function Header() {
 
 
             {/* Desktop Nav */}
-            <nav className="hidden xl:flex items-center gap-8">
+            <nav className="hidden xl:flex items-center gap-2">
               {navItems.map((item) => (
                 <div key={item.label} className="relative group">
                   <div className="flex items-center">
                     {/* Parent link */}
                     <Link
-                      href={item.href as any} passHref
-                      className={`px-2 md:px-2 py-3 rounded-lg inline-flex items-center ${pathname === "/"
-                        ? scrolled
-                          ? "text-gray-800 hover:text-maroon"
-                          : "text-white"
-                        : "text-gray-800 hover:text-maroon"
-                        }`}
+                      href={item.href as any}
+                      passHref
+                      className={`relative px-2 md:px-2 py-3 font-medium rounded-lg inline-flex items-center transition-all duration-300
+    ${pathname === "/"
+                          ? scrolled
+                            ? "text-gray-800"
+                            : "text-white"
+                          : "text-gray-800"
+                        } hover:text-maroon-300`}
                     >
                       <motion.span
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
+                        className="transition-all duration-300"
                       >
                         {item.label}
                       </motion.span>
-                    </Link>
 
+                      {/* Smooth Underline Animation */}
+                      <span className="absolute bottom-1 left-0 w-0 h-[2px] bg-maroon-300 transition-all duration-500 group-hover:w-full" />
+                    </Link>
 
                     {/* Dropdown arrow for submenu */}
                     {item.submenu && (
@@ -304,7 +308,7 @@ export default function Header() {
                         initial={{ opacity: 0, y: -8 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-0.5 text-gray-600 hover:text-maroon"
+                        className="mt-0.5 text-gray-600 hover:text-maroon-300"
                         onClick={(e) => {
                           e.preventDefault();
                           const submenu =

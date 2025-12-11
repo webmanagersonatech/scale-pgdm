@@ -8,23 +8,25 @@ export async function generateStaticParams() {
         { slug: "history" },
         { slug: "management" },
         { slug: "chairman" },
-       
+        { slug: "advisory" }
+
     ];
 }
-   
+
 
 export function generateMetadata({ params }: any) {
-   const titles: any = {
+    const titles: any = {
         about: "About Us",
         vision: "BlackbVision & Missionoard",
         history: "History",
         chairman: "Chairman's Books",
         management: "Management Profile",
-        
+        advisory: "Advisory Board"
+
     };
 
     const title = titles[params.slug] || "Facilities";
-     return {
+    return {
         title: `About | ${title} | Sona School of Business & Management`,
         description: `Explore ${title} at Sona School of Business and Management`,
         alternates: {
@@ -35,7 +37,7 @@ export function generateMetadata({ params }: any) {
 }
 
 export const dynamic = "force-static";
- 
+
 export default function FacilitySlugPage({ params }: any) {
     return <AboutPage activeSlug={params.slug} />;
 }

@@ -203,12 +203,12 @@ export default function ScalePage({ activeSlug }: any) {
         {customStyles}
       </style>
 
-      <section className="w-full min-h-screen bg-gray-50 py-12 flex flex-col items-center">
+      <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] py-12 flex flex-col items-center">
         {/* BANNER */}
         <div className="relative w-full">
           <AnimatePresence mode="wait">
             <img
-              src="/images/banner/about-banners/about-us.webp"
+              src="/images/banner/about-banners/11.webp"
               alt="Scale Banner"
               className="w-full h-auto max-h-96 object-contain"
             />
@@ -222,7 +222,7 @@ export default function ScalePage({ activeSlug }: any) {
 
             <div className="mt-3 sm:mt-4 w-full">
               <nav
-                className="flex flex-wrap text-white text-xs sm:text-sm md:text-base"
+                className="flex flex-wrap text-white text-xs sm:text-[14px]"
                 aria-label="Breadcrumb"
               >
                 <ol className="inline-flex flex-wrap items-center space-x-1 sm:space-x-2">
@@ -231,7 +231,7 @@ export default function ScalePage({ activeSlug }: any) {
                   <li className="inline-flex items-center">
                     <Link
                       href="/"
-                      className="hover:text-maroon cursor-pointer transition-colors text-white"
+                      className=" cursor-pointer transition-colors text-white"
                     >
                       Home
                     </Link>
@@ -243,7 +243,7 @@ export default function ScalePage({ activeSlug }: any) {
                   <li className="inline-flex items-center">
                     <Link
                       href="/scale"
-                      className="hover:text-maroon cursor-pointer transition-colors text-white"
+                      className="cursor-pointer transition-colors text-white"
                     >
                       About Scale
                     </Link>
@@ -317,26 +317,26 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="p-6 md:p-8 space-y-6"
               >
                 <div className="text-start mb-8">
-                  <h3 className="text-2xl font-semibold text-maroon mb-4 text-start">
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-start">
                     Why Students Should Join Sona School of Business &
                     Management - SCALE
                   </h3>
-                  <p className="text-sm md:text-base text-primary-700">
+                  <p className="text-[14px] text-primary-700">
                     India's First Truly Tech-Driven, Industry-Built Business
                     School
                   </p>
-                  <p className="text-primary-600 mt-2 text-sm md:text-base">
+                  <p className="text-primary-600 mt-2 text-[14px]">
                     Sona Business School is not another B-school. It is a
                     new-age, high-impact leadership factory created for students
                     who want to lead the future—not catch up to it.
                   </p>
                 </div>
 
-                <div className="bg-primary-50 p-6 rounded-lg border-l-4 border-primary">
-                  <h3 className="text-lg md:text-xl font-bold text-primary-800 mb-4">
+                <div className=" border-primary">
+                  <h3 className="text-[17px] font-bold text-primary-800 mb-4">
                     Here is what makes SCALE truly unique:
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -344,7 +344,8 @@ export default function ScalePage({ activeSlug }: any) {
                       <button
                         key={sec.id}
                         onClick={() => handleTabChange(sec.id)}
-                        className="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow text-left text-sm md:text-base"
+                        className="flex items-center gap-3 p-4   shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)]
+ transition-shadow text-left text-[14px]"
                       >
                         <div className="bg-primary-light p-2 rounded-lg">
                           <sec.icon className="w-5 h-5 text-primary" />
@@ -372,17 +373,17 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="space-y-6"
               >
                 <div className="flex items-center gap-4 mb-6">
 
-                  <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-center">
                     A Business School Built by the Industry, for the Industry,
                     to the Industry
                   </h3>
                 </div>
 
-                <p className="text-sm md:text-base text-primary-700">
+                <p className="text-[14px] text-primary-700">
                   Most business schools teach industry. SCALE-SSBM is designed
                   by industry.
                 </p>
@@ -390,11 +391,11 @@ export default function ScalePage({ activeSlug }: any) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
-                      <div className=" mt-1">
+                      <div >
                         <span className="font-bold text-primary">✓</span>
                       </div>
                       <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                        <h4 className="font-semibold text-primary-800 text-[14px]">
                           Curriculum co-created with CXOs, founders, and tech
                           leaders
                         </h4>
@@ -406,10 +407,10 @@ export default function ScalePage({ activeSlug }: any) {
 
                     <div className="flex items-start gap-3">
                       <div className="mt-1">
-                        <span className="font-bold text-primary">✓</span>
+                        <span className="font-semibold text-primary">✓</span>
                       </div>
                       <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                        <h4 className="font-semibold text-primary-800 text-[14px]">
                           Real-world case labs instead of textbook theory
                         </h4>
                         <p className="text-primary-600 text-xs md:text-sm mt-1">
@@ -425,7 +426,7 @@ export default function ScalePage({ activeSlug }: any) {
                         <span className="font-bold text-primary">✓</span>
                       </div>
                       <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                        <h4 className="font-semibold text-primary-800 text-[14px]">
                           Industry mentors are part of everyday learning
                         </h4>
                         <p className="text-primary-600 text-xs md:text-sm mt-1">
@@ -439,7 +440,7 @@ export default function ScalePage({ activeSlug }: any) {
                         <span className="font-bold text-primary">✓</span>
                       </div>
                       <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                        <h4 className="font-semibold text-primary-800 text-[14px]">
                           Corporate-backed live projects every semester
                         </h4>
                         <p className="text-primary-600 text-xs md:text-sm mt-1">
@@ -450,11 +451,17 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    Students learn exactly what companies want RIGHT NOW.
-                  </p>
+                <div className="mt-8">
+                  <div className="bg-primary-50  px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+
+                    <p className="text-maroon text-[16px]  leading-relaxed">
+                      Students learn exactly what companies want <br />
+                      <span className="text-maroon">RIGHT NOW.</span>
+                    </p>
+
+                  </div>
                 </div>
+
               </motion.div>
             )}
 
@@ -466,24 +473,24 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="space-y-6"
               >
                 <div className="flex items-center gap-4 mb-6">
 
-                  <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-center">
                     India's Only Tech-Infused Business School Model
                   </h3>
                 </div>
 
-                <p className="text-sm md:text-base text-primary-700">
+                <p className="text-[14px] text-primary-700">
                   In tomorrow's leadership landscape, technology = power. SCALE
                   integrates:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                   {/* AI */}
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className=" shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaRobot className="w-4 h-4" />
                       </span>
@@ -495,8 +502,8 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
 
                   {/* Data Science */}
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaChartBar className="w-4 h-4" />
                       </span>
@@ -508,8 +515,8 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
 
                   {/* Cloud & Cybersecurity */}
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary flex items-center gap-1">
                         <FaCloud className="w-4 h-4" />
                         <FaShieldAlt className="w-4 h-4" />
@@ -522,8 +529,8 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
 
                   {/* Digital Business Strategy */}
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaBullseye className="w-4 h-4" />
                       </span>
@@ -535,8 +542,8 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
 
                   {/* Automation Tools */}
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaCogs className="w-4 h-4" />
                       </span>
@@ -548,8 +555,8 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
 
                   {/* FinTech */}
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaCoins className="w-4 h-4" />
                       </span>
@@ -561,12 +568,18 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    Every graduate leaves SCALE-SSBM with dual strength:
-                    business + technology.
-                  </p>
+
+                <div className="mt-8">
+                  <div className="bg-primary-50  px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+
+                    <p className="text-maroon text-[16px]  leading-relaxed">
+                      Every graduate leaves SCALE-SSBM with dual strength: <br />
+                      <span className="text-maroon">Business + Technology.</span>
+                    </p>
+
+                  </div>
                 </div>
+
               </motion.div>
             )}
 
@@ -578,109 +591,101 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="space-y-6"
               >
+                {/* Header */}
                 <div className="flex items-center gap-4 mb-6">
-
-                  <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-center">
                     Global Exposure From Day One
                   </h3>
                 </div>
 
-                <p className="text-sm md:text-base text-primary-700">
-                  Sona Business School is built on global academic and industry
-                  partnerships, offering:
+                <p className="text-[14px] text-primary-700">
+                  Sona Business School is built on global academic and industry partnerships, offering:
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    {/* International Faculty */}
-                    <div className="flex items-start gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaGlobe className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          International faculty
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Learn from global experts and professors
-                        </p>
-                      </div>
-                    </div>
+                {/* GRID SAME STYLE AS TECH-DRIVEN */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
-                    {/* Global Immersion */}
-                    <div className="flex items-start gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaPlane className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Global immersion programs
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Study abroad opportunities and exchanges
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Cross-border Business Labs */}
-                    <div className="flex items-start gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaBuilding className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Cross-border business labs
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          International business simulations
-                        </p>
-                      </div>
-                    </div>
+                  {/* International Faculty */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaGlobe className="w-4 h-4" />
+                      </span>
+                      International Faculty
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Learn from global experts and professors
+                    </p>
                   </div>
 
-                  <div className="space-y-4">
-                    {/* Universities & Innovation Hubs */}
-                    <div className="flex items-start gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaGraduationCap className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Access to foreign universities and innovation hubs
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Connect with global educational institutions
-                        </p>
-                      </div>
-                    </div>
+                  {/* Global Immersion */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaPlane className="w-4 h-4" />
+                      </span>
+                      Global Immersion Programs
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Study abroad opportunities and exchanges
+                    </p>
+                  </div>
 
-                    {/* Multinational Internship */}
-                    <div className="flex items-start gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaBriefcase className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Multinational internship pathways
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Intern with global companies
-                        </p>
-                      </div>
-                    </div>
+                  {/* Cross-border Business Labs */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaBuilding className="w-4 h-4" />
+                      </span>
+                      Cross-Border Business Labs
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      International business simulations
+                    </p>
+                  </div>
+
+                  {/* Foreign Universities & Innovation Hubs */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaGraduationCap className="w-4 h-4" />
+                      </span>
+                      Foreign Universities & Innovation Hubs
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Connect with global educational institutions
+                    </p>
+                  </div>
+
+                  {/* Multinational Internships */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaBriefcase className="w-4 h-4" />
+                      </span>
+                      Multinational Internship Pathways
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Intern with global companies
+                    </p>
                   </div>
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    Students graduate with a global mindset and global
-                    opportunities.
-                  </p>
+                {/* Bottom Highlight Box (Same UI as Tech-Driven) */}
+                <div className="mt-8">
+                  <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+                    <p className="text-maroon text-[16px] leading-relaxed">
+                      Students graduate with a global mindset <br />
+                      <span className="text-maroon">and worldwide opportunities.</span>
+                    </p>
+                  </div>
                 </div>
+
               </motion.div>
             )}
+
 
             {/* ---------------- STARTUP INCUBATION ---------------- */}
             {activeTab === "startup-incubation" && (
@@ -690,29 +695,29 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="space-y-6"
               >
+                {/* Header */}
                 <div className="flex items-center gap-4 mb-6">
-
-                  <div>
-                    <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
-                      A Startup Incubation Centre Inside the Campus
-                    </h3>
-                    <p className="text-primary-600 mt-2 text-sm md:text-base">
-                      SCALE doesn't just prepare students for jobs—it prepares
-                      them to create jobs.
-                    </p>
-                  </div>
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-center">
+                    A Startup Incubation Centre Inside the Campus
+                  </h3>
                 </div>
 
+                <p className="text-primary-600 mt-2 text-[14px]">
+                  SCALE doesn't just prepare students for jobs—it prepares them to create jobs.
+                </p>
+
+                {/* CARDS (Same UI as Tech-Driven) */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+
                   {/* Dedicated Incubator */}
-                  <div className="bg-primary-50 p-5 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaBuilding className="w-4 h-4" />
                       </span>
-                      A dedicated Startup Incubator
+                      A Dedicated Startup Incubator
                     </h4>
                     <p className="text-primary-600 text-xs md:text-sm">
                       State-of-the-art facilities for budding entrepreneurs
@@ -720,38 +725,38 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
 
                   {/* Mentorship */}
-                  <div className="bg-primary-50 p-5 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaUsers className="w-4 h-4" />
                       </span>
-                      Mentorship from entrepreneurs & venture capitalists
+                      Mentorship from Entrepreneurs & Venture Capitalists
                     </h4>
                     <p className="text-primary-600 text-xs md:text-sm">
                       Guidance from successful founders and investors
                     </p>
                   </div>
 
-                  {/* Funding Opportunities */}
-                  <div className="bg-primary-50 p-5 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  {/* Funding */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaCoins className="w-4 h-4" />
                       </span>
-                      Startup funding opportunities
+                      Startup Funding Opportunities
                     </h4>
                     <p className="text-primary-600 text-xs md:text-sm">
                       Access to seed funding and investment networks
                     </p>
                   </div>
 
-                  {/* Innovation Hackathons */}
-                  <div className="bg-primary-50 p-5 rounded-lg">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  {/* Hackathons */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaLightbulb className="w-4 h-4" />
                       </span>
-                      Innovation hackathons
+                      Innovation Hackathons
                     </h4>
                     <p className="text-primary-600 text-xs md:text-sm">
                       Regular competitions to solve real-world problems
@@ -759,25 +764,30 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
 
                   {/* Product Bootcamps */}
-                  <div className="bg-primary-50 p-5 rounded-lg md:col-span-2">
-                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-sm md:text-base">
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg md:col-span-2">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
                       <span className="bg-primary-light p-2 rounded text-primary">
                         <FaTools className="w-4 h-4" />
                       </span>
-                      Product-building bootcamps
+                      Product-Building Bootcamps
                     </h4>
                     <p className="text-primary-600 text-xs md:text-sm">
                       Hands-on training to build and launch products
                     </p>
                   </div>
+
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    SCALE is the perfect choice for future founders,
-                    innovators, and problem-solvers.
-                  </p>
+                {/* Bottom Highlight Box (same as tech-driven) */}
+                <div className="mt-8">
+                  <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+                    <p className="text-maroon text-[16px] leading-relaxed">
+                      SCALE is the perfect choice for future founders, innovators, <br />
+                      <span className="text-maroon">and problem-solvers.</span>
+                    </p>
+                  </div>
                 </div>
+
               </motion.div>
             )}
 
@@ -789,112 +799,102 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="space-y-6"
               >
+                {/* Header */}
                 <div className="flex items-center gap-4 mb-6">
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-center">
+                    A Fully Residential, High-Performance Learning Environment
+                  </h3>
+                </div>
 
-                  <div>
-                    <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
-                      A Fully Residential, High-Performance Learning Environment
-                    </h3>
-                    <p className="text-primary-600 mt-2 text-sm md:text-base">
-                      Two years at SCALE = A complete leadership immersion
-                      experience.
+                <p className="text-primary-600 text-[14px]">
+                  Two years at SCALE = A complete leadership immersion experience.
+                </p>
+
+                {/* CARDS MATCHING TECH-DRIVEN UI */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+
+                  {/* 24/7 Learning */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaClock className="w-4 h-4" />
+                      </span>
+                      24/7 Learning Culture
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Continuous learning and development
+                    </p>
+                  </div>
+
+                  {/* Peer Collaboration */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaHandshake className="w-4 h-4" />
+                      </span>
+                      Peer Collaboration
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Learn from and with fellow students
+                    </p>
+                  </div>
+
+                  {/* Leadership Labs */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaBullseye className="w-4 h-4" />
+                      </span>
+                      Leadership Labs
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Practical leadership training sessions
+                    </p>
+                  </div>
+
+                  {/* Corporate-style Campus */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaUniversity className="w-4 h-4" />
+                      </span>
+                      Corporate-Style Campus Life
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Professional environment preparation
+                    </p>
+                  </div>
+
+                  {/* Workshops & Events */}
+                  <div className="shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] p-4 rounded-lg md:col-span-2">
+                    <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-[14px]">
+                      <span className="bg-primary-light p-2 rounded text-primary">
+                        <FaFlagCheckered className="w-4 h-4" />
+                      </span>
+                      Workshops, Clubs, Competitions & Simulations
+                    </h4>
+                    <p className="text-primary-600 text-xs md:text-sm">
+                      Holistic development activities and experiential learning
+                    </p>
+                  </div>
+
+                </div>
+
+                {/* Bottom Highlight Box (same UI as all tabs) */}
+                <div className="mt-8">
+                  <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+                    <p className="text-maroon text-[16px] leading-relaxed">
+                      Students experience the real world of leadership—<br />
+                      <span className="text-maroon">not just a classroom.</span>
                     </p>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* LEFT SIDE */}
-                  <div className="space-y-4">
-                    {/* 24/7 Learning */}
-                    <div className="flex items-center gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaClock className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          24/7 learning culture
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Continuous learning and development
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Peer Collaboration */}
-                    <div className="flex items-center gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaHandshake className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Peer collaboration
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Learn from and with fellow students
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Leadership Labs */}
-                    <div className="flex items-center gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaBullseye className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Leadership labs
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Practical leadership training sessions
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* RIGHT SIDE */}
-                  <div className="space-y-4">
-                    {/* Corporate-style Campus */}
-                    <div className="flex items-center gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaUniversity className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Corporate-style campus life
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Professional environment preparation
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Workshops & Events */}
-                    <div className="flex items-center gap-3">
-                      <div className="bg-primary-light p-2 rounded-full">
-                        <FaFlagCheckered className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
-                          Workshops, clubs, competitions, simulations
-                        </h4>
-                        <p className="text-primary-600 text-xs md:text-sm">
-                          Holistic development activities
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    Students experience the real world of leadership, not
-                    just a classroom.
-                  </p>
-                </div>
               </motion.div>
             )}
+
 
             {/* ---------------- SONA LEGACY ---------------- */}
             {activeTab === "sona-legacy" && (
@@ -904,74 +904,78 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="p-6 md:p-8 space-y-6"
               >
                 <div className="flex items-center gap-4 mb-6">
 
-                  <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
+                  <h3 className="text-[17px] font-semibold text-maroon  text-center">
                     Powered by Sona Group's 100-Year Legacy
                   </h3>
                 </div>
 
-                <p className="text-sm md:text-base text-primary-700">
+                <p className="text-[14px] text-primary-700">
                   Backed by one of India's most respected names in:
                 </p>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {/* Technology */}
-                  <div className="bg-primary-50 p-4 border border-maroon-300 text-center">
+                  <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] text-center">
                     <FaMicrochip className="text-3xl mb-2 text-primary mx-auto" />
-                    <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                    <h4 className="font-bold text-primary-800 text-[14px]">
                       Technology
                     </h4>
                   </div>
 
                   {/* Innovation */}
-                  <div className="bg-primary-50 p-4 border border-maroon-300 text-center">
+                  <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] text-center">
                     <FaLightbulb className="text-3xl mb-2 text-primary mx-auto" />
-                    <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                    <h4 className="font-bold text-primary-800 text-[14px]">
                       Innovation
                     </h4>
                   </div>
 
                   {/* Manufacturing */}
-                  <div className="bg-primary-50 p-4 border border-maroon-300 text-center">
+                  <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] text-center">
                     <FaIndustry className="text-3xl mb-2 text-primary mx-auto" />
-                    <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                    <h4 className="font-bold text-primary-800 text-[14px]">
                       Manufacturing
                     </h4>
                   </div>
 
                   {/* Education */}
-                  <div className="bg-primary-50 p-4 border border-maroon-300 text-center">
+                  <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] text-center">
                     <FaGraduationCap className="text-3xl mb-2 text-primary mx-auto" />
-                    <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                    <h4 className="font-bold text-primary-800 text-[14px]">
                       Education
                     </h4>
                   </div>
 
                   {/* Research */}
-                  <div className="bg-primary-50 p-4 border border-maroon-300 text-center">
+                  <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] text-center">
                     <FaFlask className="text-3xl mb-2 text-primary mx-auto" />
-                    <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                    <h4 className="font-bold text-primary-800 text-[14px]">
                       Research
                     </h4>
                   </div>
 
                   {/* Digital Transformation */}
-                  <div className="bg-primary-50 p-4 border border-maroon-300 text-center">
+                  <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] text-center">
                     <FaRocket className="text-3xl mb-2 text-primary mx-auto" />
-                    <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                    <h4 className="font-bold text-primary-800 text-[14px]">
                       Digital Transformation
                     </h4>
                   </div>
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    SCALE stands on a century-old foundation of credibility,
-                    quality, and trust.
-                  </p>
+
+                <div className="mt-8">
+                  <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+                    <p className="text-maroon text-[16px] leading-relaxed">
+                      SCALE stands on a century-old foundation of <br />
+                      <span className="text-maroon">credibility,
+                        quality, and trust.</span>
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             )}
@@ -984,21 +988,22 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className=" p-6 md:p-8 space-y-6"
               >
-                <div className="flex items-center gap-4 mb-6">
-
+                {/* HEADER */}
+                <div className="flex items-start gap-4 mb-6">
                   <div>
-                    <h3 className="text-2xl font-semibold text-maroon mb-4 text-start">
+                    <h3 className="text-[17px] font-semibold text-maroon mb-3 text-start">
                       Future-Proof Career Opportunities
                     </h3>
-                    <p className="text-primary-600 mt-2 text-sm md:text-base">
-                      Because of the tech-enabled curriculum + global exposure +
-                      incubation + industry integration
+                    <p className="text-primary-600 mt-1 text-[14px] leading-relaxed">
+                      Because of the tech-enabled curriculum + global exposure + incubation +
+                      industry integration
                     </p>
                   </div>
                 </div>
 
+                {/* GRID LIST */}
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {[
                     "Consulting",
@@ -1014,13 +1019,11 @@ export default function ScalePage({ activeSlug }: any) {
                   ].map((role, index) => (
                     <div
                       key={index}
-                      className="bg-primary-50 p-4 rounded-lg hover:bg-primary-light transition-colors"
+                      className=" p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)] hover:bg-primary-light transition-colors "
                     >
                       <div className="flex items-center gap-2">
-                        <div className=" p-1 rounded">
-                          <span className="text-maroon  text-xs">✓</span>
-                        </div>
-                        <h4 className="font-bold text-primary-800 text-sm md:text-base">
+                        <span className="text-maroon text-sm font-bold">✓</span>
+                        <h4 className="font-semibold text-primary-800 text-[14px]">
                           {role}
                         </h4>
                       </div>
@@ -1028,14 +1031,22 @@ export default function ScalePage({ activeSlug }: any) {
                   ))}
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    SCALE-SSBM graduates are multi-skilled, employable,
-                    adaptable, and future-ready.
-                  </p>
+
+
+
+                <div className="mt-8">
+                  <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+                    <p className="text-maroon text-[16px] leading-relaxed">
+                      SCALE-SSBM graduates are multi-skilled, employable, adaptable, and
+                      future-ready. <br />
+
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             )}
+
+
 
             {/* ---------------- LEADERSHIP DEVELOPMENT ---------------- */}
             {activeTab === "leadership-development" && (
@@ -1045,16 +1056,16 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className=" p-6 md:p-8  space-y-6"
               >
                 <div className="flex items-center gap-4 mb-6">
 
-                  <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-center">
                     Leadership Development at the Core
                   </h3>
                 </div>
 
-                <p className="text-sm md:text-base text-primary-700">
+                <p className="text-[14px] text-primary-700">
                   SCALE-SSBM focuses deeply on developing essential leadership
                   qualities:
                 </p>
@@ -1072,7 +1083,7 @@ export default function ScalePage({ activeSlug }: any) {
                         <div className=" p-1 rounded">
                           <span className="text-maroon  text-xs">✓</span>
                         </div>
-                        <span className="font-medium text-primary-800 text-sm md:text-base">
+                        <span className="font-medium text-primary-800 text-[14px]">
                           {skill}
                         </span>
                       </div>
@@ -1091,7 +1102,7 @@ export default function ScalePage({ activeSlug }: any) {
                         <div className=" p-1 rounded">
                           <span className="text-maroon  text-xs">✓</span>
                         </div>
-                        <span className="font-medium text-primary-800 text-sm md:text-base">
+                        <span className="font-medium text-primary-800 text-[14px]">
                           {skill}
                         </span>
                       </div>
@@ -1099,12 +1110,17 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    Students evolve into purpose-driven, confident, and
-                    ethical leaders.
-                  </p>
+
+                <div className="mt-8">
+                  <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+                    <p className="text-maroon text-[16px] leading-relaxed">
+                      Students evolve into purpose-driven, confident, and
+                      ethical leaders. <br />
+
+                    </p>
+                  </div>
                 </div>
+
               </motion.div>
             )}
 
@@ -1116,16 +1132,16 @@ export default function ScalePage({ activeSlug }: any) {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-6"
+                className="p-6 md:p-8 space-y-6"
               >
                 <div className="flex items-center gap-4 mb-6">
 
-                  <h3 className="text-2xl font-semibold text-maroon mb-4 text-center">
+                  <h3 className="text-[17px] font-semibold text-maroon mb-4 text-center">
                     A School Designed for Tomorrow's World
                   </h3>
                 </div>
 
-                <p className="text-sm md:text-base text-primary-700">
+                <p className="text-[14px] text-primary-700">
                   SSBM prepares students for the future with a forward-looking
                   approach:
                 </p>
@@ -1133,8 +1149,8 @@ export default function ScalePage({ activeSlug }: any) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Left Column */}
                   <div className="space-y-4">
-                    <div className="bg-primary-50 p-4 rounded-lg">
-                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-sm md:text-base">
+                    <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)]">
+                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-[14px]">
                         <FaRobot className="text-primary text-lg" /> AI-driven
                         workplaces
                       </h4>
@@ -1143,8 +1159,8 @@ export default function ScalePage({ activeSlug }: any) {
                       </p>
                     </div>
 
-                    <div className="bg-primary-50 p-4 rounded-lg">
-                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-sm md:text-base">
+                    <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)]">
+                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-[14px]">
                         <FaGlobe className="text-primary text-lg" /> Digital
                         global ecosystems
                       </h4>
@@ -1153,8 +1169,8 @@ export default function ScalePage({ activeSlug }: any) {
                       </p>
                     </div>
 
-                    <div className="bg-primary-50 p-4 rounded-lg">
-                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-sm md:text-base">
+                    <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)]">
+                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-[14px]">
                         <FaRocket className="text-primary text-lg" />{" "}
                         Innovation-led industries
                       </h4>
@@ -1166,8 +1182,8 @@ export default function ScalePage({ activeSlug }: any) {
 
                   {/* Right Column */}
                   <div className="space-y-4">
-                    <div className="bg-primary-50 p-4 rounded-lg">
-                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-sm md:text-base">
+                    <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)]">
+                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-[14px]">
                         <FaBriefcase className="text-primary text-lg" />{" "}
                         Entrepreneurial careers
                       </h4>
@@ -1176,8 +1192,8 @@ export default function ScalePage({ activeSlug }: any) {
                       </p>
                     </div>
 
-                    <div className="bg-primary-50 p-4 rounded-lg">
-                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-sm md:text-base">
+                    <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)]">
+                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-[14px]">
                         <FaSync className="text-primary text-lg" /> New business
                         models
                       </h4>
@@ -1186,8 +1202,8 @@ export default function ScalePage({ activeSlug }: any) {
                       </p>
                     </div>
 
-                    <div className="bg-primary-50 p-4 rounded-lg">
-                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-sm md:text-base">
+                    <div className="bg-primary-50 p-4 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.18)]">
+                      <h4 className="font-bold text-primary-800 mb-2 flex items-center gap-2 text-[14px]">
                         <FaMagic className="text-primary text-lg" /> Roles that
                         don't even exist yet
                       </h4>
@@ -1198,12 +1214,19 @@ export default function ScalePage({ activeSlug }: any) {
                   </div>
                 </div>
 
-                <div className="bg-primary-50 p-4 rounded-lg border-l-4 border-primary mt-6">
-                  <p className="font-semibold text-primary-800 text-sm md:text-base">
-                    Students leave SCALE ready to lead the unknown and shape
-                    the new.
-                  </p>
+
+
+                <div className="mt-8">
+                  <div className="bg-primary-50 px-6 py-5 text-center shadow-[0_4px_10px_-3px_rgba(0,0,0,0.12)]">
+                    <p className="text-maroon text-[16px] leading-relaxed">
+                      Students leave SCALE ready to lead the unknown and shape
+                      the new.<br />
+
+                    </p>
+                  </div>
                 </div>
+
+
               </motion.div>
             )}
           </AnimatePresence>
