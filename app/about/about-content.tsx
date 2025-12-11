@@ -103,40 +103,40 @@ export default function AboutPage({ activeSlug }: any) {
 
     // Advisory Board
     const advisoryMembers = [
-        { name: "Prof. Atul Sharma", designation: "National Vice President – ISTD", company: "Former SR.GM-HR, BOSCH INDIA", image: "/images/about/advisory/picture1.png" },
-        { name: "Mr. Vanshi Mohan", designation: "Cluster COO", company: "KIMSHEALTH", image: "/images/about/advisory/picture2.png" },
-        { name: "Prof. Girinarayan", designation: "Former Chairman, NIPM", company: "INSEAD Singapore alumnus", image: "/images/about/advisory/picture6.png" },
-        { name: "Dr. Mahesh Bhatt", designation: "CEO", company: "Formax Consulting Pvt Ltd", image: "/images/about/advisory/picture7.png" },
-        { name: "Mr. Suraj Chettri", designation: "Director – HR", company: "Airbus", image: "/images/about/advisory/picture3.png" },
-        { name: "Dr. Ranjith T.P", designation: "Director, Recruitment – Asia Pacific", company: "VOLVO India", image: "/images/about/advisory/picture4.png" },
-        { name: "Mr. Glen Dsouza", designation: "VP Human Resources & Head ER", company: "Air India Limited", image: "/images/about/advisory/picture5.png" },
-        { name: "Mr. Jays Chandy", designation: "Chief People Officer", company: "CensaNext", image: "/images/about/advisory/picture8.png" },
-        { name: "Mr. Alex Mathews", designation: "Chief HR Officer", company: "KPN Fresh – West Bridge Capital", image: "/images/about/advisory/picture9.png" },
-        { name: "Mr. Vamshi Guntha", designation: "Founder & CEO", company: "Propl Inventions Ltd (Business Analytics)", image: "/images/about/advisory/picture10.png" },
+        { name: "Prof. Atul Sharma", designation: "National Vice President – ISTD", company: "Former SR.GM-HR, BOSCH INDIA", image: "/images/about/advisory/Picture1.png" },
+        { name: "Mr. Vanshi Mohan", designation: "Cluster COO", company: "KIMSHEALTH", image: "/images/about/advisory/Picture2.png" },
+        { name: "Prof. Girinarayan", designation: "Former Chairman, NIPM", company: "INSEAD Singapore alumnus", image: "/images/about/advisory/Picture6.png" },
+        { name: "Dr. Mahesh Bhatt", designation: "CEO", company: "Formax Consulting Pvt Ltd", image: "/images/about/advisory/Picture7.png" },
+        { name: "Mr. Suraj Chettri", designation: "Director – HR", company: "Airbus", image: "/images/about/advisory/Picture3.png" },
+        { name: "Dr. Ranjith T.P", designation: "Director, Recruitment – Asia Pacific", company: "VOLVO India", image: "/images/about/advisory/Picture4.png" },
+        { name: "Mr. Glen Dsouza", designation: "VP Human Resources & Head ER", company: "Air India Limited", image: "/images/about/advisory/Picture5.png" },
+        { name: "Mr. Jays Chandy", designation: "Chief People Officer", company: "CensaNext", image: "/images/about/advisory/Picture8.png" },
+        { name: "Mr. Alex Mathews", designation: "Chief HR Officer", company: "KPN Fresh – West Bridge Capital", image: "/images/about/advisory/Picture9.png" },
+        { name: "Mr. Vamshi Guntha", designation: "Founder & CEO", company: "Propl Inventions Ltd (Business Analytics)", image: "/images/about/advisory/Picture10.png" },
     ];
 
     // Industry Advisory Council
     const industryAdvisoryMembers = [
-        { name: "Mr. Srikanth", designation: "GM & Head – HR", company: "SIEMENS Technology India", image: "/images/about/advisory/picture11.png" },
-        { name: "Mr. Rathod", designation: "Consultant", company: "Retail Management", image: "/images/about/advisory/picture12.png" },
-        { name: "Mr. Benny Augustine", designation: "Director - Compliance & Ethics", company: "Global Head - Center of Excellence, Conflicts of Interest", image: "/images/about/advisory/picture14.png" },
-        { name: "Mr. Sarang Ayachit", designation: "Program Lead - HR Process Automation and Digitalization", image: "/images/about/advisory/picture13.png" },
+        { name: "Mr. Srikanth", designation: "GM & Head – HR", company: "SIEMENS Technology India", image: "/images/about/advisory/Picture11.png" },
+        { name: "Mr. Rathod", designation: "Consultant", company: "Retail Management", image: "/images/about/advisory/Picture12.png" },
+        { name: "Mr. Benny Augustine", designation: "Director - Compliance & Ethics", company: "Global Head - Center of Excellence, Conflicts of Interest", image: "/images/about/advisory/Picture14.png" },
+        { name: "Mr. Sarang Ayachit", designation: "Program Lead - HR Process Automation and Digitalization", image: "/images/about/advisory/Picture13.png" },
     ];
 
     // Governing Council
     const governingCouncilMembers = [
-        { name: "Mr. Kamal Bali", designation: "MD Volvo", image: "/images/about/advisory/picture16.png" },
-        { name: "Dr. Augustus (Augie) Azariah", designation: "Regional Director, Kyndryl India", image: "/images/about/advisory/picture15.png" },
-        { name: "Madhusudan Murthy", designation: "Senior Vice President of Engineering, GlobalLogic", image: "/images/about/advisory/picture17.png" },
-        { name: "Viswanath PS", designation: "Managing Director & CEO, Randstad India", image: "/images/about/advisory/picture18.png" },
-        { name: "Dr. Akali Fulma", designation: "Director International Relation, University of West Alabama", image: "/images/about/advisory/picture19.png" },
+        { name: "Mr. Kamal Bali", designation: "MD Volvo", image: "/images/about/advisory/Picture16.png" },
+        { name: "Dr. Augustus (Augie) Azariah", designation: "Regional Director, Kyndryl India", image: "/images/about/advisory/Picture15.png" },
+        { name: "Madhusudan Murthy", designation: "Senior Vice President of Engineering, GlobalLogic", image: "/images/about/advisory/Picture17.png" },
+        { name: "Viswanath PS", designation: "Managing Director & CEO, Randstad India", image: "/images/about/advisory/Picture18.png" },
+        { name: "Dr. Akali Fulma", designation: "Director International Relation, University of West Alabama", image: "/images/about/advisory/Picture19.png" },
     ];
 
     // Academic Advisory Council
     const academicAdvisoryMembers = [
-        { name: "Dr. M.P. Ganesh Ph.D.", designation: "Head (EM) & Associate Professor, IIT- Hyderabad", image: "/images/about/advisory/picture20.png" },
-        { name: "Dr. Virajanand Varma", designation: "Professor, IIM- Ranchi", image: "/images/about/advisory/picture21.png" },
-        { name: "Dr. I Lokananda Reddy", designation: "Professor, Hyderabad Central University", image: "/images/about/advisory/picture22.png" },
+        { name: "Dr. M.P. Ganesh Ph.D.", designation: "Head (EM) & Associate Professor, IIT- Hyderabad", image: "/images/about/advisory/Picture20.png" },
+        { name: "Dr. Virajanand Varma", designation: "Professor, IIM- Ranchi", image: "/images/about/advisory/Picture21.png" },
+        { name: "Dr. I Lokananda Reddy", designation: "Professor, Hyderabad Central University", image: "/images/about/advisory/Picture22.png" },
     ];
 
 
@@ -353,22 +353,20 @@ export default function AboutPage({ activeSlug }: any) {
             <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] py-12 flex flex-col items-center">
 
                 <div className="w-full relative">
-                    <div className="w-full h-96 flex items-center justify-center overflow-hidden">
 
-                        <AnimatePresence mode="wait">
-                            <motion.img
-                                key={tabImages[activeTab]}
-                                src={tabImages[activeTab] || ""}
-                                alt="Corporate Banner"
-                                className="w-full h-full object-contain"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.4 }}
-                            />
-                        </AnimatePresence>
 
-                    </div>
+                    <AnimatePresence mode="wait">
+                        <motion.img
+                            key={tabImages[activeTab]}
+                            src={tabImages[activeTab] || ""}
+                            alt="Corporate Banner"
+                            className="w-full h-full object-contain"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.4 }}
+                        />
+                    </AnimatePresence>
 
 
                     <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-4 sm:px-6">
@@ -708,8 +706,6 @@ export default function AboutPage({ activeSlug }: any) {
                                 </div>
                             </motion.div>
                         )}
-
-
 
 
 
