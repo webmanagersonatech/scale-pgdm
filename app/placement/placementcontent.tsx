@@ -130,7 +130,7 @@ export default function PlacementPage() {
                                 <li className="inline-flex items-center">
                                     <Link
                                         href="/"
-                                        className="hover:text-maroon cursor-pointer transition-colors text-white"
+                                        className=" cursor-pointer transition-colors text-white"
                                     >
                                         Home
                                     </Link>
@@ -142,7 +142,7 @@ export default function PlacementPage() {
                                 <li className="inline-flex items-center">
                                     <Link
                                         href="/placement"
-                                        className="hover:text-maroon cursor-pointer transition-colors text-white"
+                                        className=" cursor-pointer transition-colors text-white"
                                     >
                                         Placement
                                     </Link>
@@ -150,7 +150,7 @@ export default function PlacementPage() {
                                 </li>
 
                                 {/* Current Section */}
-                                <li className="inline-flex items-center text-yellow-500 font-semibold">
+                                <li className="inline-flex items-center  font-semibold">
                                     {currentSection?.title}
                                 </li>
                             </ol>
