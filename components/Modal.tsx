@@ -20,7 +20,7 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
                     onClick={onClose} // close on background click
                 >
                     <motion.div
-                        className="bg-white rounded-xl p-8 max-w-md w-full relative"
+                        className="bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] rounded-xl p-8 max-w-2xl w-full relative"
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1, transition: { duration: 0.3 } }}
                         exit={{ scale: 0.8, opacity: 0, transition: { duration: 0.2 } }}

@@ -1,5 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+const IndianStatesCities = require("indian-states-cities-list");
 
 const COURSES = [
   "MBA in Marketing",
@@ -10,16 +11,21 @@ const COURSES = [
 
 const CAPTCHA_LENGTH = 6;
 
-export default function AdmissionForm() {
-  const [formData, setFormData] = useState({
+export default function AdmissionLoginTabs() {
+  const [activeTab, setActiveTab] = useState<"admission" | "login">("admission");
+
+  const [admissionData, setAdmissionData] = useState({
     name: "",
     email: "",
     phone: "",
     course: "",
+    state: "",
+    city: "",
     captchaAnswer: "",
   });
 
   const [captcha, setCaptcha] = useState("");
+  const [loginData, setLoginData] = useState({ email: "", password: "" });
 
   // Generate captcha on load
   useEffect(() => {
@@ -27,8 +33,7 @@ export default function AdmissionForm() {
   }, []);
 
   const generateCaptcha = () => {
-    const chars =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     let result = "";
     for (let i = 0; i < CAPTCHA_LENGTH; i++) {
       result += chars.charAt(Math.floor(Math.random() * chars.length));
@@ -36,153 +41,265 @@ export default function AdmissionForm() {
     setCaptcha(result);
   };
 
-  const handleChange = (e: any) => {
+  const handleAdmissionChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setFormData((p) => ({ ...p, [name]: value }));
+
+    setAdmissionData((prev) => ({
+      ...prev,
+      [name]: value,
+
+      // When the state changes, reset the city field
+      ...(name === "state" ? { city: "" } : {}),
+    }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleAdmissionSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (formData.captchaAnswer !== captcha) {
+    if (admissionData.captchaAnswer !== captcha) {
       alert("Captcha incorrect!");
       return;
     }
 
-    console.log("FORM SUBMITTED ↓↓");
-    console.table(formData);
+    console.log("ADMISSION FORM SUBMITTED ↓↓");
+    console.table(admissionData);
+    alert("Admission form submitted successfully!");
 
-    alert("Form submitted successfully!");
-
-    // Reset
-    setFormData({
+    // reset
+    setAdmissionData({
       name: "",
       email: "",
       phone: "",
       course: "",
+      state: "",
+      city: "",
       captchaAnswer: "",
     });
+
     generateCaptcha();
   };
 
+  const handleLoginSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("LOGIN FORM SUBMITTED ↓↓");
+    console.table(loginData);
+    alert("Login submitted successfully!");
+    setLoginData({ email: "", password: "" });
+  };
+
+  // Get states list and cities list filtered by selected state
+  const statesList = IndianStatesCities.STATES_OBJECT;
+  const citiesList =
+    admissionData.state && IndianStatesCities.STATE_WISE_CITIES
+      ? (IndianStatesCities.STATE_WISE_CITIES as any)[
+      admissionData.state.replace(/ /g, "")
+      ] || []
+      : [];
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-
-      {/* NAME */}
-      <div className="relative mb-4">
-        <label htmlFor="name" className="leading-7 text-sm text-gray-600">
-          Name
-        </label>
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter your full name"
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full bg-white rounded border border-gray-300 focus:border-[#4A301C] focus:ring-2 focus:ring-[#4A301C] text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          required
-        />
-      </div>
-
-      {/* EMAIL */}
-      <div className="relative mb-4">
-        <label className="leading-7 text-sm text-gray-600">Email</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email address"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full bg-white rounded border border-gray-300 focus:border-[#4A301C] focus:ring-2 focus:ring-[#4A301C] text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          required
-        />
-      </div>
-
-      {/* PHONE */}
-      <div className="relative mb-4">
-        <label className="leading-7 text-sm text-gray-600">Phone Number</label>
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Enter your phone number"
-          value={formData.phone}
-          onChange={handleChange}
-          className="w-full bg-white rounded border border-gray-300 focus:border-[#4A301C] focus:ring-2 focus:ring-[#4A301C] text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          required
-        />
-      </div>
-
-      {/* COURSE SELECT */}
-      <div className="relative mb-4">
-        <label className="leading-7 text-sm text-gray-600">
-          Choose Your Course
-        </label>
-        <select
-          name="course"
-          value={formData.course}
-          onChange={handleChange}
-          className="w-full bg-white rounded border border-gray-300 focus:border-[#4A301C] focus:ring-2 focus:ring-[#4A301C] text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          required
+    <div className="max-w-3xl mx-auto mt-6">
+      {/* Tabs */}
+      <div className="flex mb-6 border-b border-gray-300">
+        <button
+          className={`flex-1 py-2 text-center font-semibold ${activeTab === "admission"
+            ? "border-b-2 border-[#4A301C] text-[#4A301C]"
+            : "text-gray-500"
+            }`}
+          onClick={() => setActiveTab("admission")}
         >
-          <option value="">Select a course</option>
-          {COURSES.map((c) => (
-            <option key={c} value={c}>
-              {c}
-            </option>
-          ))}
-        </select>
+          Admission
+        </button>
+        <button
+          className={`flex-1 py-2 text-center font-semibold ${activeTab === "login"
+            ? "border-b-2 border-[#4A301C] text-[#4A301C]"
+            : "text-gray-500"
+            }`}
+          onClick={() => setActiveTab("login")}
+        >
+          Login
+        </button>
       </div>
 
-      {/* CAPTCHA */}
-      <div className="relative mb-4 flex flex-col">
-        <label className="leading-7 text-sm text-gray-600 mb-2">
-          Enter the text below:
-        </label>
+      {/* Admission Form */}
+      {activeTab === "admission" && (
+        <form onSubmit={handleAdmissionSubmit} className="space-y-4" >
 
-        <div className="flex items-center mb-2">
-          <span className="bg-gray-200 px-4 py-2 rounded text-lg font-mono tracking-widest select-none">
-            {captcha}
-          </span>
-          <button
-            type="button"
-            onClick={generateCaptcha}
-            className="ml-2 px-2 py-1 bg-[#4A301C] text-white rounded text-sm"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 4v5h.582M20 20v-5h-.581M4 9a8 8 0 0112.874-4.644M20 15a8 8 0 01-12.874 4.644"
+          {/* Name */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <label className="text-sm text-gray-600">Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your full name"
+                value={admissionData.name}
+                onChange={handleAdmissionChange}
+                className="w-full border rounded px-3 py-2"
+                required
               />
-            </svg>
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="text-sm text-gray-600">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                value={admissionData.email}
+                onChange={handleAdmissionChange}
+                className="w-full border rounded px-3 py-2"
+                required
+              />
+            </div>
+          </div>
+          {/* Phone */}
+
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div>
+            <label className="text-sm text-gray-600">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter your phone number"
+              value={admissionData.phone}
+              onChange={handleAdmissionChange}
+              className="w-full border rounded px-3 py-2"
+              required
+            />
+          </div>
+
+          {/* Course */}
+          <div>
+            <label className="text-sm text-gray-600">Choose Your Course</label>
+            <select
+              name="course"
+              value={admissionData.course}
+              onChange={handleAdmissionChange}
+              className="w-full border rounded px-3 py-2"
+              required
+            >
+              <option value="">Select a course</option>
+              {COURSES.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
+          </div>
+</div>
+          {/* State */}
+
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div>
+            <label className="text-sm text-gray-600">State</label>
+            <select
+              name="state"
+              value={admissionData.state}
+              onChange={handleAdmissionChange}
+              className="w-full border rounded px-3 py-2"
+              required
+            >
+              <option value="">Select State</option>
+              {statesList.map((s: any) => (
+                <option key={s.value} value={s.value}>
+                  {s.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* City */}
+          <div>
+            <label className="text-sm text-gray-600">City</label>
+            <select
+              name="city"
+              value={admissionData.city}
+              onChange={handleAdmissionChange}
+              className="w-full border rounded px-3 py-2"
+              required
+              disabled={!admissionData.state}
+            >
+              <option value="">Select City</option>
+              {citiesList.map((c: any) => (
+                <option key={c.value} value={c.value}>
+                  {c.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          </div>
+
+          {/* CAPTCHA */}
+          <div>
+            <label className="text-sm text-gray-600">Enter Captcha</label>
+            <div className="flex items-center mb-2">
+              <span className="bg-gray-200 px-4 py-2 rounded font-mono select-none">
+                {captcha}
+              </span>
+              <button
+                type="button"
+                onClick={generateCaptcha}
+                className="ml-2 px-2 py-1 bg-[#4A301C] text-white rounded text-sm"
+              >
+                ⟳
+              </button>
+            </div>
+            <input
+              type="text"
+              name="captchaAnswer"
+              placeholder="Type the captcha"
+              value={admissionData.captchaAnswer}
+              onChange={handleAdmissionChange}
+              className="w-full border rounded px-3 py-2"
+              required
+            />
+          </div>
+
+          <button className="w-full bg-[#4A301C] text-white py-2 rounded">
+            Submit Application
           </button>
-        </div>
+        </form>
+      )}
 
-        <input
-          type="text"
-          name="captchaAnswer"
-          placeholder="Type the text here"
-          value={formData.captchaAnswer}
-          onChange={handleChange}
-          className="w-full bg-white rounded border border-gray-300 focus:border-[#4A301C] focus:ring-2 focus:ring-[#4A301C] text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
-          required
-        />
-      </div>
+      {/* Login Form */}
+      {activeTab === "login" && (
+        <form onSubmit={handleLoginSubmit} className="space-y-6">
+          <div>
+            <label className="text-sm text-gray-600">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              value={loginData.email}
+              onChange={(e) =>
+                setLoginData((prev) => ({ ...prev, email: e.target.value }))
+              }
+              className="w-full border rounded px-3 py-2"
+              required
+            />
+          </div>
 
-      {/* SUBMIT BUTTON */}
-      <button
-        type="submit"
-        className="w-full bg-[#4A301C] text-white py-3 rounded-lg font-semibold hover:bg-[#3a2616] transition-all"
-      >
-        Submit Application
-      </button>
-    </form>
+          <div>
+            <label className="text-sm text-gray-600">Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              value={loginData.password}
+              onChange={(e) =>
+                setLoginData((prev) => ({ ...prev, password: e.target.value }))
+              }
+              className="w-full border rounded px-3 py-2"
+              required
+            />
+          </div>
+
+          <button className="w-full bg-[#4A301C] text-white py-2 rounded">
+            Login
+          </button>
+        </form>
+      )}
+    </div>
   );
 }
