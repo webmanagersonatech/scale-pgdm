@@ -28,14 +28,13 @@ export default function Footer() {
                 />
               </div>
               <span className="font-semibold  leading-snug">
-                Sona School of<br></br>Bussiness & Management
+                Sona School of<br></br>Business & Management
               </span>
             </div>
 
             <p className="text-sm text-gray-300/80 leading-relaxed">
-              #43/1A , Billekempanahalli village, Bidadi Hobli<br></br> Ramnagara Taluk ,
-              <br />
-              Bengaluru 562109.
+              #43/1A , Billekempanahalli village, Bidadi Hobli<br></br> Ramanagara – 562109, Karnataka, India.
+           
             </p>
           </div>
 

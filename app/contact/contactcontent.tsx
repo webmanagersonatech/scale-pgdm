@@ -151,8 +151,8 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">ADDRESS</div>
                   <p className="text-sm leading-relaxed mt-2">
-                 #43/1A , Billekempanahalli village, Bidadi Hobli,  
-                    Ramnagara Taluk, Bengaluru – 562109.<br />
+                    #43/1A , Billekempanahalli village, Bidadi Hobli,
+                    Ramanagara – 562109, Karnataka, India.<br />
 
                   </p>
                 </div>
