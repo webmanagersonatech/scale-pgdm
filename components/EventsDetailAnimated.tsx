@@ -281,10 +281,10 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
 
 
 
-        <div className="flex flex-wrap items-center gap-2 mt-2 sm:mt-0">
+        {/* <div className="flex flex-wrap items-center gap-2 mt-2 sm:mt-0">
           <span className="text-gray-500 font-medium mr-2">Share:</span>
 
-          {/* WhatsApp */}
+
           <button onClick={() => handleShare("whatsapp")} className="w-8 h-8 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
             <svg className="w-8 h-8 fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 72" fill="none">
               <path d="M12.5762 56.8405L15.8608 44.6381C13.2118 39.8847 12.3702 34.3378 13.4904 29.0154C14.6106 23.693 17.6176 18.952 21.9594 15.6624C26.3012 12.3729 31.6867 10.7554 37.1276 11.1068C42.5685 11.4582 47.6999 13.755 51.5802 17.5756C55.4604 21.3962 57.8292 26.4844 58.2519 31.9065C58.6746 37.3286 57.1228 42.7208 53.8813 47.0938C50.6399 51.4668 45.9261 54.5271 40.605 55.7133C35.284 56.8994 29.7125 56.1318 24.9131 53.5513L12.5762 56.8405ZM25.508 48.985L26.2709 49.4365C29.7473 51.4918 33.8076 52.3423 37.8191 51.8555C41.8306 51.3687 45.5681 49.5719 48.4489 46.7452C51.3298 43.9185 53.1923 40.2206 53.7463 36.2279C54.3002 32.2351 53.5143 28.1717 51.5113 24.6709C49.5082 21.1701 46.4003 18.4285 42.6721 16.8734C38.9438 15.3184 34.8045 15.0372 30.8993 16.0736C26.994 17.11 23.5422 19.4059 21.0817 22.6035C18.6212 25.801 17.2903 29.7206 17.2963 33.7514C17.293 37.0937 18.2197 40.3712 19.9732 43.2192L20.4516 44.0061L18.6153 50.8167L25.508 48.985Z" />
@@ -293,7 +293,7 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
             <div className="absolute top-full left-0 w-full h-full rounded-full bg-green-400 z-0 transition-all duration-500 group-hover:top-0"></div>
           </button>
 
-          {/* Instagram */}
+
           <button onClick={() => handleShare("instagram")} className="w-8 h-8 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500">
             <svg className="w-5 h-5 fill-gray-900 relative z-10 transition-all duration-500 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51" fill="none">
               <path
@@ -306,7 +306,7 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
             <div className="absolute top-full left-0 w-full h-full rounded-full bg-gradient-to-bl from-purple-500 via-pink-500 to-yellow-500 z-0 transition-all duration-500 group-hover:top-0"></div>
           </button>
 
-          {/* LinkedIn */}
+
           <button onClick={() => handleShare("linkedin")} className="w-8 h-8 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
             <svg className="w-8 h-8 fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
               <path d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z"
@@ -315,7 +315,6 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
             <div className="absolute top-full left-0 w-full h-full rounded-full bg-[#006699] z-0 transition-all duration-500 group-hover:top-0"></div>
           </button>
 
-          {/* Twitter */}
           <button onClick={() => handleShare("twitter")} className="w-8 h-8 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-300">
             <svg className="w-5 h-5 fill-black z-10 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
               <path
@@ -325,7 +324,6 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
             <div className="absolute top-full left-0 w-full h-full rounded-full bg-black z-0 transition-all duration-500 group-hover:top-0"></div>
           </button>
 
-          {/* Facebook */}
           <button onClick={() => handleShare("facebook")} className="w-8 h-8 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
             <svg className="w-6 h-6 relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
               <path
@@ -334,7 +332,7 @@ export default function EventsDetailAnimated({ eventItem, }: EventDetailProps) {
             </svg>
             <div className="absolute top-full left-0 w-full h-full rounded-full bg-blue-500 z-0 transition-all duration-500 group-hover:top-0"></div>
           </button>
-        </div>
+        </div> */}
 
       </motion.div>
 
