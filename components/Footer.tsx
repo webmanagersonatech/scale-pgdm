@@ -35,7 +35,7 @@ export default function Footer() {
             <p className="text-sm text-gray-300/80 leading-relaxed">
               71 Millers Road ,Vasanth Nagar
               <br />
-              Bengaluru 560052.
+              Bengaluru 562109.
             </p>
           </div>
 

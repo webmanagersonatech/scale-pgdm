@@ -91,7 +91,6 @@ export default function AboutPage({ activeSlug }: any) {
         { icon: <MdBusiness className="text-maroon" />, label: "Private Equity & Partner Strategy", image: "https://img.freepik.com/premium-photo/company-employees-studying-documents-meeting-office_1358627-55366.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
         { icon: <MdInsights className="text-maroon" />, label: "Market & Technology Insights", image: "https://img.freepik.com/free-photo/tired-people-working-late-their-office_23-2149006058.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_se_enriched&w=740&q=80" },
     ];
-
     const industries = [
         { icon: <FaShoppingCart className="text-maroon" />, label: "CPG & Retail", image: "https://img.freepik.com/premium-photo/owner-business-manages-inspect-location-product-transportation-cost-calculation_537132-1806.jpg?uid=R224290380&ga=GA1.1.1091201869.1763632617&semt=ais_hybrid&w=740&q=80" },
         { icon: <FaLaptopCode className="text-maroon" />, label: "ERP Software", image: "https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041853.jpg?t=st=1765429601~exp=1765433201~hmac=78c539b548ddd779cd1d4b17b610f4de6175179e1d8e4ac2a1c486ad0153486a&w=1480" },
@@ -191,7 +190,7 @@ export default function AboutPage({ activeSlug }: any) {
     const managementData: any[] = [
         {
             name: "Mr. C. Valliappa",
-            role: "Chairman",
+            role: "Chairman ",
             image: "/images/about/Valliappa.jpg",
             fullBio:
                 "Mr. C. Valliappa , is the Chairman of this institution and the illustrious son of Founder Chairman. His passion and commitment to the cause of education, able guidance and devoted care of the various needs of this institution has established SONA as a  veritable haven of educational brilliance which is moving towards greater heights of achievement and glory.",
@@ -201,7 +200,7 @@ export default function AboutPage({ activeSlug }: any) {
 
         {
             name: "Mr. Thyagu Valliappa",
-            role: "Founder",
+            role: "Founder & Chief Mentor",
             image: "/images/about/Thyagu-Valliappa1.jpg",
             fullBio:
                 "Thyagu Valliappa is a fourth-generation entrepreneur and a transformative leader known for driving innovation across diverse sectors including technology, real estate, textiles, healthcare, logistics, and education. With over four decades of entrepreneurial experience, he has mentored more than 50 startups and played a pivotal role in shaping India’s startup and industry ecosystem. As Founder & Chief Mentor of SCALE, he brings unmatched industry insight, a global mindset, and a passion for developing future-ready leaders. His work spans building world-class infrastructure, pioneering sportainment, advancing heritage healthcare, and strengthening industry–academia partnerships. A visionary strategist and thought leader, he continues to inspire change through innovation, sustainability, and purposeful leadership.",
@@ -254,23 +253,29 @@ export default function AboutPage({ activeSlug }: any) {
     };
     const MemberCard = ({ member }: { member: any }) => (
         <motion.div
+
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
-            className="flex flex-col items-center text-center"
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.5 }}
+            className="bg-[radial-gradient(circle,#f5d6c6_0%,#C9A683_60%,#A88562_100%)] bg-maroon-100 rounded-xl shadow-md overflow-hidden"
         >
-            {member.image && (
+            <div className="h-44 mt-4 w-full  flex justify-center items-center">
                 <img
                     src={member.image}
-                    alt={member.name}
-                    className="h-[100px] w-full rounded-2xl object-contain bg-[radial-gradient(circle,#f5d6c6_0%,#C9A683_60%,#A88562_100%)]
-"
+                    className="h-44 object-contain object-center"
                 />
-            )}
-            <div className="p-3 w-full">
-                <div className="flex justify-between items-center mb-1 border-b border-maroon">
-                    <h3 className="text-maroon-800 font-bold text-sm ">{member.name}</h3>
+            </div>
+
+
+
+
+
+            <div className="p-3">
+                <div className="flex justify-between items-center">
+                    <h3 className="text-maroon-800 font-bold text-[15px]">{member.name}</h3>
+
                     {member.linkedin && (
                         <a
                             href={member.linkedin}
@@ -282,15 +287,17 @@ export default function AboutPage({ activeSlug }: any) {
                         </a>
                     )}
                 </div>
-            <div className="space-y-0.5">
-  {member.title && <p className="text-sm text-gray-600 border-t border-maroon pt-0.5">{member.title}</p>}
-  {member.designation && <p className="text-[13px] text-gray-600">{member.designation}</p>}
-  {member.company && <p className="text-[12px] text-gray-500">{member.company}</p>}
-</div>
 
+                <p className="text-sm text-gray-600 border-t border-maroon mt-1 pt-1">
+                    {member.title}
+                    {member.designation && <p className="text-[13px] text-gray-600">{member.designation}</p>}
+                    {member.company && <p className="text-[12px] text-gray-500">{member.company}</p>}
+                </p>
             </div>
         </motion.div>
     );
+
+
 
 
 

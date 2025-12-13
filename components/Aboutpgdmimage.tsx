@@ -32,8 +32,8 @@ export default function Aboutpgdmimage() {
           {/* 1️⃣ COLUMN → #12345a */}
           <div className="bg-white py-12 flex flex-col justify-center">
             <h2 className="text-2xl font-semibold font-serif leading-snug text-black">
-              Sona School of
-              <br /> Bussiness & Management
+              Post Graduate
+              <br /> Diploma in Management
             </h2>
 
             <div className="mt-6 flex gap-4">

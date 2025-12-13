@@ -6,13 +6,12 @@ import { masters, visiting, parttime } from "../../data/facultydataset";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function FacultyPage() {
-
     const tabs = [
         { label: "Faculty-in-Residence", key: "masters", data: masters },
         { label: "International Resource Faculty", key: "visiting", data: visiting },
         { label: "Excellent Research Faculty", key: "parttime", data: parttime },
     ];
-
+    
     const [activeTab, setActiveTab] = useState("masters");
     const [underlineWidth, setUnderlineWidth] = useState(0);
     const [underlineLeft, setUnderlineLeft] = useState(0);

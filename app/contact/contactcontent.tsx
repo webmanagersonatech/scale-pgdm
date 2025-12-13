@@ -152,7 +152,7 @@ export default function ContactPage() {
                   <div className="text-xs font-semibold tracking-widest">ADDRESS</div>
                   <p className="text-sm leading-relaxed mt-2">
                     71 Millers Road <br />
-                    Vasanth Nagar, Bengaluru – 560052.<br />
+                    Vasanth Nagar, Bengaluru – 562109.<br />
 
                   </p>
                 </div>
@@ -164,10 +164,10 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">PHONE</div>
                   <a
-                    href="tel:+918022283008"
+                    href="tel:+919442592175"
                     className="block text-sm font-medium mt-2 hover:underline"
                   >
-                    +91 8022283008
+                    +91 9442592175
                   </a>
                 </div>
               </div>

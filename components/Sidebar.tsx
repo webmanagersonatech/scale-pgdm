@@ -31,8 +31,8 @@ export default function FloatingSidebar() {
     {
       id: "phone",
       icon: FaPhone,
-      label: "+91 8022283008",
-      href: "tel:+8022283008",
+      label: "+91 9442592175",
+      href: "tel:+9442592175",
     },
     {
       id: "email",
@@ -44,7 +44,7 @@ export default function FloatingSidebar() {
       id: "whatsapp",
       icon: FaWhatsapp,
       label: "WhatsApp",
-      href: "https://wa.me/8022283008",
+      href: "https://wa.me/9442592175",
     },
   ];
 
