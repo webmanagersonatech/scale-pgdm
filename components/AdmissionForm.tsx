@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-const IndianStatesCities = require("indian-states-cities-list");
+import { STATE_WISE_CITIES, STATES_OBJECT } from "../data/statecitydata";
 
 const COURSES = [
   "MBA in Marketing",
@@ -11,10 +11,24 @@ const COURSES = [
 
 const CAPTCHA_LENGTH = 6;
 
+interface AdmissionData {
+  name: string;
+  email: string;
+  phone: string;
+  course: string;
+  state: string;
+  city: string;
+  captchaAnswer: string;
+}
+
+interface LoginData {
+  email: string;
+  password: string;
+}
+
 export default function AdmissionLoginTabs() {
   const [activeTab, setActiveTab] = useState<"admission" | "login">("admission");
-
-  const [admissionData, setAdmissionData] = useState({
+  const [admissionData, setAdmissionData] = useState<AdmissionData>({
     name: "",
     email: "",
     phone: "",
@@ -23,9 +37,8 @@ export default function AdmissionLoginTabs() {
     city: "",
     captchaAnswer: "",
   });
-
   const [captcha, setCaptcha] = useState("");
-  const [loginData, setLoginData] = useState({ email: "", password: "" });
+  const [loginData, setLoginData] = useState<LoginData>({ email: "", password: "" });
 
   // Generate captcha on load
   useEffect(() => {
@@ -41,14 +54,14 @@ export default function AdmissionLoginTabs() {
     setCaptcha(result);
   };
 
-  const handleAdmissionChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleAdmissionChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
 
     setAdmissionData((prev) => ({
       ...prev,
       [name]: value,
-
-      // When the state changes, reset the city field
       ...(name === "state" ? { city: "" } : {}),
     }));
   };
@@ -65,7 +78,7 @@ export default function AdmissionLoginTabs() {
     console.table(admissionData);
     alert("Admission form submitted successfully!");
 
-    // reset
+    // Reset form
     setAdmissionData({
       name: "",
       email: "",
@@ -87,14 +100,12 @@ export default function AdmissionLoginTabs() {
     setLoginData({ email: "", password: "" });
   };
 
-  // Get states list and cities list filtered by selected state
-  const statesList = IndianStatesCities.STATES_OBJECT;
-  const citiesList =
-    admissionData.state && IndianStatesCities.STATE_WISE_CITIES
-      ? (IndianStatesCities.STATE_WISE_CITIES as any)[
-      admissionData.state.replace(/ /g, "")
-      ] || []
-      : [];
+  // Get cities filtered by selected state
+  const selectedStateObj = STATES_OBJECT.find((s) => s.value === admissionData.state);
+  const citiesList = selectedStateObj
+    ? (STATE_WISE_CITIES as any)[selectedStateObj.name] || []
+    : [];
+
 
   return (
     <div className="max-w-3xl mx-auto mt-6">
@@ -102,8 +113,8 @@ export default function AdmissionLoginTabs() {
       <div className="flex mb-6 border-b border-gray-300">
         <button
           className={`flex-1 py-2 text-center font-semibold ${activeTab === "admission"
-            ? "border-b-2 border-[#4A301C] text-[#4A301C]"
-            : "text-gray-500"
+              ? "border-b-2 border-[#4A301C] text-[#4A301C]"
+              : "text-gray-500"
             }`}
           onClick={() => setActiveTab("admission")}
         >
@@ -111,8 +122,8 @@ export default function AdmissionLoginTabs() {
         </button>
         <button
           className={`flex-1 py-2 text-center font-semibold ${activeTab === "login"
-            ? "border-b-2 border-[#4A301C] text-[#4A301C]"
-            : "text-gray-500"
+              ? "border-b-2 border-[#4A301C] text-[#4A301C]"
+              : "text-gray-500"
             }`}
           onClick={() => setActiveTab("login")}
         >
@@ -122,9 +133,8 @@ export default function AdmissionLoginTabs() {
 
       {/* Admission Form */}
       {activeTab === "admission" && (
-        <form onSubmit={handleAdmissionSubmit} className="space-y-4" >
-
-          {/* Name */}
+        <form onSubmit={handleAdmissionSubmit} className="space-y-4">
+          {/* Name & Email */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div>
               <label className="text-sm text-gray-600">Name</label>
@@ -138,8 +148,6 @@ export default function AdmissionLoginTabs() {
                 required
               />
             </div>
-
-            {/* Email */}
             <div>
               <label className="text-sm text-gray-600">Email</label>
               <input
@@ -153,81 +161,77 @@ export default function AdmissionLoginTabs() {
               />
             </div>
           </div>
-          {/* Phone */}
 
-           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div>
-            <label className="text-sm text-gray-600">Phone</label>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Enter your phone number"
-              value={admissionData.phone}
-              onChange={handleAdmissionChange}
-              className="w-full border rounded px-3 py-2"
-              required
-            />
+          {/* Phone & Course */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <label className="text-sm text-gray-600">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone number"
+                value={admissionData.phone}
+                onChange={handleAdmissionChange}
+                className="w-full border rounded px-3 py-2"
+                required
+              />
+            </div>
+            <div>
+              <label className="text-sm text-gray-600">Choose Your Course</label>
+              <select
+                name="course"
+                value={admissionData.course}
+                onChange={handleAdmissionChange}
+                className="w-full border rounded px-3 py-2"
+                required
+              >
+                <option value="">Select a course</option>
+                {COURSES.map((c) => (
+                  <option key={c} value={c}>
+                    {c}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
 
-          {/* Course */}
-          <div>
-            <label className="text-sm text-gray-600">Choose Your Course</label>
-            <select
-              name="course"
-              value={admissionData.course}
-              onChange={handleAdmissionChange}
-              className="w-full border rounded px-3 py-2"
-              required
-            >
-              <option value="">Select a course</option>
-              {COURSES.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
-          </div>
-</div>
-          {/* State */}
-
-           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div>
-            <label className="text-sm text-gray-600">State</label>
-            <select
-              name="state"
-              value={admissionData.state}
-              onChange={handleAdmissionChange}
-              className="w-full border rounded px-3 py-2"
-              required
-            >
-              <option value="">Select State</option>
-              {statesList.map((s: any) => (
-                <option key={s.value} value={s.value}>
-                  {s.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* City */}
-          <div>
-            <label className="text-sm text-gray-600">City</label>
-            <select
-              name="city"
-              value={admissionData.city}
-              onChange={handleAdmissionChange}
-              className="w-full border rounded px-3 py-2"
-              required
-              disabled={!admissionData.state}
-            >
-              <option value="">Select City</option>
-              {citiesList.map((c: any) => (
-                <option key={c.value} value={c.value}>
-                  {c.label}
-                </option>
-              ))}
-            </select>
-          </div>
+          {/* State & City */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <label className="text-sm text-gray-600">State</label>
+              <select
+                name="state"
+                value={admissionData.state}
+                onChange={handleAdmissionChange}
+                className="w-full border rounded px-3 py-2"
+                required
+              >
+                <option value="">Select State</option>
+                {STATES_OBJECT.map((s) => (
+                  <option key={s.name} value={s.value}>
+                    {s.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="text-sm text-gray-600">City</label>
+              <select
+                name="city"
+                value={admissionData.city}
+                onChange={handleAdmissionChange}
+                className="w-full border rounded px-3 py-2"
+                required
+                disabled={!admissionData.state}
+              >
+                <option value="">Select City</option>
+                {citiesList.map((c:any) => (
+                  <option key={c.value} value={c.value}>
+                    {c.label}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {/* CAPTCHA */}
@@ -279,7 +283,6 @@ export default function AdmissionLoginTabs() {
               required
             />
           </div>
-
           <div>
             <label className="text-sm text-gray-600">Password</label>
             <input
@@ -294,10 +297,7 @@ export default function AdmissionLoginTabs() {
               required
             />
           </div>
-
-          <button className="w-full bg-[#4A301C] text-white py-2 rounded">
-            Login
-          </button>
+          <button className="w-full bg-[#4A301C] text-white py-2 rounded">Login</button>
         </form>
       )}
     </div>
