@@ -104,7 +104,7 @@ export default function About() {
 
             <div className="space-y-6 text-gray-700 text-[14px] text-justify leading-relaxed">
               <p>
-                Welcome to - Sona School of Business & Management (SSBM), a bold
+                Welcome to Sona School of Business & Management (SSBM), a bold
                 new leap in business education where technology, industry
                 wisdom, and entrepreneurial spirit merge to create leaders who
                 aren’t just ready for the future—they are built to define it.
