@@ -278,111 +278,124 @@ export default function Header() {
 
             {/* Desktop Nav */}
             <nav className="hidden xl:flex items-center gap-2">
-              {navItems.map((item) => (
-                <div key={item.label} className="relative group">
-                  <div className="flex items-center">
-                    {/* Parent link */}
-                    <Link
-                      href={item.href as any}
-                      passHref
-                      className={`relative px-2 md:px-2 py-3 font-medium rounded-lg inline-flex items-center transition-all duration-300
-    ${pathname === "/"
-                          ? scrolled
-                            ? "text-gray-800"
-                            : "text-white"
-                          : "text-gray-800"
-                        } hover:text-maroon-300`}
-                    >
-                      <motion.span
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="transition-all duration-300"
-                      >
-                        {item.label}
-                      </motion.span>
+              {navItems.map((item) => {
+                const isActive =
+                  item.href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(item.href);
 
-                      {/* Smooth Underline Animation */}
-                      <span className="absolute bottom-1 left-0 w-0 h-[2px] bg-maroon-300 transition-all duration-500 group-hover:w-full" />
-                    </Link>
-
-                    {/* Dropdown arrow for submenu */}
-                    {item.submenu && (
-                      <motion.button
-                        type="button"
-                        initial={{ opacity: 0, y: -8 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-0.5 text-gray-600 hover:text-maroon-300"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const submenu = e.currentTarget.parentElement
-                            ?.nextElementSibling as HTMLDivElement;
-                          if (submenu) submenu.classList.toggle("hidden");
-                        }}
+                return (
+                  <div key={item.label} className="relative group">
+                    <div className="flex items-center">
+                      {/* Parent Link */}
+                      <Link
+                        href={item.href as any}
+                        className={`relative px-2 py-3 font-medium rounded-lg inline-flex items-center transition-all duration-300
+            ${isActive
+                            ? "text-maroon-300"
+                            : pathname === "/"
+                              ? scrolled
+                                ? "text-gray-800"
+                                : "text-white"
+                              : "text-gray-800"
+                          }
+            hover:text-maroon-300
+          `}
                       >
-                        <motion.div
-                          initial={{ rotate: -20, opacity: 0 }}
-                          animate={{ rotate: 0, opacity: 1 }}
-                          transition={{ duration: 0.4, ease: "easeOut" }}
+                        <motion.span
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5, ease: "easeOut" }}
+                        >
+                          {item.label}
+                        </motion.span>
+
+                        {/* Underline */}
+                        <span
+                          className={`absolute bottom-1 left-0 h-[2px] bg-maroon-300 transition-all duration-500
+              ${isActive ? "w-full" : "w-0 group-hover:w-full"}
+            `}
+                        />
+                      </Link>
+
+                      {/* Dropdown Arrow */}
+                      {item.submenu && (
+                        <motion.button
+                          type="button"
+                          className="mt-0.5 ml-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            const submenu = e.currentTarget.parentElement
+                              ?.nextElementSibling as HTMLDivElement;
+                            submenu?.classList.toggle("hidden");
+                          }}
                         >
                           <FiChevronDown
-                            className={`mt-0.5 ${pathname === "/"
-                              ? scrolled
-                                ? "text-gray-600 hover:text-maroon"
-                                : "text-white"
-                              : "text-gray-600 hover:text-maroon"
-                              } transition-transform duration-300 group-hover:rotate-180`}
+                            className={`transition-transform duration-300 group-hover:rotate-180
+                ${isActive
+                                ? "text-maroon-300"
+                                : pathname === "/"
+                                  ? scrolled
+                                    ? "text-gray-600"
+                                    : "text-white"
+                                  : "text-gray-600"
+                              }
+              `}
                           />
-                        </motion.div>
-                      </motion.button>
+                        </motion.button>
+                      )}
+                    </div>
+
+                    {/* Submenu */}
+                    {item.submenu && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.25, ease: "easeOut" }}
+                        className="
+            absolute left-0 top-full z-50 w-56
+            opacity-0 invisible
+            group-hover:opacity-100 group-hover:visible
+            group-hover:translate-y-2
+            transition-all duration-300
+          "
+                      >
+                        <div className="border border-gray-200 bg-white rounded-b-xl p-2 shadow-xl">
+                          {item.submenu.map((sub, index) => {
+                            const isSubActive = pathname === sub.href;
+
+                            return (
+                              <motion.div
+                                key={sub.label}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{
+                                  duration: 0.25,
+                                  ease: "easeOut",
+                                  delay: index * 0.07,
+                                }}
+                              >
+                                <Link
+                                  href={sub.href as any}
+                                  className={`block px-3 py-2 text-sm rounded-lg transition-all
+                      ${isSubActive
+                                      ? "bg-gray-100 text-maroon"
+                                      : "text-gray-700 hover:bg-gray-100 hover:text-maroon"
+                                    }
+                    `}
+                                >
+                                  {sub.label}
+                                </Link>
+                              </motion.div>
+                            );
+                          })}
+                        </div>
+                      </motion.div>
                     )}
                   </div>
+                );
+              })}
 
-                  {/* Submenu */}
-                  {item.submenu && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.25, ease: "easeOut" }}
-                      className="
-      absolute left-0 top-full z-50 w-56
-      opacity-0 invisible
-      group-hover:opacity-100 group-hover:visible
-      group-hover:translate-y-2
-      transition-all duration-300
-    "
-                    >
-                      <div className="border border-gray-200 bg-white rounded-b-xl p-2 shadow-xl">
-                        {item.submenu.map((sub, index) => (
-                          <motion.div
-                            key={sub.label}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{
-                              duration: 0.25,
-                              ease: "easeOut",
-                              delay: index * 0.07,
-                            }}
-                          >
-                            <Link
-                              href={sub.href as any}
-                              className="
-              block px-3 py-2 text-sm
-              text-gray-700 rounded-lg
-              hover:bg-gray-100 hover:text-maroon
-              transition-all
-            "
-                            >
-                              {sub.label}
-                            </Link>
-                          </motion.div>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </div>
-              ))}
 
               {/* Apply Now Button */}
 
