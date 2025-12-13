@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
 
             <p className="text-sm text-gray-300/80 leading-relaxed">
-              71 Millers Road ,Vasanth Nagar
+              #43/1A , Billekempanahalli village, Bidadi Hobli<br></br> Ramnagara Taluk ,
               <br />
               Bengaluru 562109.
             </p>

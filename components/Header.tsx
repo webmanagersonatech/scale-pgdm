@@ -252,7 +252,7 @@ export default function Header() {
                   >
                     Sona School of
                     <br />
-                    Bussiness & Management
+                    Business & Management
                   </p>
 
                 </div>

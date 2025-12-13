@@ -198,7 +198,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                 {/* Banner Text & Breadcrumb */}
                 <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-4 sm:px-6">
                     <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg flex items-center gap-2">
-                      Admission
+                        Admission
                     </h1>
                     <div className="mt-3 sm:mt-4 w-full">
                         <nav
@@ -222,9 +222,9 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                     >
                                         Admission
                                     </Link>
-                                    
+
                                 </li>
-                               
+
                             </ol>
                         </nav>
                     </div>
@@ -439,12 +439,14 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                     <button
                                                         key={sec.id}
                                                         onClick={() => handleTabChange(sec.id)}
-                                                        className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all
-              ${isActive
+                                                        className={`w-full flex items-start justify-start gap-3 px-4 py-3 rounded-lg 
+  text-sm font-medium transition-all text-left
+  ${isActive
                                                                 ? "bg-maroon/10 text-maroon"
                                                                 : "text-gray-700 hover:bg-gray-100"
                                                             }`}
                                                     >
+
                                                         <Icon
                                                             className={`w-5 h-5 ${isActive ? "text-maroon" : "text-gray-500"
                                                                 }`}

@@ -151,8 +151,8 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">ADDRESS</div>
                   <p className="text-sm leading-relaxed mt-2">
-                    71 Millers Road <br />
-                    Vasanth Nagar, Bengaluru – 562109.<br />
+                 #43/1A , Billekempanahalli village, Bidadi Hobli,  
+                    Ramnagara Taluk, Bengaluru – 562109.<br />
 
                   </p>
                 </div>

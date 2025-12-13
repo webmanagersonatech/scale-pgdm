@@ -290,8 +290,8 @@ export default function AboutPage({ activeSlug }: any) {
 
                 <p className="text-sm text-gray-600 border-t border-maroon mt-1 pt-1">
                     {member.title}
-                    {member.designation && <p className="text-[13px] text-gray-600">{member.designation}</p>}
-                    {member.company && <p className="text-[12px] text-gray-500">{member.company}</p>}
+                    {member.designation && <p className="text-[13px] text-maroon-800">{member.designation}</p>}
+                    {member.company && <p className="text-[12px] text-maroon-800">{member.company}</p>}
                 </p>
             </div>
         </motion.div>
