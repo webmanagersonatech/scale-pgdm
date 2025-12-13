@@ -41,10 +41,22 @@ export default function About() {
       const interval = setInterval(() => {
         start += step;
         setCounts({
-          industry: Math.min(Math.floor((start / duration) * target.industry), target.industry),
-          recruiters: Math.min(Math.floor((start / duration) * target.recruiters), target.recruiters),
-          alumni: Math.min(Math.floor((start / duration) * target.alumni), target.alumni),
-          ceo: Math.min(Math.floor((start / duration) * target.ceo), target.ceo),
+          industry: Math.min(
+            Math.floor((start / duration) * target.industry),
+            target.industry
+          ),
+          recruiters: Math.min(
+            Math.floor((start / duration) * target.recruiters),
+            target.recruiters
+          ),
+          alumni: Math.min(
+            Math.floor((start / duration) * target.alumni),
+            target.alumni
+          ),
+          ceo: Math.min(
+            Math.floor((start / duration) * target.ceo),
+            target.ceo
+          ),
         });
         if (start >= duration) clearInterval(interval);
       }, step);
@@ -61,8 +73,15 @@ export default function About() {
         <div className="absolute inset-y-0 right-0 w-1/4 hidden lg:block bg-[repeating-linear-gradient(225deg,#e5e5e5_0px,#e5e5e5_2px,transparent_2px,transparent_150px)] opacity-40"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 sm:px-6 md:px-12 py-12 grid gap-10 md:gap-16 md:grid-cols-2 items-start">
+      <div
+        className="absolute inset-0 bg-gradient-to-b 
+      from-white 
+      via-[#f5f0eb] 
+      to-[#c7a289] 
+      opacity-90 pointer-events-none"
+      ></div>
 
+      <div className="relative container mx-auto px-4 sm:px-6 md:px-12 py-12 grid gap-10 md:gap-16 md:grid-cols-2 items-start">
         {/* Mobile + Tablet Heading */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -129,11 +148,6 @@ export default function About() {
               INDUSTRY & <br /> ACADEMY
             </div>
           </motion.div>
-
-
-
-
-
         </motion.div>
 
         {/* Right Column - Text + Counters */}
@@ -174,19 +188,25 @@ export default function About() {
           </div>
 
           {/* Text */}
-          <p data-aos="fade-up"
+          <p
+            data-aos="fade-up"
             className="text-gray-700 leading-relaxed text-[14px] text-justify"
           >
-            The Sona Group is steeped in more than 100 years of success and tradition tracing back to pre-Independence.
-            The group was founded by the doyen of textile industries of the early twentieth century,
+            The Sona Group is steeped in more than 100 years of success and
+            tradition tracing back to pre-Independence. The group was founded by
+            the doyen of textile industries of the early twentieth century,
             Karumuttu Thiagarajar Chettiar.
-            <br /><br />
-            The selfless vision, the noble principles, the mettle, the singleness of purpose,
-            and the untiring industriousness of Karumuttu Thiagarajar Chettiar have been the
-            solid foundational blocks upon which the towering success of the Sona Group has been built.
-            <br /><br />
-            The Sona Group has since been toeing the same line of ideology and has emerged as a
-            valuable global conglomerate of national importance.
+            <br />
+            <br />
+            The selfless vision, the noble principles, the mettle, the
+            singleness of purpose, and the untiring industriousness of Karumuttu
+            Thiagarajar Chettiar have been the solid foundational blocks upon
+            which the towering success of the Sona Group has been built.
+            <br />
+            <br />
+            The Sona Group has since been toeing the same line of ideology and
+            has emerged as a valuable global conglomerate of national
+            importance.
           </p>
 
           {/* Counters */}
@@ -209,20 +229,17 @@ export default function About() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: idx * 0.2 }}
               >
-                <h3 className="text-xl sm:text-2xl font-bold text-maroon">{item.value}+</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-maroon">
+                  {item.value}+
+                </h3>
                 <p className="text-gray-600 text-[14px]">{item.label}</p>
               </motion.div>
             ))}
           </motion.div>
 
           {/* Know More Button */}
-          <Link
-            href={{ pathname: "/about/aboutus" }}
-          >
-
-            <button
-              className="flex items-center gap-2 border border-maroon-700  text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
-            >
+          <Link href={{ pathname: "/about/aboutus" }}>
+            <button className="flex items-center gap-2 border border-maroon-700  text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group">
               Know More
               <svg
                 className="w-8 h-8 group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
@@ -236,7 +253,6 @@ export default function About() {
               </svg>
             </button>
           </Link>
-
         </motion.div>
       </div>
     </section>

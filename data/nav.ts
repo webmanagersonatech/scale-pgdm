@@ -14,7 +14,6 @@ export const navItems: NavItem[] = [
 
       { label: "Management Profile", href: "/about/management" },
       { label: "Advisory Board", href: "/about/advisory" },
-
     ],
   },
 
@@ -24,20 +23,15 @@ export const navItems: NavItem[] = [
   },
   {
     label: "Admisssion",
-    href: "/admission/general",
-
+    href: "/admission/eligibility",
   },
   {
     label: "Research",
     href: "#",
-
-
   },
   {
     label: "Placement",
     href: "/placement",
-
-
   },
   // {
   //   label: "Program",
@@ -46,7 +40,6 @@ export const navItems: NavItem[] = [
   //     { label: " Why Sona MBA ", href: "/program?tab=whysonamaba" },
   //     { label: " Admission ", href: "/program?tab=admission" },
   //     { label: " FAQs ", href: "/program?tab=faq" },
-
 
   //   ],
   // },

@@ -6,7 +6,7 @@ import EventsPage from "../components/Events";
 import CTAApplyNow from "../components/CTAApplyNow";
 import ScrollVideoSections from "../components/ScrollVideoSections";
 import ScrollFaculty from "../components/Facultysection";
-
+import Aboutpgdmimage from "../components/Aboutpgdmimage";
 
 import "./globals.css";
 import type { Metadata } from "next";
@@ -22,8 +22,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <About />
       <Aboutscale />
+      <About />
 
       {/* Static background wrapper */}
       <div
@@ -42,10 +42,10 @@ export default function HomePage() {
       </div>
 
       <OutlookPage />
-      <ScrollVideoSections/>
-      <ScrollFaculty/>
-      <CTAApplyNow/>
-
+      <Aboutpgdmimage />
+      <ScrollVideoSections />
+      <ScrollFaculty />
+      <CTAApplyNow />
     </>
   );
 }

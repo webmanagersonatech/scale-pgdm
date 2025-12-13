@@ -1,17 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { footerLinks, quickLinks, alumniFacilities, rankings, socialIcons } from "../data/footerLinks";
+import {
+  footerLinks,
+  quickLinks,
+  alumniFacilities,
+  rankings,
+  socialIcons,
+} from "../data/footerLinks";
 import { FaChevronRight } from "react-icons/fa6";
 
 export default function Footer() {
-  const base64String = "/images/about/logo.webp"
+  const base64String = "/images/about/logo.webp";
 
   return (
     <footer className="bg-gradient-to-r from-[#6A4A2F] via-[#4A301C] to-[#1F130B] text-grayText">
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-10 lg:grid-cols-3">
-
           {/* Logo + Address + Map */}
           <div className="space-y-4">
             <div className="flex items-center gap-3 text-white">
@@ -23,19 +28,15 @@ export default function Footer() {
                 />
               </div>
               <span className="font-semibold  leading-snug">
-                Post Graduate Diploma <br></br>  in Management
+                Sona School of<br></br>Bussiness & Management
               </span>
             </div>
 
             <p className="text-sm text-gray-300/80 leading-relaxed">
               71 Millers Road ,Vasanth Nagar
               <br />
-              Bengaluru  560051.
-
-
+              Bengaluru 560052.
             </p>
-
-
           </div>
 
           {/* Links + Socials */}
@@ -87,8 +88,6 @@ export default function Footer() {
                 </ul>
               </div>
 
-
-
               {/* Facilities */}
               <div>
                 <h4 className="text-white font-semibold mb-4">Follow Us</h4>
@@ -104,25 +103,24 @@ export default function Footer() {
                     >
                       <Icon
                         className="text-white transition-colors duration-500 group-hover:text-[var(--hover-color)]"
-                        style={{ "--hover-color": color } as React.CSSProperties}
+                        style={
+                          { "--hover-color": color } as React.CSSProperties
+                        }
                       />
                     </a>
                   ))}
                 </div>
-
-
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-6 border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-300/70">
           <span className="text-center">
-            © {new Date().getFullYear()} Sona School of Business and Management. All rights reserved.
+            © {new Date().getFullYear()} Sona School of Business and Management.
+            All rights reserved.
           </span>
-
         </div>
       </div>
     </footer>

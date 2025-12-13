@@ -22,10 +22,9 @@ const heroContents = [
     title: "The Two-Year Fully Residential PGDM Programme",
     desc: "The flagship PGDM is a fully residential, immersive journey ",
     btn: "Learn More",
-    link: "/admission/general/",
+    link: "/admission/eligibility/",
     blank: false,
   },
-
 ];
 const containerVariant: Variants = {
   hidden: { opacity: 0 },
@@ -111,7 +110,6 @@ export default function Hero() {
     return text.split(" "); // split by whole words
   };
 
-
   return (
     <section
       id="home"
@@ -148,18 +146,18 @@ export default function Hero() {
                 className="text-white text-3xl sm:text-5xl font-bold leading-tight flex flex-wrap "
                 style={{ wordBreak: "keep-all" }}
               >
-                {splitWords(heroContents[index].title).map((word: string, i: number) => (
-                  <motion.span
-                    key={i}
-                    variants={letterVariant}
-                    className="mr-2 inline-block"
-                  >
-                    {word}
-                  </motion.span>
-                ))}
+                {splitWords(heroContents[index].title).map(
+                  (word: string, i: number) => (
+                    <motion.span
+                      key={i}
+                      variants={letterVariant}
+                      className="mr-2 inline-block"
+                    >
+                      {word}
+                    </motion.span>
+                  )
+                )}
               </motion.h1>
-
-
 
               {/* DESCRIPTION */}
               <motion.p
@@ -179,13 +177,16 @@ export default function Hero() {
                   className="relative inline-flex items-center border border-white mt-6 px-6 py-3 overflow-hidden rounded group cursor-pointer"
                   onClick={() => setIsModalOpen(true)} // OPEN MODAL ON CLICK
                 >
-                  <span className="w-48 h-48 rounded-xl rotate-[-40deg] 
+                  <span
+                    className="w-48 h-48 rounded-xl rotate-[-40deg] 
           bg-white/40 backdrop-blur-md shadow-[0_0_40px_rgba(255,255,255,0.6)]
           absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9
           transition-all duration-500 ease-out
           group-hover:translate-x-0 group-hover:-translate-y-10 group-hover:ml-0"
                   />
-                  <span className="relative text-white">{heroContents[index].btn}</span>
+                  <span className="relative text-white">
+                    {heroContents[index].btn}
+                  </span>
                 </motion.div>
               ) : (
                 // Learn More (specialization) — NO BLANK
@@ -196,18 +197,19 @@ export default function Hero() {
                     whileTap={{ scale: 0.95 }}
                     className="relative inline-flex items-center border border-white mt-6 px-6 py-3 overflow-hidden rounded group"
                   >
-                    <span className="w-48 h-48 rounded-xl rotate-[-40deg] 
+                    <span
+                      className="w-48 h-48 rounded-xl rotate-[-40deg] 
         bg-white/40 backdrop-blur-md shadow-[0_0_40px_rgba(255,255,255,0.6)]
         absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9
         transition-all duration-500 ease-out
         group-hover:translate-x-0 group-hover:-translate-y-10 group-hover:ml-0"
                     />
-                    <span className="relative text-white">{heroContents[index].btn}</span>
+                    <span className="relative text-white">
+                      {heroContents[index].btn}
+                    </span>
                   </motion.a>
                 </Link>
-
               )}
-
             </motion.div>
           )}
         </AnimatePresence>
@@ -216,7 +218,6 @@ export default function Hero() {
           <AdmissionForm />
         </Modal>
       </div>
-
     </section>
   );
 }

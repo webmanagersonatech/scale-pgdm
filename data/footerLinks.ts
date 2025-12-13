@@ -1,5 +1,11 @@
 // data/footerLinks.ts
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
 
 export const footerLinks: { label: string; href: string }[] = [
   { label: "About", href: "/about/aboutus" },
@@ -8,7 +14,7 @@ export const footerLinks: { label: string; href: string }[] = [
 ];
 
 export const quickLinks = [
-  { label: "Admissions", href: "/admission/general" },
+  { label: "Admissions", href: "/admission/eligibility" },
   { label: "Contact", href: "/contact" },
   { label: "Placement", href: "/placement" },
 ];
@@ -29,14 +35,28 @@ export const rankings = [
   { label: "Ranking 2023", href: "" },
   { label: "Ranking 2020", href: "" },
   { label: "Ranking 2019", href: "" },
-
-
 ];
 
 export const socialIcons = [
-  { icon: FaFacebook, href: "https://www.facebook.com/sonamanagement", color: "#1877F2" },
-  { icon: FaInstagram, href: "https://www.instagram.com/sona_mba/?hl=en", color: "#E4405F" },
-  { icon: FaLinkedin, href: "https://www.linkedin.com/school/sona-school-of-management/", color: "#0077B5" },
+  {
+    icon: FaFacebook,
+    href: "https://www.facebook.com/sonamanagement",
+    color: "#1877F2",
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/sona_mba/?hl=en",
+    color: "#E4405F",
+  },
+  {
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/school/sona-school-of-management/",
+    color: "#0077B5",
+  },
   { icon: FaTwitter, href: "https://x.com/sonamba", color: "#1DA1F2" },
-  { icon: FaYoutube, href: "https://www.youtube.com/c/SonaSchoolofManagement", color: "#FF0000" },
+  {
+    icon: FaYoutube,
+    href: "https://www.youtube.com/c/SonaSchoolofManagement",
+    color: "#FF0000",
+  },
 ];

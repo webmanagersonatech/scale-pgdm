@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3002",
     "lint": "next lint",
     "export": "next build && next export"
   },
@@ -24,6 +24,7 @@
     "framer-motion": "^12.23.22",
     "fuse.js": "^7.1.0",
     "keen-slider": "^6.8.6",
+    "lottie-react": "^2.4.1",
     "lucide-react": "^0.540.0",
     "next": "^14.2.32",
     "notiflix": "^3.2.8",

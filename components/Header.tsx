@@ -5,7 +5,12 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import Fuse from "fuse.js";
 import { navItems } from "../data/nav";
-import { footerLinks, quickLinks, alumniFacilities, rankings } from "../data/footerLinks";
+import {
+  footerLinks,
+  quickLinks,
+  alumniFacilities,
+  rankings,
+} from "../data/footerLinks";
 import { FiMenu, FiX, FiChevronDown, FiSearch } from "react-icons/fi";
 import { facultyMembers } from "../data/facultymembers";
 import { motion } from "framer-motion";
@@ -39,7 +44,6 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
 
   const flattenedItems = [
     ...navItems.flatMap((item) =>
@@ -92,17 +96,28 @@ export default function Header() {
     }
   };
 
-
   const socialLinks = [
-    { icon: FaFacebook, href: "https://www.facebook.com/sonamanagement", color: "#1877F2" },
+    {
+      icon: FaFacebook,
+      href: "https://www.facebook.com/sonamanagement",
+      color: "#1877F2",
+    },
     { icon: FaTwitter, href: "https://x.com/sonamba", color: "#1DA1F2" },
-    { icon: FaInstagram, href: "https://www.instagram.com/sona_mba/?hl=en", color: "#E4405F" },
-    { icon: FaLinkedin, href: "https://www.linkedin.com/school/sona-school-of-management/", color: "#0077B5" },
+    {
+      icon: FaInstagram,
+      href: "https://www.instagram.com/sona_mba/?hl=en",
+      color: "#E4405F",
+    },
+    {
+      icon: FaLinkedin,
+      href: "https://www.linkedin.com/school/sona-school-of-management/",
+      color: "#0077B5",
+    },
     { icon: FaYoutube, href: "https://youtube.com", color: "#FF0000" },
   ];
 
   const headerHeight = scrolled ? 80 : 112;
-  const base64String = "/images/about/logo.webp"
+  const base64String = "/images/about/logo.webp";
   const handleMobileLinkClick = () => {
     setOpenMenu(null);
     setMobileOpen(false);
@@ -114,19 +129,19 @@ export default function Header() {
       ? "bg-transparent text-white"
       : "bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400 text-maroon";
 
-
   return (
     <>
       <div className="fixed left-0 right-0 z-50 w-full">
         {/* Topbar */}
-        <div className={`w-full text-white relative z-50 transition-all duration-300 ${scrolled
-          ? "bg-gradient-to-r from-[#6A4A2F] via-[#4A301C] to-[#1F130B]"
-          : pathname === "/"
-            ? "bg-transparent"
-            : "bg-gradient-to-r from-[#6A4A2F] via-[#4A301C] to-[#1F130B]" // other pages default maroon (optional adjust opacity)
-          }`}>
+        <div
+          className={`w-full text-white relative z-50 transition-all duration-300 ${scrolled
+            ? "bg-gradient-to-r from-[#6A4A2F] via-[#4A301C] to-[#1F130B]"
+            : pathname === "/"
+              ? "bg-transparent"
+              : "bg-gradient-to-r from-[#6A4A2F] via-[#4A301C] to-[#1F130B]" // other pages default maroon (optional adjust opacity)
+            }`}
+        >
           <div className="flex items-center justify-between px-4 sm:px-6 py-2 text-sm">
-
             {/* Left: Social Icons + NAAC */}
             <div className="flex flex-1 min-w-0 items-center gap-2 overflow-hidden">
               {/* Social Icons */}
@@ -144,19 +159,13 @@ export default function Header() {
                       style={{ color: "white" }}
                     />
                     <style jsx>{`
-              a:hover svg {
-                color: ${color} !important;
-              }
-            `}</style>
+                      a:hover svg {
+                        color: ${color} !important;
+                      }
+                    `}</style>
                   </a>
                 ))}
               </div>
-
-
-
-
-
-
             </div>
 
             {/* Right: Search */}
@@ -168,7 +177,6 @@ export default function Header() {
                 >
                   <FiSearch className="text-white hover:text-maroon w-3 h-3 sm:w-4 sm:h-4" />
                 </button>
-
               ) : (
                 <div className="absolute right-0 mt-2 w-[90vw] sm:w-[250px] z-50">
                   <input
@@ -224,7 +232,10 @@ export default function Header() {
                 className="flex flex-col items-start"
               >
                 <div className="flex items-center gap-3">
-                  <div className={`transition-all ${scrolled ? "h-12 w-14" : "h-18 w-20"}`}>
+                  <div
+                    className={`transition-all ${scrolled ? "h-12 w-14" : "h-18 w-20"
+                      }`}
+                  >
                     <img
                       src={base64String}
                       alt="Sona Logo"
@@ -234,14 +245,14 @@ export default function Header() {
                   <p
                     className={`font-semibold leading-tight transition-all w-[180px] sm:w-[200px] md:w-[220px] lg:w-[240px] xl:w-[260px] ${pathname === "/"
                       ? scrolled
-                        ? "text-maroon text-[10px] sm:text-[12px] md:text-sm xl:text-base"
-                        : "text-white text-[12px] sm:text-sm md:text-base xl:text-lg"
-                      : "text-maroon text-[10px] sm:text-[12px] md:text-sm xl:text-base" // non-home pages
+                        ? "text-maroon text-[12px] sm:text-sm md:text-base xl:text-base"
+                        : "text-white text-sm sm:text-base md:text-xg xl:text-xl"
+                      : "text-maroon text-[12px] sm:text-sm md:text-base xl:text-base"
                       }`}
                   >
-                    Post Graduate Diploma
+                    Sona School of
                     <br />
-                    in Management
+                    Bussiness & Management
                   </p>
 
                 </div>
@@ -249,7 +260,6 @@ export default function Header() {
 
               {/* External link for Sona College */}
               <p className={`text-xs  px-6 ${scrolled ? "mt-0" : "mt-2"}`}>
-
                 <a
                   href="https://www.sonatech.ac.in"
                   target="_blank"
@@ -263,13 +273,8 @@ export default function Header() {
                 >
                   A unit of Sona Valliappa Group
                 </a>
-
               </p>
             </div>
-
-
-
-
 
             {/* Desktop Nav */}
             <nav className="hidden xl:flex items-center gap-2">
@@ -311,8 +316,8 @@ export default function Header() {
                         className="mt-0.5 text-gray-600 hover:text-maroon-300"
                         onClick={(e) => {
                           e.preventDefault();
-                          const submenu =
-                            e.currentTarget.parentElement?.nextElementSibling as HTMLDivElement;
+                          const submenu = e.currentTarget.parentElement
+                            ?.nextElementSibling as HTMLDivElement;
                           if (submenu) submenu.classList.toggle("hidden");
                         }}
                       >
@@ -332,7 +337,6 @@ export default function Header() {
                         </motion.div>
                       </motion.button>
                     )}
-
                   </div>
 
                   {/* Submenu */}
@@ -377,17 +381,13 @@ export default function Header() {
                       </div>
                     </motion.div>
                   )}
-
-
                 </div>
               ))}
 
               {/* Apply Now Button */}
 
               <button
-
                 onClick={() => setIsModalOpen(true)}
-
                 className={`group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md border border-neutral-200 px-6 font-medium transition-all duration-100
   ${bgClass}
 ${scrolled
@@ -399,17 +399,10 @@ ${scrolled
 
   hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[0px_0px_rgb(82_82_82)]
 `}
-
               >
                 Apply Now →
               </button>
-
-
             </nav>
-
-
-
-
 
             {/* Mobile Toggle */}
             <motion.button
@@ -425,7 +418,6 @@ ${scrolled
             >
               {mobileOpen ? <FiX size={22} /> : <FiMenu size={22} />}
             </motion.button>
-
           </div>
 
           {/* Mobile Drawer */}
@@ -452,7 +444,9 @@ ${scrolled
 
                       {/* Submenu (expandable area) */}
                       <div
-                        className={`overflow-hidden transition-all duration-500 ${openMenu === i ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                        className={`overflow-hidden transition-all duration-500 ${openMenu === i
+                          ? "max-h-96 opacity-100"
+                          : "max-h-0 opacity-0"
                           }`}
                       >
                         <div className="pl-6 pb-2 space-y-1">
@@ -496,17 +490,13 @@ ${scrolled
                   Apply Now <span className="text-lg">→</span>
                 </span>
               </button>
-
             </div>
           </div>
-
         </header>
-
       </div>
 
       {/* Spacer for subpages */}
       {pathname !== "/" && <div style={{ height: `${headerHeight}px` }} />}
-
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <h2 className="text-2xl font-bold mb-4">Admission</h2>
