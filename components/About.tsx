@@ -132,8 +132,11 @@ export default function About() {
             className="absolute bottom-6 sm:bottom-20 left-6
              w-[clamp(5rem,8vw,10rem)] h-[clamp(5rem,8vw,10rem)]
              flex flex-col items-center justify-center rounded-full 
-             bg-gradient-to-br from-[#A0E7E5] via-[#B4F8C8] to-[#FBE7C6]
-             shadow-2xl border-[3px] sm:border-4 border-maroon
+bg-gradient-to-br
+from-[#3A2416]
+via-[#4A301C]
+to-[#6A4A2F]
+             shadow-2xl border-[3px] sm:border-4 border-maroon-300
              p-[5%] sm:p-[6%] overflow-hidden"
           >
             {/* Bigger image at the top */}
@@ -144,7 +147,7 @@ export default function About() {
             />
 
             {/* Smaller text under the image */}
-            <div className="text-[clamp(0.4rem,1vw,0.7rem)] text-center leading-tight text-maroon-800">
+            <div className="text-[clamp(0.4rem,1vw,0.7rem)] text-center leading-tight text-white">
               INDUSTRY & <br /> ACADEMY
             </div>
           </motion.div>
@@ -186,7 +189,6 @@ export default function About() {
               />
             </div>
           </div>
-
           {/* Text */}
           <p
             data-aos="fade-up"
