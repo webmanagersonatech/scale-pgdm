@@ -234,7 +234,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
 
 
             {/* Content Section */}
-            <div className="w-full max-w-7xl mx-auto mt-8 px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-7xl mx-auto mt-8 ">
                 <AnimatePresence mode="wait">
 
                     <motion.section
@@ -899,7 +899,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
                                             transition={{ duration: 0.8 }}
-                                            className="relative p-6  rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                                            className="relative   rounded-3xl max-w-7xl mx-auto overflow-hidden"
                                         >
                                             {/* Header */}
                                             <motion.div
