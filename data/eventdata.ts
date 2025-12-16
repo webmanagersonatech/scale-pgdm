@@ -132,7 +132,8 @@ export const eventsData = [
 
     ],
     showFront: true,
-  }
+    
+  },
 
 
 ];

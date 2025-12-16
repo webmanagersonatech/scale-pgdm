@@ -150,26 +150,29 @@ export default function NewsEvents() {
         {/* If items exist */}
         {items.length > 0 ? (
           <>
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={16}
-              slidesPerView={1}
-              centeredSlides={items.length === 1}
-              loop={items.length > 1}
-              autoplay={{
-                delay: 2800,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                640: { slidesPerView: Math.min(items.length, 2) },
-                1024: { slidesPerView: Math.min(items.length, 3) },
-              }}
-              className="custom-swiper pb-12"
-            >
-              {items.map((item, i) => renderCard(item, i))}
-            </Swiper>
+          <Swiper
+  modules={[Pagination, Autoplay]}
+  spaceBetween={8}                 // 🔥 reduced gap
+  slidesPerView={1}
+  centeredSlides={items.length === 1}
+  loop={items.length > 1}
+  slidesOffsetBefore={0}
+  slidesOffsetAfter={0}
+  autoplay={{
+    delay: 2800,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  pagination={{ clickable: true }}
+  breakpoints={{
+    640: { slidesPerView: Math.min(items.length, 2) },
+    1024: { slidesPerView: Math.min(items.length, 2) }, // 🔥 keep 2 max
+  }}
+  className="custom-swiper pb-12"
+>
+  {items.map((item, i) => renderCard(item, i))}
+</Swiper>
+
 
             {/* Button */}
             <AnimatePresence mode="wait">
