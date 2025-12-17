@@ -117,7 +117,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-6 border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-300/70">
           <span className="text-center">
-            © {new Date().getFullYear()} Sona School of Business and Management.
+            © {new Date().getFullYear()} Sona School of Business & Management.
             All rights reserved.
           </span>
         </div>

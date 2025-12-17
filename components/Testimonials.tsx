@@ -41,7 +41,7 @@ export default function TestimonialsPage() {
       video: "https://www.youtube.com/embed/jxOUt_KIlwk",
     },
     {
-      role: "A Heartfelt Experience at Sona Group of Institutions | Mr. Akhil Narayan’s Testimonial",
+      role: "A Heartfelt Experience at Sona Valliappa Group of Institutions | Mr. Akhil Narayan’s Testimonial",
       video: "https://www.youtube.com/embed/LcoFGNBGUC0",
     },
   ];

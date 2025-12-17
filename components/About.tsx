@@ -92,7 +92,7 @@ export default function About() {
         >
           <h2 className="text-2xl sm:text-3xl font-bold   font-serif text-gray-900">
             <span className="text-gray-500">About </span>
-            <span className="text-maroon">SONA GROUP</span>
+            <span className="text-maroon">SONA VALLIAPPA GROUP</span>
           </h2>
         </motion.div>
 
@@ -165,9 +165,9 @@ to-[#6A4A2F]
           <div className="hidden md:flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-left space-y-2 md:space-y-0">
             {/* Heading */}
             <div className="inline-block relative">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900   font-serif relative z-10">
+              <h2 className="text-2xl  font-bold text-gray-900   font-serif relative z-10">
                 <span className="text-gray-500 block md:inline">About </span>
-                <span className="text-maroon block md:inline">SONA GROUP</span>
+                <span className="text-maroon block md:inline">SONA VALLIAPPA GROUP</span>
               </h2>
 
               {/* LEFT → CENTER */}
@@ -194,7 +194,7 @@ to-[#6A4A2F]
             data-aos="fade-up"
             className="text-gray-700 leading-relaxed text-[14px] text-justify"
           >
-            The Sona Group is steeped in more than 100 years of success and
+            The Sona Valliappa Group is steeped in more than 100 years of success and
             tradition tracing back to pre-Independence. The group was founded by
             the doyen of textile industries of the early twentieth century,
             Karumuttu Thiagarajar Chettiar.
@@ -203,10 +203,10 @@ to-[#6A4A2F]
             The selfless vision, the noble principles, the mettle, the
             singleness of purpose, and the untiring industriousness of Karumuttu
             Thiagarajar Chettiar have been the solid foundational blocks upon
-            which the towering success of the Sona Group has been built.
+            which the towering success of the Sona Valliappa Group has been built.
             <br />
             <br />
-            The Sona Group has since been toeing the same line of ideology and
+            The Sona Valliappa Group has since been toeing the same line of ideology and
             has emerged as a valuable global conglomerate of national
             importance.
           </p>
@@ -241,7 +241,7 @@ to-[#6A4A2F]
 
           {/* Know More Button */}
           <Link href={{ pathname: "/about/aboutus" }}>
-            <button className="flex items-center gap-2 border border-maroon-700  text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group">
+            <button className="flex items-center gap-2 border-[0.5px] border-maroon-700   text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group">
               Know More
               <svg
                 className="w-8 h-8 group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"

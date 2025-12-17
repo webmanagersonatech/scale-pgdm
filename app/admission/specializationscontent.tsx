@@ -298,7 +298,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
     bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400
     text-maroon font-semibold
     px-4 py-2
-    rounded-lg shadow-sm
+    rounded-full shadow-sm
     hover:shadow-md transition
   "
                                 >
@@ -1037,7 +1037,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                 className="mt-4  items-center gap-3 
      bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400
       text-maroon font-semibold
-      px-8 py-3 rounded-xl shadow-md
+      px-8 py-3 rounded-full shadow-md
       hover:shadow-lg transition-transform duration-300"
                             >
                                 Apply Now

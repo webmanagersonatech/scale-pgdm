@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa"
 import Notiflix from "notiflix";
 
 export default function ContactPage() {
@@ -167,7 +167,7 @@ export default function ContactPage() {
                     href="tel:+919442592175"
                     className="block text-sm font-medium mt-2 hover:underline"
                   >
-                    +91 9442592175
+                    +91 94425 92175
                   </a>
                 </div>
               </div>
@@ -182,6 +182,20 @@ export default function ContactPage() {
                     className="block text-sm font-medium mt-2 hover:underline"
                   >
                     contact@scaleindia.in
+                  </a>
+                </div>
+              </div>
+              <div className="bg-white/90 text-[#4A301C] rounded-lg p-4 shadow flex gap-3">
+                <FaWhatsapp className="text-xl" />
+                <div>
+                  <div className="text-xs font-semibold tracking-widest">WHATSAPP</div>
+                  <a
+                    href="https://wa.me/919442592175"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-sm font-medium mt-2 hover:underline"
+                  >
+                    Chat on WhatsApp
                   </a>
                 </div>
               </div>
@@ -252,7 +266,7 @@ export default function ContactPage() {
                 <button
                   type="button"
                   onClick={generateCaptcha}
-                  className="ml-2 px-2 py-1 bg-[#4A301C] text-white rounded text-sm"
+                  className="ml-2 px-2 py-1 bg-[#4A301C]/80 hover:bg-[#3A2415] text-white rounded text-sm"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -283,11 +297,24 @@ export default function ContactPage() {
 
             <button
               type="submit"
-              className="text-white border-0 py-2 px-6 focus:outline-none rounded text-lg"
-              style={{ backgroundColor: "#4A301C" }}
+              className="
+    bg-[#4A301C]/80 
+    text-white 
+    py-2 px-6 
+    rounded 
+    text-lg
+    transition-all 
+    duration-300 
+    ease-in-out
+    hover:bg-[#3A2415]
+    hover:shadow-lg
+    hover:-translate-y-0.5
+    focus:outline-none
+  "
             >
               Submit
             </button>
+
           </form>
         </div>
       </div>

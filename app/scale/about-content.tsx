@@ -909,7 +909,7 @@ export default function ScalePage({ activeSlug }: any) {
                 <div className="flex items-center gap-4 mb-6">
 
                   <h3 className="text-[17px] font-semibold text-maroon  text-center">
-                    Powered by Sona Group's 100-Year Legacy
+                    Powered by Sona Valliappa Group's 100-Year Legacy
                   </h3>
                 </div>
 

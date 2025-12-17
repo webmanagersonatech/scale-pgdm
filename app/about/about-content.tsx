@@ -533,12 +533,12 @@ export default function AboutPage({ activeSlug }: any) {
                                         <div className="flex items-center gap-2 mb-3">
                                             <RiBuilding4Line className="text-maroon text-xl" />
                                             <h4 className="text-[17px] font-semibold text-maroon">
-                                                Sona Group’s Pioneering Role in India’s IT Revolution
+                                                Sona Valliappa Group’s Pioneering Role in India’s IT Revolution
                                             </h4>
                                         </div>
 
                                         <p className="text-gray-700 text-[14px] leading-relaxed text-justify mb-4">
-                                            The Sona Group played a foundational role in establishing Bengaluru as the Silicon Valley of India.
+                                            The Sona Valliappa Group played a foundational role in establishing Bengaluru as the Silicon Valley of India.
                                         </p>
 
                                         <h5 className="font-semibold text-gray-800 underline mb-2">Key Milestones</h5>

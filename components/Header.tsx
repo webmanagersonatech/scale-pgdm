@@ -290,7 +290,7 @@ export default function Header() {
                       {/* Parent Link */}
                       <Link
                         href={item.href as any}
-                        className={`relative px-2 py-3 font-medium rounded-lg inline-flex items-center transition-all duration-300
+                        className={`relative px-2 py-3  rounded-lg inline-flex items-center transition-all duration-300
             ${isActive
                             ? "text-maroon-300"
                             : pathname === "/"
@@ -401,7 +401,7 @@ export default function Header() {
 
               <button
                 onClick={() => setIsModalOpen(true)}
-                className={`group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-md border border-neutral-200 px-6 font-medium transition-all duration-100
+                className={`group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full border border-neutral-200 px-6 font-medium transition-all duration-100
   ${bgClass}
 ${scrolled
                     ? "shadow-[2px_2px_rgb(200_200_200)]"

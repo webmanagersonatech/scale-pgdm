@@ -133,7 +133,7 @@ export default function NewsEvents() {
               {activeTab === type && (
                 <motion.div
                   layoutId="activeTabBg"
-                  className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400  rounded-md"
+                  className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-300 to-gray-400  rounded-full"
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
               )}
@@ -201,7 +201,7 @@ export default function NewsEvents() {
 
 
                   <button
-                    className="flex items-center gap-2 border border-white text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
+                    className="flex items-center gap-2 border-[0.5px] text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
                   >
                     {activeTab === "News"
                       ? "View All News"
@@ -227,7 +227,7 @@ export default function NewsEvents() {
         ) : (
           <div className="flex justify-center items-center mt-12">
             <p className="text-lg font-semibold text-gray-200">
-              No events available
+         
             </p>
           </div>
         )}

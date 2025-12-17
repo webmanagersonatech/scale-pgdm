@@ -44,7 +44,7 @@ export default function Aboutpgdmimage() {
 
 
                 <button
-                  className="flex items-center gap-2 border border-maroon-700  text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
+                  className="flex items-center gap-2 border-[0.5px] border-maroon-700   text-[15px]  backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[radial-gradient(circle_at_top_left,#f5e9e2_0%,#e2c7b7_40%,#b88b6b_80%,#65230b_100%)] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
                 >
                   Apply Now
                   <svg
@@ -72,7 +72,7 @@ export default function Aboutpgdmimage() {
             <h2 className="text-4xl font-bold">100+</h2>
             <p className="text-xl mt-2">Years of Excellence</p>
             <p className="text-sm mt-4 opacity-80">
-              Academic excellence since 1920
+               Industry and Academic excellence since 1920
             </p>
           </div>
 

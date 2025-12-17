@@ -130,7 +130,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+      <div className="relative z-10 container mx-auto px-4 pt-20 sm:pt-24 md:pt-28  h-full flex items-center">
         <AnimatePresence mode="wait">
           {show && (
             <motion.div

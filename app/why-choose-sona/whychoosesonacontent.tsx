@@ -183,14 +183,14 @@ export default function SSBMPage() {
                         <div className="w-16 h-1 rounded-full mb-4" style={{ backgroundColor: "#F9C349" }} />
 
                         <p className="text-gray-700 leading-relaxed mb-3">
-                            Sona School of Business and Management (SSBM), a proud constituent of the esteemed <span className="text-[#0B3370] font-medium">Sona Group of Institutions in Salem,</span> Tamil Nadu, has established itself as a prominent centre for professional education. Rooted in the legacy of Late <span className="text-[#0B3370] font-medium">Shri M.S. Chockalingam—visionary textile industrialist </span> and philanthropist—the institution upholds his belief that high-quality professional education is vital for India’s industrial and economic progress.
+                            Sona School of Business and Management (SSBM), a proud constituent of the esteemed <span className="text-[#0B3370] font-medium">Sona  Valliappa Group of Institutions in Salem,</span> Tamil Nadu, has established itself as a prominent centre for professional education. Rooted in the legacy of Late <span className="text-[#0B3370] font-medium">Shri M.S. Chockalingam—visionary textile industrialist </span> and philanthropist—the institution upholds his belief that high-quality professional education is vital for India’s industrial and economic progress.
                         </p>
 
                         <p className="text-gray-700 leading-relaxed mb-3">
                             Emerging from the strong academic foundation of Sona College of Technology, SSBM has matured into a vibrant business school known for excellence in <span className="text-[#0B3370] font-medium"> teaching, research, consultancy, and training.</span> With a global outlook and steadfast commitment to academic quality, the school delivers value-driven management education on par with top institutions, while benefiting from the supportive environment of a smaller, student-friendly city
                         </p>
                         <p className="text-gray-700 leading-relaxed">
-                            Under the leadership of <span className="text-[#0B3370] font-medium">Mr. C. Valliappa,</span> Chairman of the Sona Group, SSBM continues to realize its founding vision by offering world-class management education. Over the years, it has grown into a premier business school recognized for its collaborative faculty–student culture, pursuit of excellence, and managerial grooming aligned with global corporate standards.
+                            Under the leadership of <span className="text-[#0B3370] font-medium">Mr. C. Valliappa,</span> Chairman of the Sona Valliappa Group, SSBM continues to realize its founding vision by offering world-class management education. Over the years, it has grown into a premier business school recognized for its collaborative faculty–student culture, pursuit of excellence, and managerial grooming aligned with global corporate standards.
                         </p>
                     </motion.div>
 

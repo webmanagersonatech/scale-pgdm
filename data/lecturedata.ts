@@ -492,7 +492,7 @@ export const lectures: Record<string, any[]> = {
             sno: 3,
             name: "Mr.Thyagu Valliappa",
             designation: "Vice Chairman",
-            company: "Sona Group of Institutions",
+            company: "Sona Valliappa Group of Institutions",
             date: "6.10.22",
             topic: "Keep your Mind Fresh",
         },

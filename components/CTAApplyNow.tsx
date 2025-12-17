@@ -31,7 +31,7 @@ export default function CTAApplyNow({ fadeUp }: any) {
 
         <motion.div className="flex justify-center items-center">
           <button
-            className="flex items-center gap-2 border border-white text-[15px] 
+            className="flex items-center gap-2 border-[0.5px]  border-white text-[15px] 
   text-maroon-100 hover:text-white
   backdrop-blur-md lg:font-semibold isolation-auto 
   before:absolute before:w-full before:transition-all before:duration-700 

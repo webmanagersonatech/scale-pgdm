@@ -680,7 +680,7 @@ the covid19 pandemic in the ITES industry</li>
     designation: "Assistant Professor",
     department: "Human Resource",
     description:
-      "Dr. B. Vasanthi is an accomplished academician and institutional leader with over 26 years of experience across academia, corporate management, operations, and human resources.She currently serves as Assistant Professor & General Manager – Operations at Sona College of Technology, contributing to the strategic and administrative excellence of the Sona Group of Institutions, including the Sona School of Business and Management, Sona Medical College of Naturopathy & Yoga, Sona STAR Innovation Pvt. Ltd., Somato, Sona STAR Wellness Products, and the SAI Foundation.Her work integrates academic insight with operational leadership, focusing on institutional effectiveness, strategic procurement, financial governance, and people development. She is widely appreciated for her analytical decision-making, people-centric approach, and commitment to excellence in higher education administration.",
+      "Dr. B. Vasanthi is an accomplished academician and institutional leader with over 26 years of experience across academia, corporate management, operations, and human resources.She currently serves as Assistant Professor & General Manager – Operations at Sona College of Technology, contributing to the strategic and administrative excellence of the Sona Valliappa Group of Institutions, including the Sona School of Business and Management, Sona Medical College of Naturopathy & Yoga, Sona STAR Innovation Pvt. Ltd., Somato, Sona STAR Wellness Products, and the SAI Foundation.Her work integrates academic insight with operational leadership, focusing on institutional effectiveness, strategic procurement, financial governance, and people development. She is widely appreciated for her analytical decision-making, people-centric approach, and commitment to excellence in higher education administration.",
     photo: "/images/faculty/vasanthi.webp",
     phone: "0427 - 4099 819",
     email: "vasanthi@sonatech.ac.in",
@@ -720,7 +720,7 @@ the covid19 pandemic in the ITES industry</li>
 
 <h3 class="text-xl font-semibold mt-6 mb-2">Awards & Recognitions</h3>
 <ul class="list-disc pl-5 space-y-1">
- <li>Pivotal in streamlining multi-institutional operations and enhancing administrative efficiency across the Sona Group.</li>
+ <li>Pivotal in streamlining multi-institutional operations and enhancing administrative efficiency across the Sona Valliappa Group.</li>
 <li>Recognized for strategic planning, digitalization of processes, and inter-departmental coordination excellence.</li>
 <li>Noted for leadership mentoring, staff development initiatives, and community outreach programs.</li></ul>
 

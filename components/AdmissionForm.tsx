@@ -260,7 +260,7 @@ export default function AdmissionLoginTabs() {
             />
           </div>
 
-          <button className="w-full bg-[#4A301C] text-white py-2 rounded">
+          <button className="w-full bg-[#4A301C]/80     hover:bg-[#3A2415] text-white py-2 rounded">
             Submit Application
           </button>
         </form>
@@ -297,7 +297,7 @@ export default function AdmissionLoginTabs() {
               required
             />
           </div>
-          <button className="w-full bg-[#4A301C] text-white py-2 rounded">Login</button>
+          <button className="w-full bg-[#4A301C]/80     hover:bg-[#3A2415] text-white py-2 rounded">Login</button>
         </form>
       )}
     </div>
