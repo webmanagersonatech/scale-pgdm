@@ -4,69 +4,37 @@ export const eventsData = [
     title: "Inaugural Pooja & Logo Launch of SCALE",
     slug: "inaugural-pooja-logo-launch-scale-2025",
     excerpt:
-      "Sona Institutions ceremoniously inaugurated SCALE – Sona Centre for Advanced Learning & Entrepreneurship with a pooja and logo launch ceremony.",
+      "Sona Valliappa Group launches SCALE – Sona Centre for Advanced Learning & Entrepreneurship – a first-of-its-kind industry-linked learning ecosystem.",
     description:
-      "Sona Institutions organized the Inaugural Pooja and Logo Launch of SCALE – Sona Centre for Advanced Learning & Entrepreneurship, marking a significant milestone in industry-driven learning and entrepreneurship.",
+      "SCALE aims to bridge the gap between academia and industry by offering hands-on learning, hot labs, leadership interactions, and industry-aligned programs. Supported by 50+ MoUs and 15+ Centres of Excellence, SCALE will upskill engineers and foster entrepreneurship. The ₹150 crore campus at Bidadi, near Bengaluru, will be fully operational by mid-2026, welcoming its first cohort in January.",
     content: `
    <div class="news-article mx-auto">
 
-  <p>
-    You are cordially invited to the <strong>Inaugural Pooja & Logo Launch of SCALE – Sona Centre for Advanced Learning & Entrepreneurship</strong>, 
-    a landmark initiative designed to bridge academia and industry through innovation, entrepreneurship, and advanced learning.
+
+<p>A new chapter in industry-linked education begins.</p>
+  <p class=" mt-6 mb-3">
+ 
+The announcement was made by Mr. Thyagu Valliappa, Founder of SCALE and a fourth-generation entrepreneur, at Sona Towers—a historic landmark that hosted India’s first Global Capability Centre (GCC) established by Texas Instruments in the 1980s. The event witnessed the presence of senior industry leaders and key policy stakeholders. </p>
+
+  <p  class=" mt-6 mb-3">
+   Speaking on the occasion, Mr. Thyagu Valliappa shared that SCALE is designed to equip India’s talent with global competitiveness. With India emerging as a preferred destination for GCCs, advanced manufacturing, and deep-tech innovation, SCALE aims to bridge the academia–industry gap through immersive, hands-on learning. Learners will benefit from hot labs, leadership interactions, and a structured Periodic Assessment Test (PAT) framework, where performance can translate into enhanced career and pay opportunities.</p>
+
+  <p class=" mt-6 mb-3">
+    SCALE will offer a diverse portfolio of programs supported by 50+ industry MoUs and 15+ Centres of Excellence, developed in collaboration with global brands, industry partners, and government bodies. Through its partnership with the Karnataka Digital Economy Mission (KDEM), SCALE will work closely with the Government of Karnataka to upskill over 3,000 young engineers, focusing on high-demand, employability-driven skills.
   </p>
+  <p class=" mt-6 mb-3">Positioned at the intersection of education, technology, and business, SCALE will house advanced learning programs, industry-oriented finishing schools, a Business School, a Techno School, and startup incubation facilities within a unified ecosystem. Built on the philosophy of “for the industry, by the industry, and to the industry,” SCALE reinforces the Group’s commitment to sustainable pathways from learning to employment and entrepreneurship.</p>
 
-  <p>
-    <strong>SCALE</strong> stands as a future-ready ecosystem driven by the philosophy:<br />
-    <em>“By the Industry, For the Industry, To the Industry.”</em><br />
-    It aims to empower students, faculty, startups, and industry professionals by fostering real-world problem-solving, 
-    technology-driven learning, and entrepreneurial excellence.
-  </p>
+ <p class=" mt-6 mb-3">Over the past 68 years, the Sona Valliappa Group has enabled the creation of 100,000+ jobs across sectors and built long-standing partnerships with organizations such as Capgemini, JSW, Dassault Systèmes, and TCS. Its strong focus on Industry 4.0—particularly in design engineering and 3D modeling through collaboration with Dassault Systèmes—has contributed to the creation of over 150 millionaires.</p>
 
-  <p>
-    This prestigious occasion also marks the unveiling of <strong>India’s First Techno Business School for all Colleges</strong>.
-  </p>
+  <p class=" mt-6 mb-3">The Group will invest ₹150 crore to develop the SCALE campus at Bidadi, near Bengaluru, strategically located within a thriving industrial corridor and accessible from both Bengaluru and Mysuru. The campus will feature cutting-edge hot labs, innovation spaces, and a 2,500-bed residential facility, enabling a fully immersive learning experience.</p>
+   
+  <p class=" mt-6 mb-3">The first cohort of 120 students will begin training in January 2026, with the campus expected to be operational by May–June 2026. The inaugural batch, comprising students from Sona College of Management, will undergo intensive industry immersion across multiple organizations, engaging directly with manufacturing environments and senior leadership teams.</p>
 
-  <!-- FLEX SECTION -->
-  <div class="flex flex-col md:flex-row gap-6 mt-6">
+  <p class=" mt-6 mb-3">
+The launch of SCALE marks a defining moment in the Sona Valliappa Group’s journey from textiles to technology, reaffirming its legacy of pioneering industry-integrated education and building future-ready learning ecosystems for India and beyond.</p>
 
-    <!-- Event Highlights -->
-    <div class="md:w-1/3">
-      <h3 class="text-lg font-semibold mb-2">Event Highlights</h3>
-      <ul class="list-disc pl-5 space-y-1">
-        <li>Inaugural Pooja of SCALE</li>
-        <li>Official Logo Launch</li>
-        <li>Vision presentation on SCALE’s industry-integrated learning model</li>
-        <li>Interaction with leadership and industry stakeholders</li>
-      </ul>
-    </div>
 
-    <!-- Event Details -->
-    <div class="md:w-1/3">
-      <h3 class="text-lg font-semibold mb-2">Event Details</h3>
-      <p>
-        <strong>Date:</strong> Monday, 15th December 2025<br />
-        <strong>Time:</strong> 09:15 AM<br />
-        <strong>Venue:</strong> Sona Basecamp, Sona Towers, Bengaluru
-      </p>
-    </div>
-
-    <!-- Dignitaries -->
-    <div class="md:w-1/3">
-      <h3 class="text-lg font-semibold mb-2">Dignitaries</h3>
-      <p><strong>Sri. C. Valliappa</strong> – Chairman, Presiding</p>
-      <p class="mt-2">
-        <strong>Mr. Thyagu Valliappa</strong> – Vice Chairman, CEO,<br />
-        Sona Star Innovation Pvt. Ltd.
-      </p>
-    </div>
-
-  </div>
-
-  <p class="mt-6">
-    Join us as we take a transformative step towards redefining learning, innovation, and entrepreneurship through 
-    <strong>SCALE – Tomorrow’s Technology Today</strong>.
-  </p>
-   <h3 class="text-lg font-semibold mt-6 mb-3">Press Coverage</h3>
+  <h3 class="text-lg font-semibold mt-6 mb-3">Press Coverage</h3>
 
   <ul class="list-disc pl-6 space-y-2">
     <li>
