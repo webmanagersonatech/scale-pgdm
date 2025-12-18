@@ -6,7 +6,7 @@ export const eventsData = [
     excerpt:
       "Sona Valliappa Group launches SCALE – Sona Centre for Advanced Learning & Entrepreneurship – a first-of-its-kind industry-linked learning ecosystem.",
     description:
-      "SCALE aims to bridge the gap between academia and industry by offering hands-on learning, hot labs, leadership interactions, and industry-aligned programs. Supported by 50+ MoUs and 15+ Centres of Excellence, SCALE will upskill engineers and foster entrepreneurship. The ₹150 crore campus at Bidadi, near Bengaluru, will be fully operational by mid-2026, welcoming its first cohort in January.",
+      "Sona Valliappa Group launches SCALE, a first-of-its-kind integrated campus bringing academia and industry together to drive skilling and innovation.SCALE aims to create globally competitive, future-ready talent aligned with industry needs.",
     content: `
    <div class="news-article mx-auto">
 
