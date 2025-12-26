@@ -23,7 +23,7 @@ export const navItems: NavItem[] = [
   },
   {
     label: "Admisssion",
-    href: "/admission/eligibility",
+    href: "/admission",
   },
   {
     label: "Research",

@@ -14,7 +14,7 @@ export const footerLinks: { label: string; href: string }[] = [
 ];
 
 export const quickLinks = [
-  { label: "Admissions", href: "/admission/eligibility" },
+  { label: "Admissions", href: "/admission" },
   { label: "Contact", href: "/contact" },
   { label: "Placement", href: "/placement" },
 ];

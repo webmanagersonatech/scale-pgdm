@@ -22,7 +22,7 @@ const heroContents = [
     title: "The Two-Year Fully Residential PGDM Programme",
     desc: "The flagship PGDM is a fully residential, immersive journey ",
     btn: "Learn More",
-    link: "/admission/eligibility/",
+    link: "/admission",
     blank: false,
   },
 ];

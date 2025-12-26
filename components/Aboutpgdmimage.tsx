@@ -38,7 +38,7 @@ export default function Aboutpgdmimage() {
 
             <div className="mt-6 flex gap-4">
               <Link
-                href="/admission/eligibility"
+                href="/admission"
 
               >
 

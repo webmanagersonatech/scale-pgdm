@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -51,7 +50,7 @@ interface Section {
     icon: any;
 }
 export default function SpecializationPageContent({ activeSlug }: any) {
-    const router = useRouter();
+
     const [activeTab, setActiveTab] = useState("marketing");
 
 
@@ -137,45 +136,8 @@ export default function SpecializationPageContent({ activeSlug }: any) {
 
     const currentSection = sections.find((s) => s.id === activeTab);
 
-    useEffect(() => {
-        if (!currentSection) return;
 
-        // Document title
-        document.title = `${currentSection.title} | MBA Specialization | Sona School of Business & Management`;
 
-        // Meta description
-        let metaDesc = document.querySelector(
-            'meta[name="description"]'
-        ) as HTMLMetaElement | null;
-        if (!metaDesc) {
-            metaDesc = document.createElement("meta");
-            metaDesc.name = "description";
-            document.head.appendChild(metaDesc);
-        }
-        metaDesc.content = currentSection.metaDescription;
-
-        // Robots
-        let metaRobots = document.querySelector(
-            'meta[name="robots"]'
-        ) as HTMLMetaElement | null;
-        if (!metaRobots) {
-            metaRobots = document.createElement("meta");
-            metaRobots.name = "robots";
-            document.head.appendChild(metaRobots);
-        }
-        metaRobots.content = "index, follow";
-
-        // Canonical
-        let linkCanonical = document.querySelector(
-            'link[rel="canonical"]'
-        ) as HTMLLinkElement | null;
-        if (!linkCanonical) {
-            linkCanonical = document.createElement("link");
-            linkCanonical.rel = "canonical";
-            document.head.appendChild(linkCanonical);
-        }
-        linkCanonical.href = `https://www.sonabusinessschool.com/specialization?tab=${currentSection.canonical}`;
-    }, [currentSection]);
 
     return (
         <section className="w-full min-h-screen bg-gradient-to-b from-white via-[#f5f0eb] to-[#c7a289] pt-12   flex flex-col items-center">
