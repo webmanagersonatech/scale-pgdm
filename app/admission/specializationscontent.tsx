@@ -468,7 +468,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
                                             transition={{ duration: 0.8 }}
-                                            className="relative   rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                                            className="relative max-w-7xl mx-auto rounded-3xl overflow-hidden"
                                         >
 
                                             {/* Header */}
@@ -476,44 +476,50 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 initial={{ y: 30, opacity: 0 }}
                                                 animate={{ y: 0, opacity: 1 }}
                                                 transition={{ duration: 0.8 }}
-                                                className="text-center mb-10"
+                                                className="text-center mb-12"
                                             >
-                                                <h2 className="text-[17px] font-semibold text-maroon  mb-2">
+                                                <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                                     Martech Innovation & Automation
                                                 </h2>
-                                                <p className="text-gray-600">
-                                                    <span className="font-semibold italic text-[14px]">Where Creativity Meets AI.</span>
-                                                    <br />Where Brands Scale with Data.
+                                                <p className="text-gray-600 text-[14px]">
+                                                    <span className="font-semibold italic">Where Creativity Meets AI.</span>
+                                                    <br />
+                                                    Where Brands Scale with Data.
                                                 </p>
                                             </motion.div>
 
-                                            {/* Timeline UI */}
-                                            <div className="relative  grid grid-cols-12 gap-10 items-stretch">
+                                            {/* Two Column Layout */}
+                                            <div className="grid grid-cols-12 gap-12">
 
                                                 {/* LEFT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col space-y-8">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
                                                     {/* Intro */}
-                                                    <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdLightbulb className="text-maroon h-6 w-6" />
+                                                    <div className="flex gap-4 items-start">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdLightbulb className="text-maroon w-6 h-6" />
                                                         </div>
-                                                        <p className="text-[14px] text-gray-700 leading-relaxed">
+                                                        <p className="text-[14px] text-gray-700 leading-relaxed text-justify">
                                                             This specialisation prepares learners to become
-                                                            <span className="font-semibold text-maroon"> modern marketing strategists</span> who master
-                                                            consumer psychology, digital ecosystems, analytics, and AI-driven growth.
+                                                            <span className="font-semibold text-maroon">
+                                                                {" "}modern marketing strategists
+                                                            </span>{" "}
+                                                            who master consumer psychology, digital ecosystems,
+                                                            analytics, and AI-driven growth.
                                                         </p>
                                                     </div>
 
                                                     {/* Core Learning Areas */}
-                                                    <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdMenuBook className="text-maroon h-6 w-6" />
+                                                    <div className="flex gap-4 items-start">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdMenuBook className="text-maroon w-6 h-6" />
                                                         </div>
 
                                                         <div className="text-[14px] text-gray-700">
-                                                            <p className="font-semibold text-maroon">Core Learning Areas</p>
-                                                            <ul className="list-disc ml-5 mt-2 space-y-1">
+                                                            <p className="font-semibold text-maroon mb-2">
+                                                                Core Learning Areas
+                                                            </p>
+                                                            <ul className="list-disc ml-5 space-y-1">
                                                                 <li>Digital Marketing, Social Media Intelligence & Performance Analytics</li>
                                                                 <li>AI-Enabled MarTech Tools & Automation Platforms</li>
                                                                 <li>Consumer Behaviour, Neuromarketing & Behavioural Insights</li>
@@ -526,18 +532,20 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 </div>
 
                                                 {/* RIGHT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
-                                                    {/* Career Title */}
-                                                    <div className="flex items-start gap-4 mb-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdWork className="text-maroon h-6 w-6" />
+                                                    {/* Career Header */}
+                                                    <div className="flex gap-4 items-start">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdWork className="text-maroon w-6 h-6" />
                                                         </div>
-                                                        <p className="font-semibold text-maroon">Career Trajectories</p>
+                                                        <p className="font-semibold text-maroon text-[14px]">
+                                                            Career Trajectories
+                                                        </p>
                                                     </div>
 
                                                     {/* Career Cards */}
-                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
+                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                         {[
                                                             { title: "Brand Manager", icon: <MdStar /> },
                                                             { title: "Digital Marketing Analyst", icon: <MdAnalytics /> },
@@ -548,12 +556,12 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                         ].map((role, index) => (
                                                             <div
                                                                 key={index}
-                                                                className="flex items-center gap-3 p-3 shadow-sm hover:shadow-md transition"
+                                                                className="flex items-center gap-3 p-3 rounded-xl shadow-sm hover:shadow-md transition"
                                                             >
-                                                                <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center text-maroon">
+                                                                <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/10 flex items-center justify-center text-maroon">
                                                                     {role.icon}
                                                                 </div>
-                                                                <p className="text-gray-700 text-[14px]">{role.title}</p>
+                                                                <p className="text-[14px] text-gray-700">{role.title}</p>
                                                             </div>
                                                         ))}
                                                     </div>
@@ -561,9 +569,110 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 </div>
 
                                             </div>
+                                        </motion.section>
+                                    )}
 
 
+                                    {activeTab === "hrtech" && (
+                                        <motion.section
+                                            key="hrtech"
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            exit={{ opacity: 0 }}
+                                            transition={{ duration: 0.8 }}
+                                            className="relative max-w-7xl mx-auto rounded-3xl overflow-hidden"
+                                        >
 
+                                            {/* Header */}
+                                            <motion.div
+                                                initial={{ y: 30, opacity: 0 }}
+                                                animate={{ y: 0, opacity: 1 }}
+                                                transition={{ duration: 0.8 }}
+                                                className="text-center mb-12"
+                                            >
+                                                <h2 className="text-[17px] font-semibold text-maroon mb-2">
+                                                    HR Tech & Digital Transformation
+                                                </h2>
+
+                                                <p className="text-gray-600 italic text-[14px]">
+                                                    <span className="font-semibold">
+                                                        Building Leaders Who Shape the Workforce of the Future.
+                                                    </span>
+                                                </p>
+                                            </motion.div>
+
+                                            {/* Two Column Layout */}
+                                            <div className="grid grid-cols-12 gap-12">
+
+                                                {/* LEFT COLUMN */}
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
+
+                                                    {/* Core Learning Areas */}
+                                                    <div className="flex items-start gap-4">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdMenuBook className="w-5 h-5 text-maroon" />
+                                                        </div>
+
+                                                        <div className="text-[14px] text-gray-700">
+                                                            <p className="font-semibold text-maroon mb-2">
+                                                                Core Learning Areas
+                                                            </p>
+                                                            <ul className="list-disc ml-5 space-y-1">
+                                                                <li>HR Analytics, Workforce Intelligence & Predictive People Modelling</li>
+                                                                <li>AI-Enabled Talent Acquisition & Competency Mapping</li>
+                                                                <li>Total Rewards Design, Performance Architecture & EX Strategy</li>
+                                                                <li>Organizational Development, Culture Engineering & Change Leadership</li>
+                                                                <li>HR Technology Platforms (HRMS, ATS, LMS, People Analytics Tools)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                {/* RIGHT COLUMN */}
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
+
+                                                    {/* Career Header */}
+                                                    <div className="flex items-start gap-4">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdWork className="w-5 h-5 text-maroon" />
+                                                        </div>
+                                                        <p className="font-semibold text-maroon text-[14px]">
+                                                            Career Trajectories
+                                                        </p>
+                                                    </div>
+
+                                                    {/* Career Cards */}
+                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                                        {[
+                                                            { title: "HRBP", icon: <MdPeople className="w-5 h-5" /> },
+                                                            { title: "Talent Acquisition Lead", icon: <MdGroup className="w-5 h-5" /> },
+                                                            { title: "HR Analyst", icon: <MdAssessment className="w-5 h-5" /> },
+                                                            { title: "L&D Specialist", icon: <MdSchool className="w-5 h-5" /> },
+                                                            { title: "Employee Experience Manager", icon: <MdEmojiEmotions className="w-5 h-5" /> },
+                                                            { title: "People Operations Strategist", icon: <MdSupervisedUserCircle className="w-5 h-5" /> },
+                                                        ].map((role, index) => (
+                                                            <motion.div
+                                                                key={index}
+                                                                initial={{ opacity: 0, y: 15 }}
+                                                                whileInView={{ opacity: 1, y: 0 }}
+                                                                viewport={{ once: true }}
+                                                                transition={{ duration: 0.4, delay: index * 0.08 }}
+                                                                className="flex items-center gap-3 p-3 rounded-xl shadow-sm hover:shadow-md transition"
+                                                            >
+                                                                <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/10 flex items-center justify-center text-maroon">
+                                                                    {role.icon}
+                                                                </div>
+                                                                <p className="text-[14px] text-gray-700">
+                                                                    {role.title}
+                                                                </p>
+                                                            </motion.div>
+                                                        ))}
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
                                         </motion.section>
                                     )}
 
@@ -576,7 +685,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
                                             transition={{ duration: 0.8 }}
-                                            className="relative    rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                                            className="relative max-w-7xl mx-auto rounded-3xl overflow-hidden"
                                         >
 
                                             {/* Header */}
@@ -584,30 +693,33 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 initial={{ y: 30, opacity: 0 }}
                                                 animate={{ y: 0, opacity: 1 }}
                                                 transition={{ duration: 0.8 }}
-                                                className="text-center mb-10"
+                                                className="text-center mb-12"
                                             >
                                                 <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                                     AI, Data Analytics & Business Intelligence
                                                 </h2>
 
-                                                <p className="text-gray-600 italic">
-                                                    <span className="font-semibold text-[14px]">Turning Data Into Decisions.</span>
-                                                    <br />Turning Decisions Into Impact.
+                                                <p className="text-gray-600 italic text-[14px]">
+                                                    <span className="font-semibold">
+                                                        Turning Data Into Decisions.
+                                                    </span>
+                                                    <br />
+                                                    Turning Decisions Into Impact.
                                                 </p>
                                             </motion.div>
 
-                                            {/* Timeline UI */}
-                                            <div className="relative  grid grid-cols-12 gap-10 items-stretch">
+                                            {/* Two Column Layout */}
+                                            <div className="grid grid-cols-12 gap-12">
 
                                                 {/* LEFT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col space-y-8">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
                                                     {/* Intro */}
                                                     <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdAnalytics className="text-maroon h-6 w-6" />
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdAnalytics className="w-6 h-6 text-maroon" />
                                                         </div>
-                                                        <p className="text-[14px] text-gray-700 leading-relaxed">
+                                                        <p className="text-[14px] text-gray-700 leading-relaxed text-justify">
                                                             A high-impact analytics and AI-driven specialization that gives learners
                                                             mastery over data science, modelling, storytelling, automation, and
                                                             business insights—skills powering today’s leading GCCs.
@@ -616,13 +728,15 @@ export default function SpecializationPageContent({ activeSlug }: any) {
 
                                                     {/* Core Learning Areas */}
                                                     <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdMenuBook className="text-maroon h-6 w-6" />
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdMenuBook className="w-6 h-6 text-maroon" />
                                                         </div>
 
                                                         <div className="text-[14px] text-gray-700">
-                                                            <p className="font-semibold text-maroon">Core Learning Areas</p>
-                                                            <ul className="list-disc ml-5 mt-2 space-y-1">
+                                                            <p className="font-semibold text-maroon mb-2">
+                                                                Core Learning Areas
+                                                            </p>
+                                                            <ul className="list-disc ml-5 space-y-1">
                                                                 <li>Python, R, SQL & Statistical Modelling</li>
                                                                 <li>Data Visualization: Tableau, Power BI & Storytelling Dashboards</li>
                                                                 <li>Machine Learning for Classification, Forecasting & Optimization</li>
@@ -635,19 +749,20 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 </div>
 
                                                 {/* RIGHT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
-                                                    {/* Career Title */}
-                                                    <div className="flex items-start gap-4 mb-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdWork className="text-maroon h-6 w-6" />
+                                                    {/* Career Header */}
+                                                    <div className="flex items-start gap-4">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdWork className="w-6 h-6 text-maroon" />
                                                         </div>
-                                                        <p className="font-semibold text-maroon">Career Trajectories</p>
+                                                        <p className="font-semibold text-maroon text-[14px]">
+                                                            Career Trajectories
+                                                        </p>
                                                     </div>
 
                                                     {/* Career Cards */}
-                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
-
+                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                         {[
                                                             { title: "Business Analyst", icon: <MdInsights /> },
                                                             { title: "Data Analyst", icon: <MdBarChart /> },
@@ -662,24 +777,24 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                                 whileInView={{ opacity: 1, y: 0 }}
                                                                 viewport={{ once: true }}
                                                                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                                                                className="flex items-center gap-3 p-3 shadow-sm hover:shadow-md transition"
+                                                                className="flex items-center gap-3 p-3 rounded-xl shadow-sm hover:shadow-md transition"
                                                             >
-                                                                <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center text-maroon">
+                                                                <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/10 flex items-center justify-center text-maroon">
                                                                     {role.icon}
                                                                 </div>
-                                                                <p className="text-gray-700 text-[14px]">{role.title}</p>
+                                                                <p className="text-[14px] text-gray-700">
+                                                                    {role.title}
+                                                                </p>
                                                             </motion.div>
                                                         ))}
-
                                                     </div>
 
                                                 </div>
 
                                             </div>
-
-
                                         </motion.section>
                                     )}
+
 
                                     {activeTab === "supplychain" && (
                                         <motion.section
@@ -688,7 +803,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
                                             transition={{ duration: 0.8 }}
-                                            className="relative   rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                                            className="relative max-w-7xl mx-auto rounded-3xl overflow-hidden"
                                         >
 
                                             {/* Header */}
@@ -696,30 +811,31 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 initial={{ y: 30, opacity: 0 }}
                                                 animate={{ y: 0, opacity: 1 }}
                                                 transition={{ duration: 0.8 }}
-                                                className="text-center mb-10"
+                                                className="text-center mb-12"
                                             >
                                                 <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                                     AI, IoT & Big Data in Supply Chain Operations
                                                 </h2>
 
-                                                <p className="text-gray-600 italic">
-                                                    <span className="font-semibold text-[14px]">Mastering the Systems That Move the World.</span>
-
+                                                <p className="text-gray-600 italic text-[14px]">
+                                                    <span className="font-semibold">
+                                                        Mastering the Systems That Move the World.
+                                                    </span>
                                                 </p>
                                             </motion.div>
 
-                                            {/* Timeline UI */}
-                                            <div className="relative grid grid-cols-12 gap-10 items-stretch">
+                                            {/* Two Column Layout */}
+                                            <div className="grid grid-cols-12 gap-12">
 
                                                 {/* LEFT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col space-y-8">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
                                                     {/* Intro */}
                                                     <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdPrecisionManufacturing className="text-maroon h-6 w-6" />
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdPrecisionManufacturing className="w-6 h-6 text-maroon" />
                                                         </div>
-                                                        <p className="text-[14px] text-gray-700 leading-relaxed">
+                                                        <p className="text-[14px] text-gray-700 leading-relaxed text-justify">
                                                             This specialization prepares students for the Industry 4.0 supply chain
                                                             revolution, where automation, analytics, robotics, and smart logistics
                                                             shape global business.
@@ -728,13 +844,15 @@ export default function SpecializationPageContent({ activeSlug }: any) {
 
                                                     {/* Core Learning Areas */}
                                                     <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdMenuBook className="text-maroon h-6 w-6" />
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdMenuBook className="w-6 h-6 text-maroon" />
                                                         </div>
 
                                                         <div className="text-[14px] text-gray-700">
-                                                            <p className="font-semibold text-maroon">Core Learning Areas</p>
-                                                            <ul className="list-disc ml-5 mt-2 space-y-1">
+                                                            <p className="font-semibold text-maroon mb-2">
+                                                                Core Learning Areas
+                                                            </p>
+                                                            <ul className="list-disc ml-5 space-y-1">
                                                                 <li>Digital Logistics, Smart Warehousing & Distribution Systems</li>
                                                                 <li>Supply Chain Analytics, KPI Dashboards & Optimization Models</li>
                                                                 <li>Procurement Strategy, E-Sourcing Tools & Vendor Intelligence</li>
@@ -747,19 +865,20 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 </div>
 
                                                 {/* RIGHT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
-                                                    {/* Career Title */}
-                                                    <div className="flex items-start gap-4 mb-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdWork className="text-maroon h-6 w-6" />
+                                                    {/* Career Header */}
+                                                    <div className="flex items-start gap-4">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdWork className="w-6 h-6 text-maroon" />
                                                         </div>
-                                                        <p className="font-semibold text-maroon">Career Trajectories</p>
+                                                        <p className="font-semibold text-maroon text-[14px]">
+                                                            Career Trajectories
+                                                        </p>
                                                     </div>
 
                                                     {/* Career Cards */}
-                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
-
+                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                         {[
                                                             { title: "Supply Chain Analyst", icon: <MdInsights /> },
                                                             { title: "Operations Manager", icon: <MdFactory /> },
@@ -774,24 +893,24 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                                 whileInView={{ opacity: 1, y: 0 }}
                                                                 viewport={{ once: true }}
                                                                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                                                                className="flex items-center gap-3 p-3 shadow-sm hover:shadow-md transition"
+                                                                className="flex items-center gap-3 p-3 rounded-xl shadow-sm hover:shadow-md transition"
                                                             >
-                                                                <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center text-maroon">
+                                                                <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/10 flex items-center justify-center text-maroon">
                                                                     {role.icon}
                                                                 </div>
-                                                                <p className="text-gray-700 text-[14px]">{role.title}</p>
+                                                                <p className="text-[14px] text-gray-700">
+                                                                    {role.title}
+                                                                </p>
                                                             </motion.div>
                                                         ))}
-
                                                     </div>
 
                                                 </div>
 
                                             </div>
-
-
                                         </motion.section>
                                     )}
+
 
                                     {activeTab === "fintech" && (
                                         <motion.section
@@ -800,7 +919,7 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
                                             transition={{ duration: 0.8 }}
-                                            className="relative  rounded-3xl max-w-7xl mx-auto overflow-hidden"
+                                            className="relative max-w-7xl mx-auto rounded-3xl overflow-hidden"
                                         >
 
                                             {/* Header */}
@@ -808,33 +927,38 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 initial={{ y: 30, opacity: 0 }}
                                                 animate={{ y: 0, opacity: 1 }}
                                                 transition={{ duration: 0.8 }}
-                                                className="text-center mb-10"
+                                                className="text-center mb-12"
                                             >
                                                 <h2 className="text-[17px] font-semibold text-maroon mb-2">
                                                     Fin-Tech, AI & Digital Finance
                                                 </h2>
 
-                                                <p className="text-gray-600 italic">
-                                                    <span className="font-semibold text-[14px]">Where Banking Meets Code.</span>
-                                                    <br />Where Finance Becomes Intelligent.
+                                                <p className="text-gray-600 italic text-[14px]">
+                                                    <span className="font-semibold">
+                                                        Where Banking Meets Code.
+                                                    </span>
+                                                    <br />
+                                                    Where Finance Becomes Intelligent.
                                                 </p>
                                             </motion.div>
 
-                                            {/* Timeline UI */}
-                                            <div className="relative  grid grid-cols-12 gap-10 items-stretch">
+                                            {/* Two Column Layout */}
+                                            <div className="grid grid-cols-12 gap-12">
 
                                                 {/* LEFT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col space-y-8">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
                                                     {/* Core Learning Areas */}
                                                     <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdMenuBook className="text-maroon h-6 w-6" />
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdMenuBook className="w-6 h-6 text-maroon" />
                                                         </div>
 
                                                         <div className="text-[14px] text-gray-700">
-                                                            <p className="font-semibold text-maroon">Core Learning Areas</p>
-                                                            <ul className="list-disc ml-5 mt-2 space-y-1">
+                                                            <p className="font-semibold text-maroon mb-2">
+                                                                Core Learning Areas
+                                                            </p>
+                                                            <ul className="list-disc ml-5 space-y-1">
                                                                 <li>FinTech Systems, Digital Payments & Blockchain</li>
                                                                 <li>AI in Finance: Risk Models, Fraud Analytics & Robo-Advisory</li>
                                                                 <li>Financial Analytics, Investment Insights & Corporate Finance Strategy</li>
@@ -845,19 +969,20 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                 </div>
 
                                                 {/* RIGHT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col">
+                                                <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
 
-                                                    {/* Career Title */}
-                                                    <div className="flex items-start gap-4 mb-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdWork className="text-maroon h-6 w-6" />
+                                                    {/* Career Header */}
+                                                    <div className="flex items-start gap-4">
+                                                        <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/20 flex items-center justify-center">
+                                                            <MdWork className="w-6 h-6 text-maroon" />
                                                         </div>
-                                                        <p className="font-semibold text-maroon">Career Trajectories</p>
+                                                        <p className="font-semibold text-maroon text-[14px]">
+                                                            Career Trajectories
+                                                        </p>
                                                     </div>
 
                                                     {/* Career Cards */}
-                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
-
+                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                         {[
                                                             { title: "FinTech Analyst", icon: <MdPayments /> },
                                                             { title: "Risk Analyst", icon: <MdSecurity /> },
@@ -871,126 +996,26 @@ export default function SpecializationPageContent({ activeSlug }: any) {
                                                                 whileInView={{ opacity: 1, y: 0 }}
                                                                 viewport={{ once: true }}
                                                                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                                                                className="flex items-center gap-3 p-3 shadow-sm hover:shadow-md transition"
+                                                                className="flex items-center gap-3 p-3 rounded-xl shadow-sm hover:shadow-md transition"
                                                             >
-                                                                <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center text-maroon">
+                                                                <div className="w-10 h-10 shrink-0 rounded-full bg-maroon/10 flex items-center justify-center text-maroon">
                                                                     {role.icon}
                                                                 </div>
-                                                                <p className="text-gray-700 text-[14px]">{role.title}</p>
+                                                                <p className="text-[14px] text-gray-700">
+                                                                    {role.title}
+                                                                </p>
                                                             </motion.div>
                                                         ))}
-
                                                     </div>
 
                                                 </div>
 
                                             </div>
-
-
-
-
                                         </motion.section>
                                     )}
 
-                                    {activeTab === "hrtech" && (
-                                        <motion.section
-                                            key="hrtech"
-                                            initial={{ opacity: 0 }}
-                                            animate={{ opacity: 1 }}
-                                            exit={{ opacity: 0 }}
-                                            transition={{ duration: 0.8 }}
-                                            className="relative   rounded-3xl max-w-7xl mx-auto overflow-hidden"
-                                        >
-                                            {/* Header */}
-                                            <motion.div
-                                                initial={{ y: 30, opacity: 0 }}
-                                                animate={{ y: 0, opacity: 1 }}
-                                                transition={{ duration: 0.8 }}
-                                                className="text-center mb-10"
-                                            >
-                                                <h2 className="text-[17px] font-semibold text-maroon mb-2">
-                                                    HR Tech & Digital Transformation
-                                                </h2>
-
-                                                <p className="text-gray-600 italic text-[14px]">
-                                                    <span className="font-semibold">
-                                                        Building Leaders Who Shape the Workforce of the Future.
-                                                    </span>
-                                                </p>
-                                            </motion.div>
-
-                                            {/* Timeline UI */}
-                                            <div className="relative  grid grid-cols-12 gap-10 items-stretch">
-
-                                                {/* LEFT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col space-y-8">
-
-                                                    {/* Core Learning Areas */}
-                                                    <div className="flex items-start gap-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdMenuBook className="w-5 h-5 text-maroon" />
-                                                        </div>
-
-                                                        <div className="text-[14px] text-gray-700">
-                                                            <p className="font-semibold text-maroon">Core Learning Areas</p>
-                                                            <ul className="list-disc ml-5 mt-2 space-y-1">
-                                                                <li>HR Analytics, Workforce Intelligence & Predictive People Modelling</li>
-                                                                <li>AI-Enabled Talent Acquisition & Competency Mapping</li>
-                                                                <li>Total Rewards Design, Performance Architecture & EX Strategy</li>
-                                                                <li>Organizational Development, Culture Engineering & Change Leadership</li>
-                                                                <li>HR Technology Platforms (HRMS, ATS, LMS, People Analytics Tools)</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                {/* RIGHT COLUMN */}
-                                                <div className="col-span-12 lg:col-span-6 h-full flex flex-col">
-
-                                                    {/* Career Title */}
-                                                    <div className="flex items-start gap-4 mb-4">
-                                                        <div className="w-10 h-10 rounded-full bg-maroon/20 flex items-center justify-center">
-                                                            <MdWork className="w-5 h-5 text-maroon" />
-                                                        </div>
-                                                        <p className="font-semibold text-maroon">Career Trajectories</p>
-                                                    </div>
-
-                                                    {/* Career Cards */}
-                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
-
-                                                        {[
-                                                            { title: "HRBP", icon: <MdPeople className="w-5 h-5 text-maroon" /> },
-                                                            { title: "Talent Acquisition Lead", icon: <MdGroup className="w-5 h-5 text-maroon" /> },
-                                                            { title: "HR Analyst", icon: <MdAssessment className="w-5 h-5 text-maroon" /> },
-                                                            { title: "L&D Specialist", icon: <MdSchool className="w-5 h-5 text-maroon" /> },
-                                                            { title: "Employee Experience Manager", icon: <MdEmojiEmotions className="w-5 h-5 text-maroon" /> },
-                                                            { title: "People Operations Strategist", icon: <MdSupervisedUserCircle className="w-5 h-5 text-maroon" /> },
-                                                        ].map((role, index) => (
-                                                            <motion.div
-                                                                key={index}
-                                                                initial={{ opacity: 0, y: 15 }}
-                                                                whileInView={{ opacity: 1, y: 0 }}
-                                                                viewport={{ once: true }}
-                                                                transition={{ duration: 0.4, delay: index * 0.08 }}
-                                                                className="flex items-center gap-3 p-3 shadow-sm hover:shadow-md transition-all rounded-md"
-                                                            >
-                                                                <div className="bg-maroon/10 w-10 h-10 rounded-full flex items-center justify-center text-maroon">
-                                                                    {role.icon}
-                                                                </div>
-                                                                <p className="text-gray-700 text-[14px]">{role.title}</p>
-                                                            </motion.div>
-                                                        ))}
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
 
 
-                                        </motion.section>
-                                    )}
                                 </div>
 
                             </div>
