@@ -3,7 +3,7 @@ import AboutPage from "../about-content";
 
 export async function generateStaticParams() {
     return [
-        { slug: "about" },
+        { slug: "aboutus" },
         { slug: "vision" },
         { slug: "history" },
         { slug: "management" },
@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 
 export function generateMetadata({ params }: any) {
     const titles: any = {
-        about: "About Us",
+        aboutus: "About Us",
         vision: "BlackbVision & Missionoard",
         history: "History",
         chairman: "Chairman's Books",

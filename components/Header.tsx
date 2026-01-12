@@ -11,7 +11,7 @@ import {
   alumniFacilities,
   rankings,
 } from "../data/footerLinks";
-import { FiMenu, FiX, FiChevronDown, FiSearch } from "react-icons/fi";
+import { FiMenu, FiX, FiChevronDown, FiSearch, FiMapPin } from "react-icons/fi";
 import { facultyMembers } from "../data/facultymembers";
 import { motion } from "framer-motion";
 import {
@@ -166,6 +166,37 @@ export default function Header() {
                   </a>
                 ))}
               </div>
+            </div>
+
+            {/* Center: Campus Link */}
+            <div className="flex-1 flex justify-center">
+              <a
+                href="https://sonabusinessschool.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+      relative flex items-center gap-1
+      text-white whitespace-nowrap
+      text-[9px] sm:text-[10px] lg:text-[11px]
+      after:content-['']
+      after:absolute after:left-0 after:-bottom-[1px]
+      after:h-[1px] after:w-0 after:bg-white
+      after:transition-all after:duration-300 after:ease-out
+      hover:after:w-full
+    "
+              >
+                <FiMapPin className="w-3 h-3 text-white shrink-0" />
+
+                {/* Mobile + Tablet */}
+                <span className="inline lg:hidden">
+                  SSBM – Salem Campus (MBA)
+                </span>
+
+                {/* Desktop */}
+                <span className="hidden lg:inline">
+                  Sona School of Business and Management – Salem Campus (MBA)
+                </span>
+              </a>
             </div>
 
             {/* Right: Search */}
