@@ -110,7 +110,7 @@ export default function AboutPage({ activeSlug }: any) {
         { name: "Dr. Ranjith T.P", designation: "Director, Recruitment – Asia Pacific", company: "VOLVO India", image: "/images/about/advisory/Picture4.webp" },
         { name: "Mr. Glen Dsouza", designation: "VP Human Resources & Head ER", company: "Air India Limited", image: "/images/about/advisory/Picture5.webp" },
         { name: "Mr. Jays Chandy", designation: "Chief People Officer", company: "CensaNext", image: "/images/about/advisory/Picture8.webp" },
-        { name: "Mr. Alex Mathews", designation: "Chief HR Officer", company: "KPN Fresh – West Bridge Capital", image: "/images/about/advisory/Picture9.webp" },
+        // { name: "Mr. Alex Mathews", designation: "Chief HR Officer", company: "KPN Fresh – West Bridge Capital", image: "/images/about/advisory/Picture9.webp" },
         { name: "Mr. Vamshi Guntha", designation: "Founder & CEO", company: "Propl Inventions Ltd (Business Analytics)", image: "/images/about/advisory/Picture10.webp" },
     ];
 
