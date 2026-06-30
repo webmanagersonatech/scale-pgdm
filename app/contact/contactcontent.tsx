@@ -151,9 +151,8 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold tracking-widest">ADDRESS</div>
                   <p className="text-sm leading-relaxed mt-2">
-                    #43/1A , Billekempanahalli village, Bidadi Hobli,
-                    Ramanagara – 562109, Karnataka, India.<br />
-
+                    Sona Towers, 71 Millers Road, Vasanth Nagar,
+                    Bengaluru – 560052, Karnataka, India.
                   </p>
                 </div>
               </div>

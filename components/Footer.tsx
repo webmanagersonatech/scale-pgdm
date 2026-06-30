@@ -33,8 +33,9 @@ export default function Footer() {
             </div>
 
             <p className="text-sm text-gray-300/80 leading-relaxed">
-              #43/1A , Billekempanahalli village, Bidadi Hobli<br></br> Ramanagara – 562109, Karnataka, India.
-           
+              Sona Towers, 71 Millers Road, Vasanth Nagar
+              <br />
+              Bengaluru – 560052, Karnataka, India.
             </p>
           </div>
 
